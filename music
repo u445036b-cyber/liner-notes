@@ -1,0 +1,23 @@
+REPO=liner-notes
+OWNER=u445036b-cyber
+SRC=~/my-brain/artifacts
+DIST=~/liner-notes-public
+
+rm -rf "$DIST" && mkdir -p "$DIST"
+cp "$SRC/music-taste.html"   "$DIST/music-taste.html"
+cp "$SRC/podcast-taste.html" "$DIST/podcast-taste.html"
+
+# ルート index.html は音楽ページへリダイレクト
+cat > "$DIST/index.html" <<'HTML'
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url=music-taste.html">
+<title>Liner Notes</title></head>
+<body><p><a href="music-taste.html">Liner Notes へ</a></p></body></html>
+HTML
+
+cd "$DIST"
+git init -b main
+git add -A
+git commit -m "publish: liner notes (music + podcast)"
+git remote add origin "https://github.com/$OWNER/$REPO.git"
+git push -u origin main

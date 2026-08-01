@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中西恒貴の音楽 ─ Liner Notes</title>
+<meta name="description" content="邦ロックを軸に、THE FIRST TAKE・UK/USギターロック・日本語ラップまで。中西恒貴の音楽の趣味をまとめたライナーノーツ。">
+<style>
+  :root{
+    --bg:#0b0b0f;
+    --bg-2:#121218;
+    --panel:#16161f;
+    --ink:#f4f1ea;
+    --ink-dim:#a7a29a;
+    --line:rgba(244,241,234,.10);
+    --accent:#ff3b5c;      /* レコード針の赤 */
+    --accent-2:#ffd34e;    /* アンプの琥珀 */
+    --accent-3:#5ec8ff;    /* ステージの青 */
+    --uk:#4f7cff;
+    --maxw:1080px;
+    --serif:'Georgia','Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Noto Sans JP','Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--sans);line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100svh;display:flex;flex-direction:column;
+    justify-content:center;align-items:center;text-align:center;overflow:hidden;
+    padding:80px 24px;
+  }
+  .hero__bg{
+    position:absolute;inset:0;z-index:0;
+    background:
+      radial-gradient(60% 50% at 50% 0%, rgba(255,59,92,.18), transparent 60%),
+      radial-gradient(50% 40% at 80% 90%, rgba(94,200,255,.14), transparent 60%),
+      radial-gradient(40% 40% at 15% 80%, rgba(255,211,78,.10), transparent 60%),
+      var(--bg);
+  }
+  /* 回るレコード */
+  .vinyl{
+    position:absolute;right:-160px;top:50%;transform:translateY(-50%);
+    width:520px;height:520px;border-radius:50%;z-index:0;opacity:.5;
+    background:
+      repeating-radial-gradient(circle at 50% 50%, #1c1c22 0 2px, #0e0e12 2px 5px);
+    box-shadow:0 0 80px rgba(0,0,0,.6), inset 0 0 60px rgba(0,0,0,.8);
+    animation:spin 14s linear infinite;
+  }
+  .vinyl::after{
+    content:"";position:absolute;inset:38%;border-radius:50%;
+    background:radial-gradient(circle,var(--accent) 0 40%,#b3283f 41% 100%);
+    box-shadow:0 0 0 6px #0b0b0f, inset 0 0 20px rgba(0,0,0,.5);
+  }
+  .vinyl::before{
+    content:"";position:absolute;inset:49.2%;border-radius:50%;
+    background:#0b0b0f;z-index:2;
+  }
+  @keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.vinyl{animation:none}}
+
+  .hero__inner{position:relative;z-index:1;max-width:820px}
+  .eyebrow{
+    letter-spacing:.42em;text-transform:uppercase;font-size:12px;
+    color:var(--accent-2);margin-bottom:24px;
+  }
+  .hero h1{
+    font-family:var(--serif);font-weight:700;line-height:1.08;margin:0;
+    font-size:clamp(40px,8vw,88px);letter-spacing:.01em;
+  }
+  .hero h1 em{color:var(--accent);font-style:normal}
+  .hero__sub{
+    margin:28px auto 0;max-width:620px;color:var(--ink-dim);
+    font-size:clamp(15px,2.2vw,18px);
+  }
+  .hero__meta{
+    margin-top:40px;display:flex;gap:28px;justify-content:center;flex-wrap:wrap;
+    font-size:13px;color:var(--ink-dim);letter-spacing:.04em;
+  }
+  .hero__meta b{color:var(--ink);font-size:22px;font-family:var(--serif);display:block}
+  .scroll-hint{
+    position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+    font-size:11px;letter-spacing:.3em;color:var(--ink-dim);z-index:1;
+    animation:float 2.4s ease-in-out infinite;
+  }
+  @keyframes float{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+
+  /* ---------- SECTION base ---------- */
+  section{position:relative;padding:96px 0}
+  .sec-head{margin-bottom:48px;max-width:720px}
+  .sec-kicker{
+    font-size:12px;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:12px;
+  }
+  .sec-kicker::before{content:"";width:34px;height:1px;background:var(--accent)}
+  .sec-head h2{
+    font-family:var(--serif);font-size:clamp(28px,4.4vw,44px);margin:0;line-height:1.15;
+  }
+  .sec-head p{color:var(--ink-dim);margin:18px 0 0;font-size:16px}
+
+  .alt{background:var(--bg-2)}
+
+  /* ---------- タブナビ ---------- */
+  .topnav{
+    position:sticky;top:0;z-index:40;display:flex;justify-content:center;gap:8px;
+    padding:12px;background:rgba(11,11,15,.72);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .topnav a{
+    display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-dim);
+    font-size:14px;letter-spacing:.04em;padding:8px 18px;border-radius:999px;
+    border:1px solid transparent;transition:color .2s,background .2s,border-color .2s;
+  }
+  .topnav a:hover{color:var(--ink);background:rgba(255,255,255,.06)}
+  .topnav a.active{color:var(--ink);border-color:var(--line);background:rgba(255,255,255,.05)}
+  .topnav a.soon{opacity:.5;cursor:default}
+  .topnav a.soon:hover{background:transparent;color:var(--ink-dim)}
+
+  /* ---------- Heavy Rotation（よく聴く曲）---------- */
+  .hr-tracks{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+  .hr-tracks h3{margin:0 0 16px;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-2);display:flex;align-items:center;gap:10px}
+  .hr-tracks ol{margin:0;padding:0;list-style:none;counter-reset:hr;display:grid;grid-template-columns:1fr 1fr;gap:2px 30px}
+  .hr-tracks ol li{counter-increment:hr;display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .hr-tracks ol li::before{content:counter(hr);font-family:var(--serif);color:var(--accent);font-size:16px;flex:0 0 auto;width:16px}
+  .hr-tracks ol li a{color:var(--ink);text-decoration:none}
+  .hr-tracks ol li a:hover{color:var(--accent-3)}
+  .hr-tracks ol li .by{color:var(--ink-dim);font-size:13px;margin-left:auto;padding-left:12px;white-space:nowrap}
+  .hr-tracks .recent{margin:18px 0 0;color:var(--ink-dim);font-size:13px}
+  .hr-tracks .recent a{color:var(--ink-dim)}
+  .hr-tracks .recent a:hover{color:var(--accent-3)}
+  @media (max-width:760px){.hr-tracks ol{grid-template-columns:1fr}}
+
+  /* ---------- 一言で / ヘッドライン ---------- */
+  .lede{
+    font-family:var(--serif);font-size:clamp(22px,3.4vw,34px);line-height:1.6;
+    max-width:900px;margin:0 auto;text-align:center;
+  }
+  .lede .hl{
+    background:linear-gradient(transparent 62%, rgba(255,59,92,.32) 62%);
+    padding:0 .1em;
+  }
+  .lede .amber{color:var(--accent-2)}
+
+  /* ---------- ピラー(推し) カード ---------- */
+  .pillars{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:12px}
+  .pillar{
+    background:var(--panel);border:1px solid var(--line);border-radius:18px;
+    padding:30px 30px 32px;position:relative;overflow:hidden;
+    transition:transform .3s ease,border-color .3s ease;
+  }
+  .pillar:hover{transform:translateY(-4px);border-color:rgba(255,59,92,.4)}
+  .pillar .num{
+    font-family:var(--serif);font-size:64px;color:rgba(255,255,255,.06);
+    position:absolute;top:8px;right:22px;line-height:1;
+  }
+  .pillar h3{margin:0 0 6px;font-size:22px}
+  .pillar .tag{
+    display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent-2);border:1px solid rgba(255,211,78,.4);border-radius:999px;
+    padding:3px 12px;margin-bottom:16px;
+  }
+  .pillar p{margin:0;color:var(--ink-dim);font-size:15px}
+  .pillar .plays{color:var(--accent);font-weight:700}
+
+  /* ---------- ジャンル ---------- */
+  .genres{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .genre{
+    background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 26px 28px;
+    border-left:3px solid var(--gc,var(--accent));
+    transition:transform .25s ease;
+  }
+  .genre:hover{transform:translateY(-3px)}
+  .genre h3{margin:0 0 4px;font-size:18px;display:flex;align-items:center;gap:10px}
+  .genre .cap{font-size:12px;color:var(--ink-dim);margin:0 0 16px;letter-spacing:.05em}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{
+    font-size:13px;padding:6px 13px;border-radius:999px;
+    background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--ink);
+    white-space:nowrap;transition:background .2s,border-color .2s;
+  }
+  .chip:hover{background:rgba(255,255,255,.09)}
+  .chip .n{color:var(--ink-dim);font-size:11px;margin-left:5px}
+  .chip.star{border-color:rgba(255,59,92,.5);background:rgba(255,59,92,.10)}
+
+  /* ---------- 洋楽 ---------- */
+  .uk-band{
+    background:linear-gradient(135deg,rgba(79,124,255,.14),rgba(255,59,92,.06));
+    border:1px solid rgba(79,124,255,.3);border-radius:20px;padding:34px;margin-bottom:26px;
+    display:flex;gap:28px;align-items:center;flex-wrap:wrap;
+  }
+  .uk-band .big{
+    font-family:var(--serif);font-size:clamp(40px,6vw,64px);line-height:1;color:#fff;
+    flex:0 0 auto;
+  }
+  .uk-band .big small{display:block;font-size:14px;color:var(--uk);letter-spacing:.2em;margin-top:8px}
+  .uk-band .txt{flex:1;min-width:240px}
+  .uk-band .txt p{margin:0;color:var(--ink-dim)}
+  .uk-band .txt .songs{margin-top:12px;color:var(--ink);font-size:14px}
+
+  /* ---------- ギター / 家族 : 引用ブロック ---------- */
+  .feature{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+  .feature .card{
+    background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px;
+  }
+  .feature .card h3{margin:0 0 14px;font-size:20px;display:flex;align-items:center;gap:10px}
+  .feature .card p{color:var(--ink-dim);margin:0 0 14px}
+  .feature .card p:last-child{margin-bottom:0}
+  .searchlist{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .searchlist li{
+    font-family:var(--serif);font-style:italic;color:var(--ink);
+    background:rgba(255,255,255,.03);border-left:2px solid var(--accent-2);
+    padding:8px 14px;border-radius:0 8px 8px 0;font-size:15px;
+  }
+  .quote{
+    grid-column:1/-1;text-align:center;font-family:var(--serif);
+    font-size:clamp(20px,3vw,28px);line-height:1.6;color:var(--ink);
+    padding:20px;position:relative;
+  }
+  .quote span{color:var(--accent)}
+  .quote .cite{display:block;font-size:14px;font-style:normal;color:var(--ink-dim);margin-top:18px;font-family:var(--sans)}
+
+  /* ---------- タイムライン ---------- */
+  .timeline{max-width:640px}
+  .tl-item{display:flex;gap:18px;padding:14px 0;border-bottom:1px dashed var(--line)}
+  .tl-item .when{flex:0 0 130px;color:var(--accent-2);font-size:14px;font-weight:600}
+  .tl-item .what{color:var(--ink-dim);font-size:15px}
+  .tl-item .what b{color:var(--ink)}
+
+  /* ---------- フッター ---------- */
+  footer{padding:70px 0 90px;text-align:center;color:var(--ink-dim);font-size:13px}
+  footer .fmark{font-family:var(--serif);font-size:20px;color:var(--ink);margin-bottom:14px}
+  footer a{color:var(--accent-3);text-decoration:none}
+
+  /* ---------- 羊文学スポットライト ---------- */
+  .spotlight{
+    display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px;align-items:center;
+  }
+  .spotlight .photo{
+    position:relative;border-radius:20px;overflow:hidden;aspect-ratio:1/1;
+    border:1px solid var(--line);box-shadow:0 30px 60px rgba(0,0,0,.5);
+  }
+  .spotlight .photo img{width:100%;height:100%;object-fit:cover;display:block;
+    transition:transform .6s ease;}
+  .spotlight .photo:hover img{transform:scale(1.05)}
+  .spotlight .photo .credit{
+    position:absolute;left:0;bottom:0;right:0;padding:14px 16px;
+    background:linear-gradient(transparent,rgba(0,0,0,.8));
+    font-size:11px;color:var(--ink-dim);letter-spacing:.04em;
+  }
+  .spotlight .photo .fav{
+    position:absolute;top:14px;left:14px;background:var(--accent);color:#fff;
+    font-size:11px;font-weight:700;letter-spacing:.08em;padding:5px 12px;border-radius:999px;
+  }
+  .spotlight h3{font-family:var(--serif);font-size:clamp(26px,4vw,38px);margin:0 0 6px}
+  .spotlight .rome{color:var(--ink-dim);letter-spacing:.24em;text-transform:uppercase;font-size:12px;margin:0 0 18px}
+  .spotlight p{color:var(--ink-dim);margin:0 0 18px}
+  .sp-btn{
+    display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    background:#1DB954;color:#04160b;font-weight:700;font-size:14px;
+    padding:11px 20px;border-radius:999px;transition:transform .2s,box-shadow .2s;
+  }
+  .sp-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(29,185,84,.35)}
+  .sp-btn svg{width:18px;height:18px}
+
+  /* ---------- アーティスト写真ギャラリー ---------- */
+  .artist-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+  }
+  .artist-card{
+    text-decoration:none;color:inherit;background:var(--panel);
+    border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    transition:transform .3s ease,border-color .3s ease;display:block;
+  }
+  .artist-card:hover{transform:translateY(-6px);border-color:rgba(29,185,84,.55)}
+  .artist-card .ph{aspect-ratio:1/1;overflow:hidden;position:relative}
+  .artist-card .ph img{width:100%;height:100%;object-fit:cover;display:block;
+    filter:grayscale(.15);transition:filter .3s,transform .5s}
+  .artist-card:hover .ph img{filter:none;transform:scale(1.06)}
+  .artist-card .ph::after{
+    content:"▶ Spotify";position:absolute;bottom:10px;right:10px;
+    background:rgba(29,185,84,.92);color:#04160b;font-size:11px;font-weight:700;
+    padding:4px 10px;border-radius:999px;opacity:0;transform:translateY(6px);
+    transition:opacity .3s,transform .3s;
+  }
+  .artist-card:hover .ph::after{opacity:1;transform:translateY(0)}
+  .artist-card .meta{padding:14px 16px 16px}
+  .artist-card .meta b{display:block;font-size:16px}
+  .artist-card .meta span{font-size:12px;color:var(--ink-dim)}
+
+  /* ---------- Spotify 埋め込み ---------- */
+  .embed-wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .embed-wrap iframe{width:100%;border:0;border-radius:14px;background:var(--panel)}
+  .embed-full iframe{width:100%;border:0;border-radius:14px;margin-top:8px}
+  .embed-note{color:var(--ink-dim);font-size:13px;margin-top:16px}
+
+  /* ---------- アーティスト モーダル ---------- */
+  .modal{
+    position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;
+    padding:24px;opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s ease;
+  }
+  .modal.open{opacity:1;visibility:visible}
+  .modal__backdrop{
+    position:absolute;inset:0;background:rgba(4,4,8,.78);backdrop-filter:blur(6px);
+  }
+  .modal__box{
+    position:relative;z-index:1;width:min(680px,100%);max-height:88vh;overflow:auto;
+    background:var(--panel);border:1px solid var(--line);border-radius:22px;
+    display:grid;grid-template-columns:0.9fr 1.1fr;
+    box-shadow:0 40px 90px rgba(0,0,0,.6);
+    transform:translateY(18px) scale(.98);transition:transform .32s cubic-bezier(.2,.9,.3,1);
+  }
+  .modal.open .modal__box{transform:translateY(0) scale(1)}
+  .modal__photo{position:relative;min-height:260px}
+  .modal__photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .modal__body{padding:30px 30px 32px}
+  .modal__body .rome{color:var(--ink-dim);letter-spacing:.22em;text-transform:uppercase;font-size:11px;margin:0 0 4px}
+  .modal__body h3{font-family:var(--serif);font-size:28px;margin:0 0 14px;line-height:1.2}
+  .modal__body p{color:var(--ink-dim);font-size:15px;margin:0 0 22px}
+  .modal__close{
+    position:absolute;top:12px;right:12px;z-index:2;width:38px;height:38px;border-radius:50%;
+    border:0;background:rgba(0,0,0,.55);color:#fff;font-size:20px;cursor:pointer;line-height:1;
+    display:flex;align-items:center;justify-content:center;transition:background .2s;
+  }
+  .modal__close:hover{background:var(--accent)}
+  .artist-card{cursor:pointer}
+  /* 写真なしモーダル（チップ用の軽量表示） */
+  .modal__box.no-photo{grid-template-columns:1fr}
+  .modal__box.no-photo .modal__photo{display:none}
+  .modal__box.no-photo .modal__body{padding:36px 34px 34px}
+  .modal__body .genre-note{
+    display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-2);border:1px solid rgba(255,211,78,.4);border-radius:999px;
+    padding:3px 12px;margin:0 0 14px;
+  }
+  /* クリック可能チップ */
+  .chip[data-artist]{cursor:pointer}
+  .chip[data-artist]:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25)}
+  .chip[data-artist]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .chip.star[data-artist]:hover{background:rgba(255,59,92,.2)}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:760px){
+    section{padding:72px 0}
+    .pillars,.genres,.feature{grid-template-columns:1fr}
+    .vinyl{width:340px;height:340px;right:-140px;opacity:.32}
+    .hero__meta{gap:20px}
+    .uk-band{padding:26px}
+    .spotlight{grid-template-columns:1fr;gap:26px}
+    .artist-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+    .embed-wrap{grid-template-columns:1fr}
+    .modal__box{grid-template-columns:1fr;max-height:90vh}
+    .modal__photo{min-height:220px;aspect-ratio:16/10}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= タブナビ ================= -->
+<nav class="topnav">
+  <a class="active" href="music-taste.html">♪ 音楽</a>
+  <a href="podcast-taste.html">🎙 ポッドキャスト</a>
+  <a href="youtube-taste.html">▶ YouTube</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero__bg"></div>
+  <div class="vinyl" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="eyebrow">Liner Notes ─ 中西 恒貴</div>
+    <h1>鳴らし続ける、<br><em>好きな音</em>。</h1>
+    <p class="hero__sub">
+      羊文学・King Gnu・スピッツを軸に、邦ロック／オルタナから日本語ラップ、
+      UK/USのギターロックまで。Spotifyの再生履歴から見えた“いま”の音。
+    </p>
+    <div class="hero__meta">
+      <div><b>羊文学</b>最もよく聴く</div>
+      <div><b>King Gnu</b>2番目</div>
+      <div><b>スピッツ</b>3番目</div>
+      <div><b>サカナクション</b>4番目</div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">S C R O L L</div>
+</header>
+
+<!-- ================= 一言で ================= -->
+<section>
+  <div class="wrap">
+    <p class="lede">
+      軸にあるのは<span class="hl">邦ロック・オルタナ</span>。
+      羊文学と King Gnu を中心に、スピッツやサカナクション、
+      Creepy Nuts の<span class="amber">日本語ラップ</span>、
+      The Stone Roses のような UK ギターロックまで。
+      新旧も和洋も、<span class="hl">境界なく。</span>
+    </p>
+  </div>
+</section>
+
+<!-- ================= いちばんよく観るもの ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Now Playing</div>
+      <h2>いま、いちばん聴いているもの</h2>
+      <p>Spotifyの再生履歴で突出していた、ふたりの主役。</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar">
+        <span class="num">01</span>
+        <span class="tag">Most Played ・ 1位</span>
+        <h3>🐑 羊文学</h3>
+        <p>Spotifyで<span class="plays">最もよく聴くアーティスト</span>。「more than words」を筆頭に「Burning」「金色」「そのとき」「砂漠のきみへ」まで、アルバム単位でヘビロテ。轟音のギターと透明なメロディが同居するサウンドが、いまの気分の中心にある。</p>
+      </article>
+      <article class="pillar">
+        <span class="num">02</span>
+        <span class="tag">Most Played ・ 2位</span>
+        <h3>👑 King Gnu</h3>
+        <p>いちばんの愛聴曲は<span class="plays">「雨燦々」</span>。混沌と美メロを行き来する常田大希のソングライティングに惹かれ、コンスタントに再生。羊文学と並んで、再生履歴で頭ひとつ抜けている。</p>
+      </article>
+    </div>
+
+    <div class="hr-tracks">
+      <h3>♪ Heavy Rotation ─ よく聴く曲</h3>
+      <ol>
+        <li><a href="https://open.spotify.com/track/34PR0zLBVl7VMF9E7dDwdo" target="_blank" rel="noopener">雨燦々</a><span class="by">King Gnu</span></li>
+        <li><a href="https://open.spotify.com/track/2kXER8pkjxDVQnlagpVJJw" target="_blank" rel="noopener">more than words</a><span class="by">羊文学</span></li>
+        <li><a href="https://open.spotify.com/track/60eCBtq6iU3bCuaFI8bTpg" target="_blank" rel="noopener">愛し合うとして</a><span class="by">SATOH</span></li>
+        <li><a href="https://open.spotify.com/track/1mdbjTargZrrMHgzveQBcN" target="_blank" rel="noopener">Burning</a><span class="by">羊文学</span></li>
+      </ol>
+      <p class="recent">最近の再生：
+        <a href="https://open.spotify.com/track/758wEKVqfYopJIHYWdLVd4" target="_blank" rel="noopener">I Wanna Be Adored</a>（The Stone Roses）／
+        <a href="https://open.spotify.com/track/3UcldTDroPUrszcXjXvMhp" target="_blank" rel="noopener">涙のふるさと</a>（BUMP OF CHICKEN）／
+        <a href="https://open.spotify.com/track/2FrdiTHaolkyx4lbBBXNou" target="_blank" rel="noopener">金色</a>・<a href="https://open.spotify.com/track/5dZDHprMDKVwQ5dzU736JL" target="_blank" rel="noopener">そのとき</a>（羊文学）
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 羊文学 スポットライト ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Spotlight</div>
+      <h2>羊文学 ── 浮遊するギターの轟音</h2>
+      <p>邦ロックの中でも特にお気に入りの3ピース。塩塚モエカのささやくようなボーカルと、爆音のシューゲイザー・サウンドが同居する。</p>
+    </div>
+    <div class="spotlight">
+      <div class="photo">
+        <span class="fav">FAVORITE</span>
+        <img src="https://i.scdn.co/image/ab676161000051741833f4534ed3dd88d9e12c8b"
+             alt="羊文学（Hitsujibungaku）アーティスト写真" loading="lazy">
+        <div class="credit">Photo: Spotify 公式アーティストイメージ</div>
+      </div>
+      <div class="txt">
+        <h3>羊文学</h3>
+        <p class="rome">Hitsujibungaku</p>
+        <p>轟音のギターと透明なメロディが同居する“新しいスタンダード”。アニメ主題歌でも知られ、代表曲「more than words」「光るとき」「あいまいでいいよ」など。中西さんの視聴履歴でも上位に食い込む、いま一番聴きたいバンドのひとつ。</p>
+        <p>下のプレーヤーから、そのまま試聴できます。</p>
+        <a class="sp-btn" href="https://open.spotify.com/artist/6S8w5rLsEwjN21jQeRES0n" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32c-.22.36-.68.47-1.03.25-2.82-1.72-6.36-2.11-10.54-1.16-.4.1-.8-.16-.9-.56-.1-.4.16-.8.56-.9 4.56-1.04 8.48-.6 11.64 1.35.36.22.47.68.27 1.02zm1.47-3.27c-.27.44-.85.58-1.29.31-3.23-1.98-8.15-2.56-11.96-1.4-.5.15-1.03-.13-1.18-.62-.15-.5.13-1.02.62-1.18 4.36-1.32 9.78-.68 13.5 1.6.44.27.58.85.31 1.29zm.13-3.4C15.06 8.35 8.7 8.13 5.03 9.25c-.6.18-1.23-.16-1.4-.76-.18-.6.16-1.23.76-1.4 4.2-1.28 11.24-1.03 15.66 1.6.53.32.7 1.01.39 1.55-.32.53-1.02.7-1.55.38z"/></svg>
+          Spotifyで羊文学を開く
+        </a>
+        <div class="embed-full">
+          <iframe src="https://open.spotify.com/embed/artist/6S8w5rLsEwjN21jQeRES0n?utm_source=generator&theme=0"
+                  height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy" title="羊文学 on Spotify"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ジャンル別 ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Record Shelf</div>
+      <h2>棚を覗く ─ ジャンル別</h2>
+      <p>括弧内の数字は視聴履歴で確認できた本数。★は特に再生の多いアーティスト。<b style="color:var(--ink)">アーティスト名をクリック</b>すると、紹介とSpotifyリンクがポップアップで開きます。</p>
+    </div>
+    <div class="genres">
+      <div class="genre" style="--gc:var(--accent)">
+        <h3>🎸 邦ロック／ギターバンド</h3>
+        <p class="cap">音楽趣味の中心</p>
+        <div class="chips">
+          <span class="chip star" data-artist="sakanaction">サカナクション<span class="n">22</span></span>
+          <span class="chip" data-artist="hitsujibungaku">羊文学</span>
+          <span class="chip" data-artist="radwimps">RADWIMPS<span class="n">11</span></span>
+          <span class="chip" data-artist="ajikan">ASIAN KUNG-FU GENERATION</span>
+          <span class="chip" data-artist="humpback">Hump Back</span>
+          <span class="chip" data-artist="kanaboon">KANA-BOON</span>
+          <span class="chip" data-artist="frederic">フレデリック</span>
+          <span class="chip" data-artist="vaundy">Vaundy</span>
+          <span class="chip" data-artist="backnumber">back number</span>
+          <span class="chip" data-artist="mrchildren">Mr.Children</span>
+          <span class="chip" data-artist="tacica">tacica</span>
+          <span class="chip" data-artist="does">DOES</span>
+          <span class="chip" data-artist="larcenciel">L'Arc-en-Ciel</span>
+          <span class="chip" data-artist="ginnanboyz">銀杏BOYZ</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:var(--accent-2)">
+        <h3>🎤 J-POP／SSW</h3>
+        <p class="cap">シンガーソングライター</p>
+        <div class="chips">
+          <span class="chip" data-artist="higedan">Official髭男dism</span>
+          <span class="chip" data-artist="ryokushaka">緑黄色社会</span>
+          <span class="chip" data-artist="tomoo">TOMOO</span>
+          <span class="chip" data-artist="yoasobi">YOASOBI</span>
+          <span class="chip star" data-artist="ushioreira">汐れいら</span>
+          <span class="chip" data-artist="superfly">Superfly</span>
+          <span class="chip" data-artist="nanawoakari">ナナヲアカリ</span>
+          <span class="chip" data-artist="ikutalila">幾田りら</span>
+          <span class="chip" data-artist="uru">Uru</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:var(--accent-3)">
+        <h3>🎧 日本語ラップ／HIP-HOP</h3>
+        <p class="cap">バトル系まで</p>
+        <div class="chips">
+          <span class="chip star" data-artist="creepynuts">Creepy Nuts<span class="n">15</span></span>
+          <span class="chip" data-artist="awich">Awich</span>
+          <span class="chip" data-artist="chanmina">CHANMINA</span>
+          <span class="chip" data-artist="suglawd">SugLawd Familiar</span>
+          <span class="chip" data-artist="umedacypher">umedacypher</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#4ade80">
+        <h3>🌴 レゲエ／ミクスチャー</h3>
+        <p class="cap">縦ノリも守備範囲</p>
+        <div class="chips">
+          <span class="chip" data-artist="hannya">HANNYA</span>
+          <span class="chip" data-artist="chehon">CHEHON</span>
+          <span class="chip" data-artist="shonannokaze">湘南乃風</span>
+          <span class="chip" data-artist="hormone">マキシマム ザ ホルモン</span>
+          <span class="chip" data-artist="orangerange">ORANGE RANGE</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#c084fc">
+        <h3>🌆 シティポップ／昭和歌謡</h3>
+        <p class="cap">新旧問わず</p>
+        <div class="chips">
+          <span class="chip" data-artist="takeuchimariya">竹内まりや</span>
+          <span class="chip" data-artist="shiinaringo">椎名林檎</span>
+          <span class="chip" data-artist="komeicomeiclub">米米CLUB</span>
+          <span class="chip" data-artist="otsukaai">大塚愛</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#f472b6">
+        <h3>🎀 アイドル／アニメ・ボカロ</h3>
+        <p class="cap">FIRST TAKE 経由中心</p>
+        <div class="chips">
+          <span class="chip" data-artist="fruitszipper">FRUITS ZIPPER</span>
+          <span class="chip" data-artist="cutiestreet">CUTIE STREET</span>
+          <span class="chip" data-artist="niziu">NiziU</span>
+          <span class="chip" data-artist="mygo">MyGO!!!!!</span>
+          <span class="chip" data-artist="ado">Ado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 洋楽 ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Overseas</div>
+      <h2>洋楽 ─ 軸はUK/USのギターロック</h2>
+      <p>邦楽と同じくらい洋楽もしっかり。60〜70年代のクラシックロックから現行USポップまで縦断。とりわけイギリス勢への愛着が強い。直近のSpotify再生では <b style="color:var(--ink)">Van Halen「Panama」</b>・<b style="color:var(--ink)">Mötley Crüe「Kickstart My Heart」</b> といった80sアメリカンハードロックも顔を出している。</p>
+    </div>
+
+    <div class="uk-band">
+      <div class="big">Oasis<small>いちばんの洋楽推し ・ 約29本</small></div>
+      <div class="txt">
+        <p>2025年の再結成 <b>Oasis Live '25</b>（Cardiff / Knebworth）のライブ／プレビュー映像を多数視聴し、再結成に強く反応。定番曲も網羅。</p>
+        <p class="songs">Don't Look Back In Anger ／ Live Forever ／ Champagne Supernova ／ Rock 'N' Roll Star ／ Some Might Say</p>
+      </div>
+    </div>
+
+    <div class="genres">
+      <div class="genre" style="--gc:var(--uk)">
+        <h3>🇬🇧 UK ロック／ブリットポップ</h3>
+        <p class="cap">マッドチェスターも</p>
+        <div class="chips">
+          <span class="chip" data-artist="stoneroses">The Stone Roses</span>
+          <span class="chip" data-artist="theview">The View</span>
+          <span class="chip" data-artist="thebeatles">The Beatles</span>
+          <span class="chip" data-artist="ledzeppelin">Led Zeppelin</span>
+          <span class="chip" data-artist="radiohead">Radiohead</span>
+          <span class="chip" data-artist="queen">Queen</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#ff6b3d">
+        <h3>🇺🇸 US オルタナ／グランジ／パンク</h3>
+        <p class="cap">ミクスチャーまで</p>
+        <div class="chips">
+          <span class="chip" data-artist="thestrokes">The Strokes</span>
+          <span class="chip" data-artist="nirvana">Nirvana</span>
+          <span class="chip" data-artist="rhcp">Red Hot Chili Peppers</span>
+          <span class="chip" data-artist="theoffspring">The Offspring</span>
+          <span class="chip" data-artist="ratm">Rage Against The Machine</span>
+          <span class="chip star" data-artist="mcr">My Chemical Romance<span class="n">13</span></span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#9ca3af">
+        <h3>🤘 ハードロック／メタル</h3>
+        <p class="cap">80sアメリカンロックまで</p>
+        <div class="chips">
+          <span class="chip" data-artist="vanhalen">Van Halen</span>
+          <span class="chip" data-artist="motleycrue">Mötley Crüe</span>
+          <span class="chip" data-artist="slayer">Slayer</span>
+          <span class="chip" data-artist="metallica">Metallica</span>
+          <span class="chip" data-artist="gunsnroses">Guns N' Roses</span>
+          <span class="chip" data-artist="extreme">Extreme</span>
+          <span class="chip" data-artist="lynyrdskynyrd">Lynyrd Skynyrd</span>
+          <span class="chip" data-artist="cheaptrick">Cheap Trick</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#e879f9">
+        <h3>🌊 現行 US ポップ</h3>
+        <p class="cap">今の音も</p>
+        <div class="chips">
+          <span class="chip" data-artist="sabrinacarpenter">Sabrina Carpenter<span class="n">7</span></span>
+          <span class="chip" data-artist="billieeilish">Billie Eilish</span>
+          <span class="chip" data-artist="arianagrande">Ariana Grande</span>
+          <span class="chip" data-artist="eminem">Eminem</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 聴き込みの波 ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">On the Timeline</div>
+      <h2>聴き込みの波</h2>
+      <p>ベースはYouTube視聴履歴の分析。そこに直近のSpotify再生（トップ・最近の再生）を重ねた“いま”の波。</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="when">2025.05–07</div><div class="what">多め。<b>月40〜52本</b>のペースで聴き込む。</div></div>
+      <div class="tl-item"><div class="when">2025 通年</div><div class="what">Oasis 再結成ツアー <b>Live '25</b> の映像を継続的に視聴。</div></div>
+      <div class="tl-item"><div class="when">2026.02</div><div class="what"><b>急増（約130本）</b>。18ヶ月で最も集中的に聴き込んだ月。</div></div>
+      <div class="tl-item"><div class="when">2026 春〜夏</div><div class="what"><b>汐れいら</b>をヘビロテ。THE FIRST TAKE は変わらず入り口に。</div></div>
+      <div class="tl-item"><div class="when">2026.08 現在</div><div class="what">Spotifyのトップは <b>羊文学・King Gnu・スピッツ・サカナクション・Creepy Nuts</b>。洋楽は <b>Radiohead「Creep」</b> や80sハードロック（Van Halen／Mötley Crüe）。芸人ラジオの<b>ポッドキャスト</b>も日常の一部に。</div></div>
+    </div>
+    <p class="embed-note" style="max-width:680px;margin-top:20px">※ Spotifyは再生回数や月別の推移までは公開しないため、直近分は本数ではなく“観測できた傾向”で記載しています。</p>
+  </div>
+</section>
+
+<!-- ================= アーティスト写真ギャラリー ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Faces</div>
+      <h2>よく聴く顔ぶれ</h2>
+      <p>アーティスト（全13組）をクリックすると、紹介とSpotifyへのリンクがポップアップで開きます。画像はいずれも Spotify 公式アーティストイメージ。</p>
+    </div>
+    <div class="artist-grid">
+      <a class="artist-card" href="https://open.spotify.com/artist/6S8w5rLsEwjN21jQeRES0n" target="_blank" rel="noopener"
+         data-name="羊文学" data-rome="Hitsujibungaku"
+         data-img="https://i.scdn.co/image/ab676161000051741833f4534ed3dd88d9e12c8b"
+         data-desc="轟音のギターと透明なメロディが同居する3ピース。塩塚モエカのささやくようなボーカルが、爆音のシューゲイザー・サウンドの中で際立つ。アニメ主題歌でも知られ、代表曲は「more than words」「光るとき」「あいまいでいいよ」。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab676161000051741833f4534ed3dd88d9e12c8b" alt="羊文学" loading="lazy"></div>
+        <div class="meta"><b>羊文学</b><span>邦ロック / シューゲイザー</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq" target="_blank" rel="noopener"
+         data-name="サカナクション" data-rome="sakanaction"
+         data-img="https://i.scdn.co/image/ab6761610000517436e29d377fba222834f257cd"
+         data-desc="バンドサウンドとエレクトロニカを高い次元で融合させた孤高の存在。山口一郎の詩世界と踊れるビートが同居する。代表曲は「新宝島」「アイデンティティ」「夜の踊り子」「ミュージック」。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000517436e29d377fba222834f257cd" alt="サカナクション" loading="lazy"></div>
+        <div class="meta"><b>サカナクション</b><span>邦ロック / エレクトロ</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/6GVsZoMbMt0jmqwcvz1a1F" target="_blank" rel="noopener"
+         data-name="汐れいら" data-rome="Ushio Reira"
+         data-img="https://i.scdn.co/image/ab67616100005174b4491721bbd81f7bef5adc63"
+         data-desc="いま特にハマっているシンガーソングライター。日常のひとコマを掬い取る歌詞と、伸びやかで芯のある歌声が持ち味。THE FIRST TAKE でも注目を集めた。代表曲は「味噌汁とバター」「センチメンタル・キス」。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174b4491721bbd81f7bef5adc63" alt="汐れいら" loading="lazy"></div>
+        <div class="meta"><b>汐れいら</b><span>直近の推し / SSW</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE" target="_blank" rel="noopener"
+         data-name="Creepy Nuts" data-rome="Creepy Nuts"
+         data-img="https://i.scdn.co/image/ab6761610000517471c03bb9c1fe71f40a5fe1dc"
+         data-desc="ラッパー R-指定 と DJ松永 による2人組。緻密なワードプレイと圧倒的なスキルで日本語ラップを牽引。「Bling-Bang-Bang-Born」「オトノケ」で世界的ヒットを記録した。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000517471c03bb9c1fe71f40a5fe1dc" alt="Creepy Nuts" loading="lazy"></div>
+        <div class="meta"><b>Creepy Nuts</b><span>日本語ラップ</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/1EowJ1WwkMzkCkRomFhui7" target="_blank" rel="noopener"
+         data-name="RADWIMPS" data-rome="RADWIMPS"
+         data-img="https://i.scdn.co/image/ab67616100005174f7374b42bee7c71b9649ac83"
+         data-desc="文学的で内省的な歌詞と、ジャンルを跨ぐ変幻自在のサウンドが武器のバンド。映画『君の名は。』『天気の子』の劇伴でも広く知られる。野田洋次郎のボーカルが象徴的。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174f7374b42bee7c71b9649ac83" alt="RADWIMPS" loading="lazy"></div>
+        <div class="meta"><b>RADWIMPS</b><span>邦ロック</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4" target="_blank" rel="noopener"
+         data-name="Oasis" data-rome="United Kingdom"
+         data-img="https://i.scdn.co/image/ab67616100005174b4ddbc39706ef0f2ae0f7c9b"
+         data-desc="90年代ブリットポップを代表するマンチェスターのバンド。ギャラガー兄弟の楽曲は世代を超えて愛される。2025年に電撃再結成し「Live '25」ツアーを実施。代表曲は「Don't Look Back In Anger」「Live Forever」。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174b4ddbc39706ef0f2ae0f7c9b" alt="Oasis" loading="lazy"></div>
+        <div class="meta"><b>Oasis</b><span>UK / いちばんの洋楽推し</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V" target="_blank" rel="noopener"
+         data-name="The Strokes" data-rome="New York, USA"
+         data-img="https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9"
+         data-desc="2000年代のロックンロール・リバイバルを象徴するニューヨークのバンド。ざらついたギターとクールなボーカルが都会的。代表曲は「Last Nite」「Reptilia」「You Only Live Once」。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9" alt="The Strokes" loading="lazy"></div>
+        <div class="meta"><b>The Strokes</b><span>US オルタナ</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/5Vo1hnCRmCM6M4thZCInCj" target="_blank" rel="noopener"
+         data-name="Official髭男dism" data-rome="Higedan"
+         data-img="https://i.scdn.co/image/ab67616100005174a603edbfe14a6bced859d7e1"
+         data-desc="卓越したメロディセンスと藤原聡のハイトーンボーカルで日本のポップシーンを席巻するピアノPOPロックバンド。代表曲は「Pretender」「I LOVE...」「Subtitle」「ミックスナッツ」。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174a603edbfe14a6bced859d7e1" alt="Official髭男dism" loading="lazy"></div>
+        <div class="meta"><b>Official髭男dism</b><span>J-POP / ピアノロック</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/2IUl3m1H1EQ7QfNbNWvgru" target="_blank" rel="noopener"
+         data-name="Vaundy" data-rome="Vaundy"
+         data-img="https://i.scdn.co/image/ab67616100005174b718d2d3988005d3a72f22c9"
+         data-desc="作詞作曲からアートワークまで自ら手掛けるマルチクリエイター。ロック、ファンク、バラードを軽やかに横断する。代表曲は「怪獣の花唄」「napori」「花占い」「踊り子」。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174b718d2d3988005d3a72f22c9" alt="Vaundy" loading="lazy"></div>
+        <div class="meta"><b>Vaundy</b><span>邦ロック / SSW</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/6wxfx1yhyqjCPYwwxJktR2" target="_blank" rel="noopener"
+         data-name="King Gnu" data-rome="King Gnu"
+         data-img="https://i.scdn.co/image/ab676161000051744ec795dffef81475326da642"
+         data-desc="混沌と美メロを行き来する常田大希率いる4人組ミクスチャーバンド。ハイトーンと低音の二枚看板ボーカルが特徴。代表曲は「白日」「一途」、そしてお気に入りの一曲『雨燦々』。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab676161000051744ec795dffef81475326da642" alt="King Gnu" loading="lazy"></div>
+        <div class="meta"><b>King Gnu</b><span>邦ロック / ミクスチャー</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt" target="_blank" rel="noopener"
+         data-name="ASIAN KUNG-FU GENERATION" data-rome="Ajikan"
+         data-img="https://i.scdn.co/image/ab676161000051747640113b83bd03884a0bb258"
+         data-desc="日本のギターロックを象徴する4人組。疾走感あるサウンドと後藤正文の飾らない歌声が世代を超えて支持される。代表曲は「リライト」「ソラニン」「遥か彼方」「転がる岩、君に朝が降る」。">
+        <div class="ph"><img src="https://i.scdn.co/image/ab676161000051747640113b83bd03884a0bb258" alt="ASIAN KUNG-FU GENERATION" loading="lazy"></div>
+        <div class="meta"><b>ASIAN KUNG-FU GENERATION</b><span>邦ロック</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/1lYT0A0LV5DUfxr6doRP3d" target="_blank" rel="noopener"
+         data-name="The Stone Roses" data-rome="Manchester, UK"
+         data-img="https://i.scdn.co/image/b0854d19e48d0f2c8e3c0cc83f04813600529a0b"
+         data-desc="ダンスビートとギターロックを融合させ、マッドチェスター・ムーブメントを象徴したマンチェスターのバンド。UKロック史に残る1stアルバムで知られる。代表曲は「I Wanna Be Adored」「Waterfall」「I Am the Resurrection」。">
+        <div class="ph"><img src="https://i.scdn.co/image/b0854d19e48d0f2c8e3c0cc83f04813600529a0b" alt="The Stone Roses" loading="lazy"></div>
+        <div class="meta"><b>The Stone Roses</b><span>UK / マッドチェスター</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh" target="_blank" rel="noopener"
+         data-name="Nirvana" data-rome="Seattle, USA"
+         data-img="https://i.scdn.co/image/42ae0f180f16e2f21c1f2212717fc436f5b95451"
+         data-desc="90年代グランジを世界に知らしめた伝説的バンド。カート・コバーンの生々しいギターサウンドは、いまも音作りの研究対象として掘り下げられる。代表曲は「Smells Like Teen Spirit」「Come as You Are」「Heart-Shaped Box」。">
+        <div class="ph"><img src="https://i.scdn.co/image/42ae0f180f16e2f21c1f2212717fc436f5b95451" alt="Nirvana" loading="lazy"></div>
+        <div class="meta"><b>Nirvana</b><span>US / グランジ</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/playlist/1tx56U5W3tLNw8deOdznQw" target="_blank" rel="noopener"
+         style="background:linear-gradient(135deg,rgba(29,185,84,.16),rgba(255,59,92,.08))">
+        <div class="ph" style="display:flex;align-items:center;justify-content:center">
+          <span style="font-family:var(--serif);font-size:38px;line-height:1;text-align:center;padding:16px">♪<br><span style="font-size:14px;color:var(--ink-dim)">プレイリストへ</span></span>
+        </div>
+        <div class="meta"><b>and more…</b><span>雑食ミックスを聴く</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Spotify プレイリスト ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Listen Now</div>
+      <h2>この趣味を、1本のプレイリストに</h2>
+      <p>中西さんの音楽の趣味を映して作った<b>「雑食ミックス」</b>。邦ロックを軸に、J-POP・日本語ラップ・UK/USギターロックを行き来する30曲です。</p>
+    </div>
+    <div class="embed-wrap">
+      <iframe src="https://open.spotify.com/embed/playlist/1tx56U5W3tLNw8deOdznQw?utm_source=generator&theme=0"
+              height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy" title="雑食ミックス プレイリスト"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1KNg2uX9Ngk?utm_source=generator&theme=0"
+              height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy" title="Oasis Live '25 Tour Official Setlist"></iframe>
+    </div>
+    <p class="embed-note">
+      左：楓が作成した中西さん用プレイリスト「雑食ミックス」（Spotifyアカウントに保存済み・プライベート）。
+      右：Oasis 再結成 <b>Live '25</b> 公式セットリスト。&nbsp;
+      <a href="https://open.spotify.com/playlist/1tx56U5W3tLNw8deOdznQw" target="_blank" rel="noopener" style="color:#1DB954">→ 雑食ミックスをSpotifyで開く</a>
+    </p>
+
+    <div class="sec-head" style="margin-top:64px;margin-bottom:28px">
+      <div class="sec-kicker">Your Own Crates</div>
+      <h2>中西さん自身がつくった棚から</h2>
+      <p>Spotifyアカウントにある、中西さんご本人のお気に入りプレイリスト <b>「fav」</b> と <b>「fav2」</b>。ふだん繰り返し聴いている本命の2本です。</p>
+    </div>
+    <div class="embed-wrap">
+      <iframe src="https://open.spotify.com/embed/playlist/16qW9BrAvcGavQW64bNGBE?utm_source=generator&theme=0"
+              height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy" title="fav（中西さん作成のプレイリスト）"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/5OnUbHZC7Ly6tyqsnMJYcg?utm_source=generator&theme=0"
+              height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy" title="fav2（中西さん作成のプレイリスト）"></iframe>
+    </div>
+    <p class="embed-note">
+      いずれも中西さんご本人が作成・保存しているプレイリスト。&nbsp;
+      <a href="https://open.spotify.com/playlist/16qW9BrAvcGavQW64bNGBE" target="_blank" rel="noopener" style="color:#1DB954">→ fav</a> ／
+      <a href="https://open.spotify.com/playlist/5OnUbHZC7Ly6tyqsnMJYcg" target="_blank" rel="noopener" style="color:#1DB954">→ fav2</a> をSpotifyで開く
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="fmark">♪ Liner Notes</div>
+    <p>
+      中西 恒貴 の音楽の趣味まとめ<br>
+      出典：Spotifyの再生履歴（よく聴くアーティスト・曲・ポッドキャスト）を中心に、YouTube視聴履歴もあわせて分析。<br>
+      アーティスト画像・試聴・プレイリストは <a href="https://open.spotify.com" target="_blank" rel="noopener">Spotify</a> 公式データ／埋め込みを使用。
+    </p>
+    <p style="margin-top:18px;opacity:.7">Compiled by 楓 &nbsp;·&nbsp; 2026</p>
+  </div>
+</footer>
+
+<!-- ================= アーティスト モーダル ================= -->
+<div class="modal" id="artistModal" role="dialog" aria-modal="true" aria-labelledby="modalName" aria-hidden="true">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__box">
+    <button class="modal__close" type="button" data-close aria-label="閉じる">&times;</button>
+    <div class="modal__photo"><img id="modalImg" src="" alt=""></div>
+    <div class="modal__body">
+      <span class="genre-note" id="modalGenre" hidden></span>
+      <p class="rome" id="modalRome"></p>
+      <h3 id="modalName"></h3>
+      <p id="modalDesc"></p>
+      <a class="sp-btn" id="modalLink" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32c-.22.36-.68.47-1.03.25-2.82-1.72-6.36-2.11-10.54-1.16-.4.1-.8-.16-.9-.56-.1-.4.16-.8.56-.9 4.56-1.04 8.48-.6 11.64 1.35.36.22.47.68.27 1.02zm1.47-3.27c-.27.44-.85.58-1.29.31-3.23-1.98-8.15-2.56-11.96-1.4-.5.15-1.03-.13-1.18-.62-.15-.5.13-1.02.62-1.18 4.36-1.32 9.78-.68 13.5 1.6.44.27.58.85.31 1.29zm.13-3.4C15.06 8.35 8.7 8.13 5.03 9.25c-.6.18-1.23-.16-1.4-.76-.18-.6.16-1.23.76-1.4 4.2-1.28 11.24-1.03 15.66 1.6.53.32.7 1.01.39 1.55-.32.53-1.02.7-1.55.38z"/></svg>
+        <span id="modalLinkLabel">Spotifyでアーティストページを開く</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var SEARCH = 'https://open.spotify.com/search/';
+
+  // ── アーティスト・レジストリ（チップのモーダル表示の単一の情報源）──
+  // img と exact:true を持つものは Spotify 公式画像＆アーティストページ直リンク。
+  // それ以外は情報＋Spotify検索リンクの軽量モーダル。
+  var ARTISTS = {
+    // 邦ロック
+    sakanaction:{name:"サカナクション",rome:"sakanaction",exact:true,url:"https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq",img:"https://i.scdn.co/image/ab6761610000517436e29d377fba222834f257cd",genre:"邦ロック / エレクトロ",desc:"バンドサウンドとエレクトロニカを高次元で融合させた孤高の存在。山口一郎の詩世界と踊れるビートが同居する。代表曲は「新宝島」「アイデンティティ」「夜の踊り子」「ミュージック」。"},
+    hitsujibungaku:{name:"羊文学",rome:"Hitsujibungaku",exact:true,url:"https://open.spotify.com/artist/6S8w5rLsEwjN21jQeRES0n",img:"https://i.scdn.co/image/ab676161000051741833f4534ed3dd88d9e12c8b",genre:"邦ロック / シューゲイザー",desc:"轟音のギターと透明なメロディが同居する3ピース。塩塚モエカのささやくようなボーカルが際立つ。代表曲は「more than words」「光るとき」「あいまいでいいよ」。"},
+    radwimps:{name:"RADWIMPS",rome:"RADWIMPS",exact:true,url:"https://open.spotify.com/artist/1EowJ1WwkMzkCkRomFhui7",img:"https://i.scdn.co/image/ab67616100005174f7374b42bee7c71b9649ac83",genre:"邦ロック",desc:"文学的で内省的な歌詞と、ジャンルを跨ぐ変幻自在のサウンドが武器のバンド。映画『君の名は。』『天気の子』の劇伴でも知られる。野田洋次郎のボーカルが象徴的。"},
+    ajikan:{name:"ASIAN KUNG-FU GENERATION",rome:"Ajikan",exact:true,url:"https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt",img:"https://i.scdn.co/image/ab676161000051747640113b83bd03884a0bb258",genre:"邦ロック",desc:"日本のギターロックを象徴する4人組。疾走感あるサウンドと後藤正文の飾らない歌声が世代を超えて支持される。代表曲は「リライト」「ソラニン」「遥か彼方」。"},
+    humpback:{name:"Hump Back",rome:"Hump Back",genre:"邦ロック / ガールズバンド",desc:"大阪発の3ピース・ガールズバンド。まっすぐで青春感のあるメロディと、林萌々子の伸びやかな歌声が持ち味。代表曲は「拝啓、少年よ」「番狂わせ」「LILLY」。"},
+    kanaboon:{name:"KANA-BOON",rome:"KANA-BOON",genre:"邦ロック",desc:"疾走感あるギターロックとキャッチーなメロディで知られる4人組。代表曲は「シルエット」（NARUTO主題歌）「ないものねだり」「フルドライブ」。"},
+    frederic:{name:"フレデリック",rome:"frederic",genre:"邦ロック / ダンスロック",desc:"中毒性のあるリズムと反復するフレーズが特徴のダンスロックバンド。代表曲は「オドループ」「オンリーワンダー」「かなしいうれしい」。"},
+    vaundy:{name:"Vaundy",rome:"Vaundy",exact:true,url:"https://open.spotify.com/artist/2IUl3m1H1EQ7QfNbNWvgru",img:"https://i.scdn.co/image/ab67616100005174b718d2d3988005d3a72f22c9",genre:"邦ロック / SSW",desc:"作詞作曲からアートワークまで自ら手掛けるマルチクリエイター。ロック、ファンク、バラードを軽やかに横断する。代表曲は「怪獣の花唄」「napori」「花占い」「踊り子」。"},
+    backnumber:{name:"back number",rome:"back number",genre:"邦ロック / ラブソング",desc:"切ないラブソングの名手として絶大な人気を誇る3人組。清水依与吏の歌詞が響く。代表曲は「クリスマスソング」「高嶺の花子さん」「水平線」。"},
+    mrchildren:{name:"Mr.Children",rome:"Mr.Children",genre:"邦ロック / 国民的バンド",desc:"日本を代表する国民的ロックバンド。桜井和寿の紡ぐ歌詞世界と普遍的なメロディが世代を超えて愛される。代表曲は「innocent world」「Tomorrow never knows」「Sign」。"},
+    tacica:{name:"tacica",rome:"tacica",genre:"邦ロック",desc:"硬質なバンドサウンドと文学的で叙情的な歌詞が魅力の3ピース。アニメ主題歌でも知られる。代表曲は「HALO」（宇宙兄弟）「LEO」（ハイキュー!!）。"},
+    does:{name:"DOES",rome:"DOES",genre:"邦ロック / ロックンロール",desc:"骨太で疾走感あるロックンロールを鳴らす3人組。アニメ主題歌でも知られる。代表曲は「曇天」「修羅」（ともに『銀魂』主題歌）「バクチ・ダンサー」。"},
+    larcenciel:{name:"L'Arc-en-Ciel",rome:"L'Arc-en-Ciel",genre:"邦ロック / ヴィジュアル系",desc:"日本のロックシーンを牽引してきたバンド。hyde の歌声と多彩な楽曲で幅広い支持を得る。代表曲は「READY STEADY GO」「HONEY」「花葬」「Driver's High」。"},
+    ginnanboyz:{name:"銀杏BOYZ",rome:"Ginnan Boyz",genre:"邦ロック / オルタナ",desc:"峯田和伸率いる、衝動と純情が同居するロックバンド。剥き出しの言葉と轟音が胸を打つ。代表曲は「BABY BABY」「駆け抜けて性春」「愛してるって言ってるだろ」。"},
+    // J-POP / SSW
+    higedan:{name:"Official髭男dism",rome:"Higedan",exact:true,url:"https://open.spotify.com/artist/5Vo1hnCRmCM6M4thZCInCj",img:"https://i.scdn.co/image/ab67616100005174a603edbfe14a6bced859d7e1",genre:"J-POP / ピアノロック",desc:"卓越したメロディセンスと藤原聡のハイトーンボーカルで日本のポップシーンを席巻するピアノPOPロックバンド。代表曲は「Pretender」「I LOVE...」「Subtitle」「ミックスナッツ」。"},
+    ryokushaka:{name:"緑黄色社会",rome:"Ryokushaka",genre:"J-POP / ポップロック",desc:"長屋晴子のパワフルで表情豊かな歌声を軸にしたポップロックバンド。通称「リョクシャカ」。代表曲は「Mela!」「キャラクター」「サボテン」「花になって」。"},
+    tomoo:{name:"TOMOO",rome:"TOMOO",genre:"J-POP / SSW",desc:"卓越したソングライティングと表現力で近年注目を集めるシンガーソングライター。代表曲は「Ginger」「誰も」「Super Ball」。"},
+    yoasobi:{name:"YOASOBI",rome:"YOASOBI",genre:"J-POP",desc:"小説を音楽にするコンセプトのユニット。Ayaseの楽曲とikuraの歌声で世界的人気。代表曲は「夜に駆ける」「アイドル」「群青」「怪物」。"},
+    ushioreira:{name:"汐れいら",rome:"Ushio Reira",exact:true,url:"https://open.spotify.com/artist/6GVsZoMbMt0jmqwcvz1a1F",img:"https://i.scdn.co/image/ab67616100005174b4491721bbd81f7bef5adc63",genre:"直近の推し / SSW",desc:"いま特にハマっているシンガーソングライター。日常のひとコマを掬い取る歌詞と、伸びやかで芯のある歌声が持ち味。THE FIRST TAKE でも注目を集めた。代表曲は「味噌汁とバター」「センチメンタル・キス」。"},
+    superfly:{name:"Superfly",rome:"Superfly",genre:"J-POP / ロック",desc:"越智志帆の圧倒的な歌唱力を誇るロックプロジェクト。ソウルフルな歌声が魅力。代表曲は「愛をこめて花束を」「Beautiful」「タマシイレボリューション」。"},
+    nanawoakari:{name:"ナナヲアカリ",rome:"Nanawoakari",genre:"J-POP / ネット発",desc:"ネットシーン発の個性派シンガー。キャッチーでポップな楽曲が持ち味。代表曲は「チューリングラブ」「ハッピーになりたい」「ワンルームシュガーライフ」。"},
+    ikutalila:{name:"幾田りら",rome:"Ikuta Lilas",genre:"J-POP / SSW",desc:"YOASOBIのボーカルikuraのソロ名義。透明感のある歌声と繊細なメロディが魅力。代表曲は「レオ」「Answer」「スパークル」。"},
+    uru:{name:"Uru",rome:"Uru",genre:"J-POP / SSW",desc:"素顔を明かさず歌声で魅せるシンガーソングライター。カバー動画でも人気を博した。代表曲は「プロローグ」「振り子」「あなたがいることで」。"},
+    // 日本語ラップ
+    creepynuts:{name:"Creepy Nuts",rome:"Creepy Nuts",exact:true,url:"https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE",img:"https://i.scdn.co/image/ab6761610000517471c03bb9c1fe71f40a5fe1dc",genre:"日本語ラップ",desc:"ラッパー R-指定 と DJ松永 による2人組。緻密なワードプレイと圧倒的なスキルで日本語ラップを牽引。「Bling-Bang-Bang-Born」「オトノケ」で世界的ヒットを記録した。"},
+    awich:{name:"Awich",rome:"Awich",genre:"日本語ラップ",desc:"沖縄出身、日本語ラップシーンの女王と称される女性ラッパー。凄みのあるフロウとメッセージ性が武器。代表曲は「洗脳」「GILA GILA」「口に出して」。"},
+    chanmina:{name:"CHANMINA",rome:"Chanmina",genre:"日本語ラップ / ポップ",desc:"日韓のルーツを持つラッパー／シンガー。鋭いリリックと歌唱を自在に行き来する。代表曲は「Bijin」「ハレンチ」「Never Grow Up」。"},
+    suglawd:{name:"SugLawd Familiar",rome:"SugLawd Familiar",genre:"日本語ラップ",desc:"沖縄発のヒップホップクルー。フリースタイルバトルシーンでも存在感を放つ。"},
+    umedacypher:{name:"umedacypher",rome:"Umeda Cypher",genre:"日本語ラップ / バトル",desc:"大阪・梅田発のフリースタイルバトル／ラップ集団。関西のバトルシーンを象徴する存在。"},
+    // レゲエ / ミクスチャー
+    hannya:{name:"HANNYA",rome:"Hannya",genre:"レゲエ / ダンスホール",desc:"日本のレゲエ／ダンスホールシーンを支えるベテランのディージェイ。骨太なマイクさばきが持ち味。"},
+    chehon:{name:"CHEHON",rome:"Chehon",genre:"レゲエ",desc:"伸びやかな歌声と説得力のあるリリックで人気の実力派レゲエディージェイ。代表曲は「輝きながら…」。"},
+    shonannokaze:{name:"湘南乃風",rome:"Shonan no Kaze",genre:"レゲエ",desc:"日本のレゲエを大衆に広めた4人組。熱いメッセージと歌い上げが特徴。代表曲は「純恋歌」「睡蓮花」「Rider」。"},
+    hormone:{name:"マキシマム ザ ホルモン",rome:"Maximum the Hormone",genre:"ミクスチャー / ラウド",desc:"爆音とユーモア、緩急が同居するミクスチャーバンド。強烈な個性で唯一無二。代表曲は「恋のメガラバ」「What's up, people?!」「ぶっ生き返す!!」。"},
+    orangerange:{name:"ORANGE RANGE",rome:"Orange Range",genre:"ミクスチャー",desc:"沖縄発、ジャンル横断のミクスチャーバンド。ポップからロックまで自在。代表曲は「花」「上海ハニー」「以心電信」「ロコローション」。"},
+    // シティポップ / 昭和歌謡
+    takeuchimariya:{name:"竹内まりや",rome:"Mariya Takeuchi",genre:"シティポップ / 歌謡",desc:"シティポップ〜歌謡の名匠。近年は「プラスティック・ラブ」が世界的に再評価された。代表曲は「駅」「元気を出して」「純愛ラプソディ」。"},
+    shiinaringo:{name:"椎名林檎",rome:"Sheena Ringo",genre:"オルタナ / 歌謡",desc:"妖艶で唯一無二の世界観を持つアーティスト。東京事変でも活躍。代表曲は「本能」「丸ノ内サディスティック」「歌舞伎町の女王」。"},
+    komeicomeiclub:{name:"米米CLUB",rome:"Kome Kome Club",genre:"歌謡 / エンタメ",desc:"石井竜也（カールスモーキー石井）率いる、エンタメ性抜群のバンド。代表曲は「浪漫飛行」「君がいるだけで」「Shake Hip!」。"},
+    otsukaai:{name:"大塚愛",rome:"Ai Otsuka",genre:"J-POP / SSW",desc:"2000年代を代表するシンガーソングライター。キュートでポップな楽曲が魅力。代表曲は「さくらんぼ」「プラネタリウム」「金魚花火」。"},
+    // アイドル / アニメ・ボカロ
+    fruitszipper:{name:"FRUITS ZIPPER",rome:"Fruits Zipper",genre:"アイドル",desc:"「わたしの一番かわいいところ」で一躍話題になった新世代アイドルグループ。原宿系のカラフルな世界観。"},
+    cutiestreet:{name:"CUTIE STREET",rome:"Cutie Street",genre:"アイドル",desc:"「かわいいだけじゃだめですか?」（通称かわだめ）で人気急上昇の新鋭アイドルグループ。"},
+    niziu:{name:"NiziU",rome:"NiziU",genre:"アイドル / K-POP系",desc:"日韓グローバルオーディション発の9人組ガールズグループ。キレのあるダンスが魅力。代表曲は「Make you happy」「Chopstick」「Take a picture」。"},
+    mygo:{name:"MyGO!!!!!",rome:"MyGO!!!!!",genre:"アニメ / リアルバンド",desc:"メディアミックス『BanG Dream!』発のリアルバンド。感情を抉る楽曲とライブ表現で高評価。代表曲は「春日影」「壱雫空」。"},
+    ado:{name:"Ado",rome:"Ado",genre:"歌い手 / J-POP",desc:"圧倒的な表現力と声量を誇る歌い手。素顔を明かさず活動する。代表曲は「うっせぇわ」「新時代」「唱」「踊」。"},
+    // UK
+    stoneroses:{name:"The Stone Roses",rome:"Manchester, UK",exact:true,url:"https://open.spotify.com/artist/1lYT0A0LV5DUfxr6doRP3d",img:"https://i.scdn.co/image/b0854d19e48d0f2c8e3c0cc83f04813600529a0b",genre:"UK / マッドチェスター",desc:"ダンスビートとギターロックを融合させ、マッドチェスター・ムーブメントを象徴したマンチェスターのバンド。代表曲は「I Wanna Be Adored」「Waterfall」「I Am the Resurrection」。"},
+    theview:{name:"The View",rome:"Scotland, UK",genre:"UK / インディーロック",desc:"スコットランド出身のインディーロックバンド。若々しく疾走感のあるギターロックが持ち味。代表曲は「Same Jeans」「Wasted Little DJ's」。"},
+    thebeatles:{name:"The Beatles",rome:"Liverpool, UK",genre:"UK / ロックの原点",desc:"言わずと知れた20世紀最大のバンド。ポピュラー音楽のすべてを塗り替えた。代表曲は「Hey Jude」「Let It Be」「Yesterday」「Come Together」。"},
+    ledzeppelin:{name:"Led Zeppelin",rome:"United Kingdom",genre:"ハードロック",desc:"ハードロック／ヘヴィロックの礎を築いた伝説的バンド。重厚なリフと幻想的な世界観。代表曲は「Stairway to Heaven」「Whole Lotta Love」「Kashmir」。"},
+    radiohead:{name:"Radiohead",rome:"Oxford, UK",genre:"UK / オルタナ",desc:"実験精神で音楽の可能性を拡張し続けるUKバンド。憂いと革新を併せ持つ。代表曲は「Creep」「Karma Police」「No Surprises」「Paranoid Android」。"},
+    queen:{name:"Queen",rome:"United Kingdom",genre:"ロック / 不朽の名盤",desc:"フレディ・マーキュリー擁する不朽のロックバンド。壮大でドラマティックな楽曲群。代表曲は「Bohemian Rhapsody」「Don't Stop Me Now」「We Will Rock You」。"},
+    // US
+    thestrokes:{name:"The Strokes",rome:"New York, USA",exact:true,url:"https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V",img:"https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9",genre:"US オルタナ",desc:"2000年代のロックンロール・リバイバルを象徴するニューヨークのバンド。ざらついたギターとクールなボーカルが都会的。代表曲は「Last Nite」「Reptilia」「You Only Live Once」。"},
+    nirvana:{name:"Nirvana",rome:"Seattle, USA",exact:true,url:"https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh",img:"https://i.scdn.co/image/42ae0f180f16e2f21c1f2212717fc436f5b95451",genre:"US / グランジ",desc:"90年代グランジを世界に知らしめた伝説的バンド。カート・コバーンの生々しいギターサウンドが象徴的。代表曲は「Smells Like Teen Spirit」「Come as You Are」「Heart-Shaped Box」。"},
+    rhcp:{name:"Red Hot Chili Peppers",rome:"California, USA",genre:"US / ファンクロック",desc:"ファンクとロックを融合させたカリフォルニアの怪物バンド。躍動するベースが特徴。代表曲は「Californication」「Can't Stop」「Under the Bridge」「Snow」。"},
+    theoffspring:{name:"The Offspring",rome:"California, USA",genre:"US / メロディックパンク",desc:"90年代のメロディックパンクを代表するバンド。キャッチーで疾走感のある楽曲。代表曲は「Self Esteem」「The Kids Aren't Alright」「Pretty Fly (for a White Guy)」。"},
+    ratm:{name:"Rage Against The Machine",rome:"Los Angeles, USA",genre:"ミクスチャー / ラップメタル",desc:"ラップメタル／ミクスチャーの先駆にして頂点。強烈な反骨のメッセージを鳴らす。代表曲は「Killing in the Name」「Bulls on Parade」「Guerrilla Radio」。"},
+    mcr:{name:"My Chemical Romance",rome:"New Jersey, USA",genre:"US / エモ・オルタナ",desc:"エモ／オルタナを象徴するバンド。ドラマティックでシアトリカルな世界観。代表曲は「Welcome to the Black Parade」「Helena」「I'm Not Okay」。"},
+    // ハードロック / メタル
+    slayer:{name:"Slayer",rome:"California, USA",genre:"スラッシュメタル",desc:"スラッシュメタル四天王のひとつ。攻撃的で容赦のないサウンドが信条。代表曲は「Raining Blood」「Angel of Death」「South of Heaven」。"},
+    metallica:{name:"Metallica",rome:"USA",genre:"メタル",desc:"世界最大のヘヴィメタルバンド。重厚なリフと幅広い楽曲性で頂点に君臨する。代表曲は「Enter Sandman」「Master of Puppets」「Nothing Else Matters」。"},
+    gunsnroses:{name:"Guns N' Roses",rome:"Los Angeles, USA",genre:"ハードロック",desc:"80〜90年代を象徴するハードロックバンド。危うさと美メロが同居する。代表曲は「Sweet Child O' Mine」「November Rain」「Welcome to the Jungle」。"},
+    extreme:{name:"Extreme",rome:"Boston, USA",genre:"ハードロック",desc:"高い演奏力とヌーノ・ベッテンコートのギターで知られるロックバンド。代表曲は「More Than Words」「Get the Funk Out」。"},
+    lynyrdskynyrd:{name:"Lynyrd Skynyrd",rome:"Florida, USA",genre:"サザンロック",desc:"サザンロックの代表格。土臭くも壮大なギターロックを鳴らす。代表曲は「Sweet Home Alabama」「Free Bird」。"},
+    cheaptrick:{name:"Cheap Trick",rome:"Illinois, USA",genre:"パワーポップ / ロック",desc:"キャッチーなメロディと骨太なロックを両立するパワーポップの名バンド。代表曲は「Surrender」「I Want You to Want Me」「Dream Police」。"},
+    vanhalen:{name:"Van Halen",rome:"California, USA",genre:"ハードロック",desc:"エディ・ヴァン・ヘイレンの革新的なギターで一時代を築いたアメリカのハードロックバンド。直近のSpotify再生で浮上。代表曲は「Jump」「Panama」「Runnin' with the Devil」。"},
+    motleycrue:{name:"Mötley Crüe",rome:"Los Angeles, USA",genre:"グラムメタル / LAメタル",desc:"80年代のLAメタル／グラムメタルを代表するバンド。享楽的で派手なサウンドが持ち味。直近のSpotify再生で浮上。代表曲は「Kickstart My Heart」「Girls, Girls, Girls」「Dr. Feelgood」。"},
+    // 現行 US ポップ
+    sabrinacarpenter:{name:"Sabrina Carpenter",rome:"USA",genre:"US ポップ",desc:"いま世界を席巻するポップスター。機知に富んだ歌詞とキャッチーな楽曲で人気爆発。代表曲は「Espresso」「Please Please Please」「Taste」。"},
+    billieeilish:{name:"Billie Eilish",rome:"Los Angeles, USA",genre:"US ポップ / オルタナ",desc:"ウィスパーボイスとダークで繊細なサウンドで一時代を築いた才媛。代表曲は「bad guy」「Happier Than Ever」「BIRDS OF A FEATHER」。"},
+    arianagrande:{name:"Ariana Grande",rome:"USA",genre:"US ポップ / R&B",desc:"圧巻の歌唱力と広い音域を誇るポップ／R&Bのディーヴァ。代表曲は「thank u, next」「7 rings」「positions」「we can't be friends」。"},
+    eminem:{name:"Eminem",rome:"Detroit, USA",genre:"ヒップホップ",desc:"ヒップホップ史上最も影響力のあるラッパーの一人。超絶技巧のラップと赤裸々なリリック。代表曲は「Lose Yourself」「Stan」「Without Me」「Rap God」。"}
+  };
+
+  var modal   = document.getElementById('artistModal');
+  var box     = modal.querySelector('.modal__box');
+  var mImg    = document.getElementById('modalImg');
+  var mName   = document.getElementById('modalName');
+  var mRome   = document.getElementById('modalRome');
+  var mDesc   = document.getElementById('modalDesc');
+  var mLink   = document.getElementById('modalLink');
+  var mLabel  = document.getElementById('modalLinkLabel');
+  var mGenre  = document.getElementById('modalGenre');
+  var lastFocused = null;
+
+  // 統一のオープン処理。d = {name, rome, desc, img, url, exact, genre}
+  function openWith(d, trigger){
+    var hasImg = !!d.img;
+    box.classList.toggle('no-photo', !hasImg);
+    mImg.src          = d.img || '';
+    mImg.alt          = d.name || '';
+    mName.textContent = d.name || '';
+    mRome.textContent = d.rome || '';
+    mDesc.textContent = d.desc || '';
+    if(d.genre){ mGenre.textContent = d.genre; mGenre.hidden = false; }
+    else { mGenre.textContent = ''; mGenre.hidden = true; }
+    mLink.href        = d.url || (SEARCH + encodeURIComponent(d.name || ''));
+    mLabel.textContent= d.exact ? 'Spotifyでアーティストページを開く' : 'Spotifyで探して聴く';
+    lastFocused = trigger || null;
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    modal.querySelector('.modal__close').focus();
+  }
+  function close(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    if(lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  // ① 写真ギャラリーのカード（data属性から直接。画像あり）
+  document.querySelectorAll('.artist-card[data-desc]').forEach(function(card){
+    card.addEventListener('click', function(e){
+      e.preventDefault();
+      openWith({
+        name: card.getAttribute('data-name'),
+        rome: card.getAttribute('data-rome'),
+        desc: card.getAttribute('data-desc'),
+        img:  card.getAttribute('data-img'),
+        url:  card.getAttribute('href'),
+        exact:true
+      }, card);
+    });
+  });
+
+  // ② ジャンル別チップ（レジストリ経由。未登録名は Spotify 検索へフォールバック）
+  document.querySelectorAll('.chip[data-artist]').forEach(function(chip){
+    chip.setAttribute('role','button');
+    chip.setAttribute('tabindex','0');
+    function go(){
+      var key = chip.getAttribute('data-artist');
+      var d = ARTISTS[key];
+      if(!d){
+        // 万一レジストリに無ければ、表示名（数字を除く）で検索フォールバック
+        var nm = (chip.textContent || '').replace(/\d+$/,'').trim();
+        d = { name: nm };
+      }
+      openWith(d, chip);
+    }
+    chip.addEventListener('click', go);
+    chip.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); go(); }
+    });
+  });
+
+  modal.querySelectorAll('[data-close]').forEach(function(el){
+    el.addEventListener('click', close);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) close();
+  });
+})();
+</script>
+
+</body>
+</html>

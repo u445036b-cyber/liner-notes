@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中西恒貴のYouTube ─ Subscribed</title>
+<meta name="description" content="お笑い芸人を中心に、ゴルフ・東京ヤクルトスワローズ・教養/雑学・ゲーム実況まで。中西恒貴がよく観るYouTubeチャンネルをジャンル別にまとめたライナーノーツ。">
+<style>
+  :root{
+    --bg:#0b0b0f;
+    --bg-2:#121218;
+    --panel:#16161f;
+    --ink:#f4f1ea;
+    --ink-dim:#a7a29a;
+    --line:rgba(244,241,234,.10);
+    --accent:#ff2d2d;      /* 再生ボタンの赤 */
+    --accent-2:#ffd34e;    /* 琥珀 */
+    --accent-3:#5ec8ff;    /* 青 */
+    --yt:#ff0000;          /* YouTube レッド */
+    --maxw:1080px;
+    --serif:'Georgia','Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Noto Sans JP','Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--sans);line-height:1.75;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* ---------- タブナビ ---------- */
+  .topnav{
+    position:sticky;top:0;z-index:40;display:flex;justify-content:center;gap:8px;
+    padding:12px;background:rgba(11,11,15,.72);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .topnav a{
+    display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-dim);
+    font-size:14px;letter-spacing:.04em;padding:8px 18px;border-radius:999px;
+    border:1px solid transparent;transition:color .2s,background .2s,border-color .2s;
+  }
+  .topnav a:hover{color:var(--ink);background:rgba(255,255,255,.06)}
+  .topnav a.active{color:var(--ink);border-color:var(--line);background:rgba(255,255,255,.05)}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:92svh;display:flex;flex-direction:column;
+    justify-content:center;align-items:center;text-align:center;overflow:hidden;
+    padding:80px 24px;
+  }
+  .hero__bg{
+    position:absolute;inset:0;z-index:0;
+    background:
+      radial-gradient(60% 50% at 50% 0%, rgba(255,45,45,.18), transparent 60%),
+      radial-gradient(50% 40% at 80% 90%, rgba(94,200,255,.12), transparent 60%),
+      radial-gradient(40% 40% at 15% 80%, rgba(255,211,78,.10), transparent 60%),
+      var(--bg);
+  }
+  /* 再生ボタン */
+  .playmark{
+    position:absolute;right:-40px;top:50%;transform:translateY(-50%);z-index:0;opacity:.5;
+    width:360px;height:250px;border-radius:56px;
+    background:linear-gradient(180deg,#ff3b3b,#c40000);
+    box-shadow:0 30px 80px rgba(255,0,0,.25), inset 0 0 40px rgba(0,0,0,.25);
+    animation:beat 3.4s ease-in-out infinite;
+  }
+  .playmark::after{
+    content:"";position:absolute;top:50%;left:52%;transform:translate(-50%,-50%);
+    border-style:solid;border-width:52px 0 52px 86px;
+    border-color:transparent transparent transparent #fff;
+  }
+  @keyframes beat{0%,100%{transform:translateY(-50%) scale(1)}50%{transform:translateY(-50%) scale(1.04)}}
+  @media (prefers-reduced-motion:reduce){.playmark{animation:none}}
+
+  .hero__inner{position:relative;z-index:1;max-width:820px}
+  .eyebrow{letter-spacing:.42em;text-transform:uppercase;font-size:12px;color:var(--accent-2);margin-bottom:24px}
+  .subcount{
+    display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:.2em;
+    color:#fff;background:var(--yt);padding:5px 14px;border-radius:999px;margin-bottom:22px;
+    text-transform:uppercase;font-weight:700;
+  }
+  .subcount svg{width:15px;height:15px}
+  .hero h1{font-family:var(--serif);font-weight:700;line-height:1.1;margin:0;font-size:clamp(38px,7.6vw,82px)}
+  .hero h1 em{color:var(--accent);font-style:normal}
+  .hero__sub{margin:26px auto 0;max-width:640px;color:var(--ink-dim);font-size:clamp(15px,2.2vw,18px)}
+  .hero__meta{margin-top:38px;display:flex;gap:26px;justify-content:center;flex-wrap:wrap;font-size:13px;color:var(--ink-dim);letter-spacing:.04em}
+  .hero__meta b{color:var(--ink);font-size:20px;font-family:var(--serif);display:block}
+
+  /* ---------- SECTION ---------- */
+  section{position:relative;padding:92px 0}
+  .alt{background:var(--bg-2)}
+  .sec-head{margin-bottom:44px;max-width:780px}
+  .sec-kicker{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+  .sec-kicker::before{content:"";width:34px;height:1px;background:var(--accent)}
+  .sec-head h2{font-family:var(--serif);font-size:clamp(28px,4.4vw,44px);margin:0;line-height:1.15}
+  .sec-head h2 .em{color:var(--accent)}
+  .sec-head p{color:var(--ink-dim);margin:16px 0 0;font-size:16px}
+
+  .lede{font-family:var(--serif);font-size:clamp(22px,3.4vw,34px);line-height:1.6;max-width:900px;margin:0 auto;text-align:center}
+  .lede .hl{background:linear-gradient(transparent 62%, rgba(255,45,45,.30) 62%);padding:0 .1em}
+  .lede .amber{color:var(--accent-2)}
+
+  /* ---------- ジャンル見出し ---------- */
+  .genre-block{margin-bottom:26px}
+  .genre-title{
+    display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+    margin:0 0 20px;padding-bottom:14px;border-bottom:1px solid var(--line);
+  }
+  .genre-title h3{font-family:var(--serif);font-size:clamp(21px,3vw,28px);margin:0;line-height:1.2}
+  .genre-title .cap{font-size:13px;color:var(--ink-dim);letter-spacing:.04em}
+  .genre-title .count{margin-left:auto;font-size:12px;color:var(--gc,var(--accent));letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+
+  /* ---------- チャンネルカード ---------- */
+  .channels{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .ch{
+    display:flex;gap:18px;background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:18px;position:relative;overflow:hidden;transition:transform .3s ease,border-color .3s ease;
+    border-left:3px solid var(--gc,var(--accent));
+  }
+  .ch:hover{transform:translateY(-4px);border-color:rgba(255,45,45,.4)}
+  .ch.top{background:linear-gradient(135deg,rgba(255,45,45,.08),rgba(22,22,31,.9))}
+  /* カバー画像スロット（実画像 or モノグラム） */
+  .ch .art{
+    flex:0 0 92px;width:92px;height:92px;border-radius:12px;overflow:hidden;position:relative;
+    border:1px solid var(--line);
+    background:linear-gradient(140deg,var(--a,#333),var(--b,#111));
+    display:flex;align-items:center;justify-content:center;
+  }
+  .ch .art .mono{font-family:var(--serif);font-size:30px;color:#fff;opacity:.92;letter-spacing:.02em;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+  .ch .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .ch .body{flex:1;min-width:0}
+  .ch .badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    color:#fff;background:var(--accent);border-radius:999px;padding:3px 10px;margin-bottom:7px}
+  .ch h4{margin:0 0 6px;font-size:16.5px;line-height:1.3}
+  .ch p{margin:0 0 12px;color:var(--ink-dim);font-size:13px;line-height:1.6}
+  .ch .yt-link{
+    display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+    background:var(--yt);color:#fff;font-weight:700;font-size:12px;
+    padding:7px 13px;border-radius:999px;transition:transform .2s,box-shadow .2s;
+  }
+  .ch .yt-link:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,0,0,.32)}
+  .ch .yt-link svg{width:16px;height:16px}
+
+  /* ---------- 観方のクセ ---------- */
+  .tl{max-width:700px}
+  .tl-item{display:flex;gap:18px;padding:13px 0;border-bottom:1px dashed var(--line)}
+  .tl-item .k{flex:0 0 132px;color:var(--accent-2);font-size:14px;font-weight:600}
+  .tl-item .v{color:var(--ink-dim);font-size:15px}
+  .tl-item .v b{color:var(--ink)}
+
+  .note{color:var(--ink-dim);font-size:13px;margin-top:22px}
+
+  footer{padding:64px 0 84px;text-align:center;color:var(--ink-dim);font-size:13px}
+  footer .fmark{font-family:var(--serif);font-size:20px;color:var(--ink);margin-bottom:14px}
+  footer a{color:var(--accent-3);text-decoration:none}
+
+  @media (max-width:760px){
+    section{padding:68px 0}
+    .channels{grid-template-columns:1fr}
+    .playmark{width:230px;height:160px;right:-30px;opacity:.32}
+    .playmark::after{border-width:34px 0 34px 56px}
+    .ch .art{flex-basis:78px;width:78px;height:78px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= タブナビ ================= -->
+<nav class="topnav">
+  <a href="music-taste.html">♪ 音楽</a>
+  <a href="podcast-taste.html">🎙 ポッドキャスト</a>
+  <a class="active" href="youtube-taste.html">▶ YouTube</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero__bg"></div>
+  <div class="playmark" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="subcount">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+      Subscribed
+    </div>
+    <div class="eyebrow">Liner Notes ─ 中西 恒貴</div>
+    <h1>登録チャンネルは、<br><em>その人の地図</em>。</h1>
+    <p class="hero__sub">
+      軸はお笑い芸人。そこにゴルフ、東京ヤクルトスワローズ、教養・雑学、ゲーム実況が重なる。
+      登録187チャンネルと視聴履歴から見えた“よく観るもの”を、ジャンル別に。
+    </p>
+    <div class="hero__meta">
+      <div><b>お笑い</b>趣味の中心</div>
+      <div><b>ゴルフ</b>自分でもプレー</div>
+      <div><b>ヤクルト</b>推し球団</div>
+      <div><b>教養・実況</b>知的好奇心</div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= 一言で ================= -->
+<section>
+  <div class="wrap">
+    <p class="lede">
+      いちばん観るのは<span class="hl">お笑い芸人</span>。
+      そこへ<span class="amber">ゴルフ</span>と<span class="amber">ヤクルト</span>、
+      ゆる系ラジオやゲーム実況の<span class="hl">知的好奇心</span>が
+      重なる、雑食の登録リスト。
+    </p>
+  </div>
+</section>
+
+<!-- ================= お笑い ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Genre 01</div>
+      <h2>🎤 お笑い・<span class="em">芸人</span></h2>
+      <p>登録・視聴ともに突出。芸人の公式チャンネルや冠番組を幅広く網羅。雑談やたとえ話が「お笑い」ネタで転がるのはこの土壌から。</p>
+    </div>
+    <div class="genre-block">
+      <div class="channels">
+
+        <article class="ch top" style="--gc:var(--accent)">
+          <div class="art" style="--a:#ff5a5a;--b:#7a0d0d"><span class="mono">令和</span></div>
+          <div class="body">
+            <span class="badge">M-1連覇</span>
+            <h4>令和ロマン</h4>
+            <p>M-1グランプリを連覇した漫才師。公式チャンネルで漫才・企画を配信。いま最も勢いのあるコンビのひとつ。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCEz6Z7EgtSi-rPes-SIKJEg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:var(--accent)">
+          <div class="art" style="--a:#3a3f4a;--b:#12141a"><span class="mono">NB</span></div>
+          <div class="body">
+            <h4>佐久間宣行のNOBROCK TV</h4>
+            <p>元テレ東・佐久間宣行の人気バラエティ。芸人の“選手権”やオーディション企画で新たな逸材を発掘。</p>
+            <a class="yt-link" href="https://www.youtube.com/@NOBROCKTV" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:var(--accent)">
+          <div class="art" style="--a:#ff7a5a;--b:#7a2a0d"><span class="mono">霜</span></div>
+          <div class="body">
+            <h4>しもふりチューブ</h4>
+            <p>霜降り明星（せいや／粗品）の毎日投稿チャンネル。漫才からゲーム・トークまで、二人の空気がそのまま。</p>
+            <a class="yt-link" href="https://www.youtube.com/@shimofuritube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:var(--accent)">
+          <div class="art" style="--a:#4a3a5a;--b:#1a1224"><span class="mono">さ</span></div>
+          <div class="body">
+            <h4>さらば青春の光</h4>
+            <p>事務所を自ら立ち上げたコンビの体当たり企画チャンネル。『大脱出』などのシリーズが人気。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCNvcNd31bA-XERO6LGy4blw" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:var(--accent)">
+          <div class="art" style="--a:#5a4a2a;--b:#241a0d"><span class="mono">見</span></div>
+          <div class="body">
+            <h4>見取り図じゃん</h4>
+            <p>M-1ファイナリスト常連・見取り図（盛山／リリー）の公式。漫才と緩いトーク企画が持ち味。</p>
+            <a class="yt-link" href="https://www.youtube.com/@mitorizujan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:var(--accent)">
+          <div class="art" style="--a:#6a4a3a;--b:#241408"><span class="mono">チ</span></div>
+          <div class="body">
+            <h4>チョコレートプラネット</h4>
+            <p>チョコプラ（長田／松尾）のコント・チャレンジ企画。“TT兄弟”などキャラも生む発信力。</p>
+            <a class="yt-link" href="https://www.youtube.com/@chocoplach" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ゴルフ ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Genre 02</div>
+      <h2>⛳ ゴルフ</h2>
+      <p>レッスン系の登録が多く、自分でもプレーする趣味の顔。プロのラウンドから100切り企画まで、実用と観戦の両取り。</p>
+    </div>
+    <div class="genre-block">
+      <div class="channels">
+
+        <article class="ch" style="--gc:#4ade80">
+          <div class="art" style="--a:#3ba55d;--b:#0f3d22"><span class="mono">蛍</span></div>
+          <div class="body">
+            <h4>ホトゴルフ</h4>
+            <p>雨上がり決死隊・蛍原徹のゴルフ専門チャンネル。千鳥ノブらゲストとのラウンドが名物。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UC42IOBjQmeDysuc5TaHMZfQ" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#4ade80">
+          <div class="art" style="--a:#3ba55d;--b:#0f3d22"><span class="mono">Te</span></div>
+          <div class="body">
+            <h4>Tera-You-Golf</h4>
+            <p>てらゆーのレッスン動画。基礎スイングからスコアアップ術まで、分かりやすい実践レッスンが軸。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCAWWDsFWX4lMuRtH46VYdIQ" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#4ade80">
+          <div class="art" style="--a:#3ba55d;--b:#0f3d22"><span class="mono">な</span></div>
+          <div class="body">
+            <h4>なみきゴルフ</h4>
+            <p>なみきの上達企画チャンネル。100切り・90切りを目指すリアルな過程を、プロコーチと一緒に。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCD1upUZnC1_zcDGSghlDjoQ" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#4ade80">
+          <div class="art" style="--a:#3ba55d;--b:#0f3d22"><span class="mono">堀</span></div>
+          <div class="body">
+            <h4>堀川未来夢</h4>
+            <p>日本プロゴルフ選手権を制したツアープロ本人のチャンネル。一流の技術をレッスン＆ラウンドで惜しみなく。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCa99s7Z2vv-5KNr-1Itvk6A" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#4ade80">
+          <div class="art" style="--a:#3ba55d;--b:#0f3d22"><span class="mono">Sh</span></div>
+          <div class="body">
+            <h4>Sho-Time Golf</h4>
+            <p>尾崎翔太プロら人気ゴルフYouTuberのチャンネル。ハイレベルなプレーとエンタメ性を両立。</p>
+            <a class="yt-link" href="https://www.youtube.com/@ShoTimeGolf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#4ade80">
+          <div class="art" style="--a:#3ba55d;--b:#0f3d22"><span class="mono">AL</span></div>
+          <div class="body">
+            <h4>ALBA TV</h4>
+            <p>ゴルフ雑誌ALBAの公式。女子プロのレッスンやツアー中継など、情報量たっぷりのゴルフメディア。</p>
+            <a class="yt-link" href="https://www.youtube.com/@ALBA_TV" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ヤクルト ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Genre 03</div>
+      <h2>⚾ プロ野球 ─ <span class="em">東京ヤクルトスワローズ</span></h2>
+      <p>登録チャンネルはヤクルト一色。球団公式から応燕（応援）配信、選手個人チャンネルまで。推し球団がはっきり出るジャンル。</p>
+    </div>
+    <div class="genre-block">
+      <div class="channels">
+
+        <article class="ch top" style="--gc:#5ec8ff">
+          <div class="art" style="--a:#1f6fb0;--b:#0a2740"><span class="mono">燕</span></div>
+          <div class="body">
+            <span class="badge">推し球団</span>
+            <h4>東京ヤクルトスワローズ（公式）</h4>
+            <p>球団公式チャンネル。試合ハイライト・選手インタビュー・神宮の舞台裏まで。応援の起点。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCt7cNctKXoKece38M9gJV7A" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#5ec8ff">
+          <div class="art" style="--a:#1f6fb0;--b:#0a2740"><span class="mono">魂</span></div>
+          <div class="body">
+            <h4>つばめ魂</h4>
+            <p>ヤクルトスワローズ応燕チャンネル。試合を最後まで見届ける応援配信で、ファン目線の熱量がそのまま。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCaJ9irc3XYSp7z_Ca9qi0aQ" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#5ec8ff">
+          <div class="art" style="--a:#1f6fb0;--b:#0a2740"><span class="mono">田口</span></div>
+          <div class="body">
+            <h4>田口麗斗の語り部屋</h4>
+            <p>ヤクルト・田口麗斗投手による対談番組。様々なジャンルのアスリートと“プロがプロから学ぶ”トーク。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCiz4XNn_xUUAy4isxAgYJ8w" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#5ec8ff">
+          <div class="art" style="--a:#1f6fb0;--b:#0a2740"><span class="mono">金</span></div>
+          <div class="body">
+            <h4>金本泰潤</h4>
+            <p>ヤクルトを軸にした野球トーク／情報系チャンネル。ファン視点でチーム事情を深掘りする。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCNcAC-VZe_f20EQ7idxPxHw" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 教養・雑学 ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Genre 04</div>
+      <h2>📚 教養・ラジオ・<span class="em">雑学</span></h2>
+      <p>知的好奇心の受け皿。ゆる系トークから美術・統計まで、「構造化＋根拠」で世の中を面白がる解説系が並ぶ。</p>
+    </div>
+    <div class="genre-block">
+      <div class="channels">
+
+        <article class="ch" style="--gc:#c084fc">
+          <div class="art" style="--a:#9a63d6;--b:#3a1d5c"><span class="mono">言</span></div>
+          <div class="body">
+            <h4>ゆる言語学ラジオ</h4>
+            <p>堀元見・水野太貴が「言語学の二歩手前」の知識をゆるく語る雑学トーク。知的好奇心の入り口。</p>
+            <a class="yt-link" href="https://www.youtube.com/@yurugengo" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#c084fc">
+          <div class="art" style="--a:#9a63d6;--b:#3a1d5c"><span class="mono">計</span></div>
+          <div class="body">
+            <h4>ゆるコンピュータ科学ラジオ</h4>
+            <p>同チームによるコンピュータ科学版。「コンピュータ科学にコンピュータは不要」など、身近な切り口で深掘り。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCpLu0KjNy616-E95gPx7LZg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#c084fc">
+          <div class="art" style="--a:#9a63d6;--b:#3a1d5c"><span class="mono">五</span></div>
+          <div class="body">
+            <h4>山田五郎 オトナの教養講座</h4>
+            <p>評論家・山田五郎が美術を中心に教養を深く楽しく解説。名画の背景を語らせたら唯一無二。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCq1r8Nq3nwI9VhvyiwcpF2w" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#c084fc">
+          <div class="art" style="--a:#9a63d6;--b:#3a1d5c"><span class="mono">統</span></div>
+          <div class="body">
+            <h4>謎解き統計学 サトマイ</h4>
+            <p>データサイエンティスト・サトマイが確率統計で世の中の“謎”を解く。ビジネスにも効く納得の解説。</p>
+            <a class="yt-link" href="https://www.youtube.com/@satomai811" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#c084fc">
+          <div class="art" style="--a:#9a63d6;--b:#3a1d5c"><span class="mono">教</span></div>
+          <div class="body">
+            <h4>大人の教養TV</h4>
+            <p>歴史・哲学・宗教など、社会人の学び直しに効く教養解説チャンネル。体系立った語り口が分かりやすい。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCwZ5GUBnp82m6mpUwk-3ZGw" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ゲーム実況 ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Genre 05</div>
+      <h2>🎮 ゲーム<span class="em">実況</span></h2>
+      <p>老舗の実況者から、タイムアタックの祭典、専門家と歩く教養系まで。ゲームを“観る”文化をしっかり押さえる。</p>
+    </div>
+    <div class="genre-block">
+      <div class="channels">
+
+        <article class="ch" style="--gc:#ffd34e">
+          <div class="art" style="--a:#c99a1f;--b:#4a3708"><span class="mono">幕</span></div>
+          <div class="body">
+            <h4>幕末志士</h4>
+            <p>ニコニコ時代からの老舗実況コンビ。独特の editing とトークで根強い人気を誇る。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UC0C6oq3TlGiSlDCei57hY6A" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#ffd34e">
+          <div class="art" style="--a:#c99a1f;--b:#4a3708"><span class="mono">キ</span></div>
+          <div class="body">
+            <h4>キヨ。</h4>
+            <p>国内トップ級の登録者を誇る実況者。ホラーからオリジナルゲームまで、テンポの良い笑いが持ち味。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCMJiPpN_09F0aWpQrgbc_qg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#ffd34e">
+          <div class="art" style="--a:#c99a1f;--b:#4a3708"><span class="mono">牛</span></div>
+          <div class="body">
+            <h4>牛沢</h4>
+            <p>落ち着いた語りでじっくり遊ぶ実況者。長編RPGの実況などをていねいに届けるスタイル。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCZMRuagdTBKmmrFtSMN48Xw" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#ffd34e">
+          <div class="art" style="--a:#c99a1f;--b:#4a3708"><span class="mono">RTA</span></div>
+          <div class="body">
+            <h4>RTA in Japan</h4>
+            <p>ゲームのタイムアタック（RTA）の祭典。凄技の連続と会場の一体感が観ていて楽しいイベントチャンネル。</p>
+            <a class="yt-link" href="https://www.youtube.com/channel/UCV8gEA4XEycdFx-myEpokLg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#ffd34e">
+          <div class="art" style="--a:#c99a1f;--b:#4a3708"><span class="mono">散</span></div>
+          <div class="body">
+            <h4>ゲームさんぽ／よそ見</h4>
+            <p>各分野の専門家とゲーム世界を歩き、思わぬ視点で世界を読み解く教養系実況。“よそ見”が学びになる。</p>
+            <a class="yt-link" href="https://www.youtube.com/@gamesampo_yosomi" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+        <article class="ch" style="--gc:#ffd34e">
+          <div class="art" style="--a:#c99a1f;--b:#4a3708"><span class="mono">桜</span></div>
+          <div class="body">
+            <h4>桜井政博のゲーム作るには</h4>
+            <p>『スマブラ』『カービィ』の生みの親・桜井政博によるゲーム制作講座。作り手の思想が学べる名チャンネル。</p>
+            <a class="yt-link" href="https://www.youtube.com/@sora_sakurai_jp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTubeで開く
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 観方のクセ ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">How I Watch</div>
+      <h2>観方のクセ</h2>
+      <p>登録187チャンネル＋視聴履歴（約18か月）から見えた、YouTubeとの付き合い方。</p>
+    </div>
+    <div class="tl">
+      <div class="tl-item"><div class="k">軸</div><div class="v"><b>お笑い芸人</b>が中心。公式チャンネル・冠番組を幅広く網羅し、登録でも視聴でも突出。</div></div>
+      <div class="tl-item"><div class="k">自分でもやる</div><div class="v"><b>ゴルフ</b>はレッスン系の登録が多く、観るだけでなく自分でプレーする趣味。</div></div>
+      <div class="tl-item"><div class="k">推し</div><div class="v">プロ野球は<b>東京ヤクルトスワローズ</b>一色。球団公式から応燕配信・選手個人まで。</div></div>
+      <div class="tl-item"><div class="k">知的好奇心</div><div class="v">ゆる系ラジオ・美術・統計など<b>解説/雑学</b>を好む。「構造化＋根拠」の語りに惹かれる。</div></div>
+      <div class="tl-item"><div class="k">音楽と地続き</div><div class="v">音楽はTHE FIRST TAKE 起点で邦ロック軸。<a href="music-taste.html">→ 音楽のライナーノーツ</a>もどうぞ。</div></div>
+    </div>
+    <p class="note">
+      ※ 掲載は<b>登録チャンネルと視聴履歴からの“よく観る”ピックアップ</b>で、各チャンネルの正確な再生回数順ではありません（YouTubeのデータでは個別の再生回数までは取得できないため）。チャンネルのアイコン画像は準備中で、いまは頭文字プレートで仮表示しています。
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="fmark">▶ Liner Notes</div>
+    <p>
+      中西 恒貴 のよく観るYouTubeチャンネルまとめ<br>
+      出典：Google Takeout の登録チャンネル（187件）＋視聴履歴（2025-01〜2026-07・約18か月）をもとに整理。<br>
+      各リンクは公式チャンネルへ。チャンネル名・画像の権利は各配信者に帰属します。
+    </p>
+    <p style="margin-top:18px;opacity:.7">Compiled by 楓 &nbsp;·&nbsp; 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>中西恒貴の音楽 ─ Liner Notes</title>
-<meta name="description" content="邦ロックを軸に、THE FIRST TAKE・UK/USギターロック・日本語ラップまで。中西恒貴の音楽の趣味をまとめたライナーノーツ。">
+<meta name="description" content="本人のお気に入りプレイリスト「fav」（邦楽）と「fav2」（洋楽）から集計した、中西恒貴の音楽の趣味のライナーノーツ。">
 <style>
   :root{
     --bg:#0b0b0f;
@@ -163,7 +163,7 @@
   }
   .pillar h3{margin:0 0 6px;font-size:22px}
   .pillar .tag{
-    display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    display:inline-block;font-size:11px;letter-spacing:.12em;
     color:var(--accent-2);border:1px solid rgba(255,211,78,.4);border-radius:999px;
     padding:3px 12px;margin-bottom:16px;
   }
@@ -335,6 +335,21 @@
   .modal__box.no-photo{grid-template-columns:1fr}
   .modal__box.no-photo .modal__photo{display:none}
   .modal__box.no-photo .modal__body{padding:36px 34px 34px}
+  /* モーダル内「収録曲」リスト */
+  .modal-songs{
+    border-top:1px solid var(--line);margin:0 0 22px;padding-top:16px;
+  }
+  .modal-songs h4{
+    margin:0 0 10px;font-size:11px;letter-spacing:.14em;
+    color:var(--accent-2);font-weight:600;
+  }
+  .modal-songs ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+  .modal-songs li{
+    font-size:14px;color:var(--ink);padding-left:18px;position:relative;line-height:1.5;
+  }
+  .modal-songs li::before{
+    content:"♪";position:absolute;left:0;top:0;color:var(--accent);font-size:12px;
+  }
   .modal__body .genre-note{
     display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
     color:var(--accent-2);border:1px solid rgba(255,211,78,.4);border-radius:999px;
@@ -378,14 +393,15 @@
     <div class="eyebrow">Liner Notes ─ 中西 恒貴</div>
     <h1>鳴らし続ける、<br><em>好きな音</em>。</h1>
     <p class="hero__sub">
-      羊文学・King Gnu・スピッツを軸に、邦ロック／オルタナから日本語ラップ、
-      UK/USのギターロックまで。Spotifyの再生履歴から見えた“いま”の音。
+      出典は、中西さんご自身がSpotifyで育ててきたお気に入りプレイリスト
+      <b style="color:var(--ink)">「fav」（邦楽）</b>と<b style="color:var(--ink)">「fav2」（洋楽）</b>。
+      再生履歴ではなく、自分で選んで入れた曲だけを、<b style="color:var(--ink)">全295曲＋187曲すべて</b>数えました。
     </p>
     <div class="hero__meta">
-      <div><b>羊文学</b>最もよく聴く</div>
-      <div><b>King Gnu</b>2番目</div>
-      <div><b>スピッツ</b>3番目</div>
-      <div><b>サカナクション</b>4番目</div>
+      <div><b>ASIAN KUNG-FU GENERATION</b>fav 最多 ・ 16曲</div>
+      <div><b>サカナクション</b>fav 2位 ・ 13曲</div>
+      <div><b>Red Hot Chili Peppers</b>fav2 最多 ・ 12曲</div>
+      <div><b>Bob Marley &amp; The Wailers</b>fav2 2位 ・ 9曲</div>
     </div>
   </div>
   <div class="scroll-hint" aria-hidden="true">S C R O L L</div>
@@ -395,174 +411,288 @@
 <section>
   <div class="wrap">
     <p class="lede">
-      軸にあるのは<span class="hl">邦ロック・オルタナ</span>。
-      羊文学と King Gnu を中心に、スピッツやサカナクション、
-      Creepy Nuts の<span class="amber">日本語ラップ</span>、
-      The Stone Roses のような UK ギターロックまで。
-      新旧も和洋も、<span class="hl">境界なく。</span>
+      邦楽は<span class="hl">00〜10年代のギターロック</span>が軸で、いまも<span class="amber">2020年代の曲が増え続けている</span>。
+      洋楽は<span class="hl">60〜00年代のUS/UKロック</span>で、ほぼ完成して止まっている。
+      2枚の棚は、<span class="hl">時間の流れ方まで違う。</span>
     </p>
   </div>
 </section>
 
-<!-- ================= いちばんよく観るもの ================= -->
+<!-- ================= 2枚の棚 ================= -->
 <section class="alt">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-kicker">Now Playing</div>
-      <h2>いま、いちばん聴いているもの</h2>
-      <p>Spotifyの再生履歴で突出していた、ふたりの主役。</p>
+      <div class="sec-kicker">Two Crates</div>
+      <h2>2枚の棚 ─ fav と fav2</h2>
+      <p>邦楽と洋楽できっちり棚を分けているのが、中西さんの聴き方。それぞれの主役を、収録曲数から。</p>
     </div>
     <div class="pillars">
       <article class="pillar">
         <span class="num">01</span>
-        <span class="tag">Most Played ・ 1位</span>
-        <h3>🐑 羊文学</h3>
-        <p>Spotifyで<span class="plays">最もよく聴くアーティスト</span>。「more than words」を筆頭に「Burning」「金色」「そのとき」「砂漠のきみへ」まで、アルバム単位でヘビロテ。轟音のギターと透明なメロディが同居するサウンドが、いまの気分の中心にある。</p>
+        <span class="tag">fav ・ 邦楽の棚</span>
+        <h3>🎸 ASIAN KUNG-FU GENERATION</h3>
+        <p>fav に<span class="plays">16曲</span>＝単独最多。「遥か彼方」「君という花」「ループ＆ループ」といった定番から「江ノ島エスカー」「或る街の群青」「ソラニン」まで。邦楽の棚は、ここを中心にギターロックが積み上がっている。</p>
       </article>
       <article class="pillar">
         <span class="num">02</span>
-        <span class="tag">Most Played ・ 2位</span>
-        <h3>👑 King Gnu</h3>
-        <p>いちばんの愛聴曲は<span class="plays">「雨燦々」</span>。混沌と美メロを行き来する常田大希のソングライティングに惹かれ、コンスタントに再生。羊文学と並んで、再生履歴で頭ひとつ抜けている。</p>
+        <span class="tag">fav2 ・ 洋楽の棚</span>
+        <h3>🌶 Red Hot Chili Peppers</h3>
+        <p>fav2 に<span class="plays">12曲</span>＝単独最多。「Californication」「Can't Stop」「By the Way」から「Snow (Hey Oh)」「Parallel Universe」まで。続くのは Bob Marley &amp; The Wailers の9曲、Green Day の8曲、Oasis の7曲。US ファンクロックが洋楽の棚の中心にある。</p>
       </article>
     </div>
 
     <div class="hr-tracks">
-      <h3>♪ Heavy Rotation ─ よく聴く曲</h3>
+      <h3>♪ 収録数ランキング ─ 4曲以上入っている34組</h3>
       <ol>
-        <li><a href="https://open.spotify.com/track/34PR0zLBVl7VMF9E7dDwdo" target="_blank" rel="noopener">雨燦々</a><span class="by">King Gnu</span></li>
-        <li><a href="https://open.spotify.com/track/2kXER8pkjxDVQnlagpVJJw" target="_blank" rel="noopener">more than words</a><span class="by">羊文学</span></li>
-        <li><a href="https://open.spotify.com/track/60eCBtq6iU3bCuaFI8bTpg" target="_blank" rel="noopener">愛し合うとして</a><span class="by">SATOH</span></li>
-        <li><a href="https://open.spotify.com/track/1mdbjTargZrrMHgzveQBcN" target="_blank" rel="noopener">Burning</a><span class="by">羊文学</span></li>
+        <li><a href="https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt" target="_blank" rel="noopener">ASIAN KUNG-FU GENERATION</a><span class="by">16曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq" target="_blank" rel="noopener">サカナクション</a><span class="by">13曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5" target="_blank" rel="noopener">Red Hot Chili Peppers</a><span class="by">12曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/0hSFeqPehe7FtCNWuQ6Bsy" target="_blank" rel="noopener">BUMP OF CHICKEN</a><span class="by">11曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/2QsynagSdAqZj3U9HgDzjD" target="_blank" rel="noopener">Bob Marley &amp; The Wailers</a><span class="by">9曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/7unNuvk3OEqGmegHTaxRA9" target="_blank" rel="noopener">JUDY AND MARY</a><span class="by">9曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/0GtBUVp1cWdIUKwm2GHTHc" target="_blank" rel="noopener">チャットモンチー</a><span class="by">9曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/3cbd5GWGOknxmFAe77MDbk" target="_blank" rel="noopener">ELLEGARDEN</a><span class="by">8曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY" target="_blank" rel="noopener">Green Day</a><span class="by">8曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/5ydDSP9qSxEOlHWnpbblFB" target="_blank" rel="noopener">サンボマスター</a><span class="by">8曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/5kjGRHClVacSyllOUqU1S0" target="_blank" rel="noopener">スピッツ</a><span class="by">8曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4" target="_blank" rel="noopener">Oasis</a><span class="by">7曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/2IUl3m1H1EQ7QfNbNWvgru" target="_blank" rel="noopener">Vaundy</a><span class="by">7曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE" target="_blank" rel="noopener">Creepy Nuts</a><span class="by">6曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/1qma7XhwZotCAucL7NHVLY" target="_blank" rel="noopener">Mr.Children</a><span class="by">6曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2" target="_blank" rel="noopener">The Beatles</a><span class="by">6曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/4Yz1LjHwgQ5DFWJrZL8bC8" target="_blank" rel="noopener">Remioromen</a><span class="by">5曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/5LfGQac0EIXyAN8aUwmNAQ" target="_blank" rel="noopener">The Offspring</a><span class="by">5曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/3GP0RQRnBvpYVgdVYfcaGS" target="_blank" rel="noopener">ヤバイTシャツ屋さん</a><span class="by">5曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/58lV9VcRSjABbAbfWS6skp" target="_blank" rel="noopener">Bon Jovi</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/7jy3rLJdDQY21OgRLCZ9sD" target="_blank" rel="noopener">Foo Fighters</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC" target="_blank" rel="noopener">Guns N' Roses</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/6S8w5rLsEwjN21jQeRES0n" target="_blank" rel="noopener">Hitsujibungaku</a><span class="by">4曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz" target="_blank" rel="noopener">Linkin Park</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP" target="_blank" rel="noopener">Maroon 5</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB" target="_blank" rel="noopener">Metallica</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/7FBcuc1gsnv6Y1nwFtNRCb" target="_blank" rel="noopener">My Chemical Romance</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/1EowJ1WwkMzkCkRomFhui7" target="_blank" rel="noopener">RADWIMPS</a><span class="by">4曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/0ujqMKVYj188ib9akGEjrM" target="_blank" rel="noopener">Rooster</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe" target="_blank" rel="noopener">The Rolling Stones</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V" target="_blank" rel="noopener">The Strokes</a><span class="by">4曲 ・ fav2</span></li>
+        <li><a href="https://open.spotify.com/artist/6e9Wgn2800cCQcM0b4cNwt" target="_blank" rel="noopener">ウルフルズ</a><span class="by">4曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/3ZWE1TnryM03rfzVin17K0" target="_blank" rel="noopener">奥田民生</a><span class="by">4曲 ・ fav</span></li>
+        <li><a href="https://open.spotify.com/artist/6GVsZoMbMt0jmqwcvz1a1F" target="_blank" rel="noopener">汐れいら</a><span class="by">4曲 ・ fav</span></li>
       </ol>
-      <p class="recent">最近の再生：
-        <a href="https://open.spotify.com/track/758wEKVqfYopJIHYWdLVd4" target="_blank" rel="noopener">I Wanna Be Adored</a>（The Stone Roses）／
-        <a href="https://open.spotify.com/track/3UcldTDroPUrszcXjXvMhp" target="_blank" rel="noopener">涙のふるさと</a>（BUMP OF CHICKEN）／
-        <a href="https://open.spotify.com/track/2FrdiTHaolkyx4lbBBXNou" target="_blank" rel="noopener">金色</a>・<a href="https://open.spotify.com/track/5dZDHprMDKVwQ5dzU736JL" target="_blank" rel="noopener">そのとき</a>（羊文学）
-      </p>
+      <p class="recent">※ 曲数は、両プレイリストの<b style="color:var(--ink)">全曲</b>を集計したもの。アーティスト名をクリックするとSpotifyのページが開きます。</p>
     </div>
   </div>
 </section>
 
-<!-- ================= 羊文学 スポットライト ================= -->
+<!-- ================= スポットライト ================= -->
 <section>
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-kicker">Spotlight</div>
-      <h2>羊文学 ── 浮遊するギターの轟音</h2>
-      <p>邦ロックの中でも特にお気に入りの3ピース。塩塚モエカのささやくようなボーカルと、爆音のシューゲイザー・サウンドが同居する。</p>
+      <h2>ASIAN KUNG-FU GENERATION ── 棚のいちばん厚いところ</h2>
+      <p>邦楽プレイリスト「fav」で単独最多の16曲。2番手のサカナクション（13曲）を上回り、ここが中西さんの音楽の芯にあたる。</p>
     </div>
     <div class="spotlight">
       <div class="photo">
-        <span class="fav">FAVORITE</span>
-        <img src="https://i.scdn.co/image/ab676161000051741833f4534ed3dd88d9e12c8b"
-             alt="羊文学（Hitsujibungaku）アーティスト写真" loading="lazy">
+        <span class="fav">fav 最多 ・ 16曲</span>
+        <img src="https://i.scdn.co/image/ab6761610000e5eb7640113b83bd03884a0bb258" alt="ASIAN KUNG-FU GENERATION アーティスト写真" loading="lazy">
         <div class="credit">Photo: Spotify 公式アーティストイメージ</div>
       </div>
       <div class="txt">
-        <h3>羊文学</h3>
-        <p class="rome">Hitsujibungaku</p>
-        <p>轟音のギターと透明なメロディが同居する“新しいスタンダード”。アニメ主題歌でも知られ、代表曲「more than words」「光るとき」「あいまいでいいよ」など。中西さんの視聴履歴でも上位に食い込む、いま一番聴きたいバンドのひとつ。</p>
-        <p>下のプレーヤーから、そのまま試聴できます。</p>
-        <a class="sp-btn" href="https://open.spotify.com/artist/6S8w5rLsEwjN21jQeRES0n" target="_blank" rel="noopener">
+        <h3>ASIAN KUNG-FU GENERATION</h3>
+        <p class="rome">Ajikan</p>
+        <p>日本のギターロックを象徴する4人組。疾走感のあるアンサンブルと、後藤正文の飾らない歌声。fav に入っているのは「遥か彼方」「君という花」「ループ＆ループ」「アフターダーク」「マーチングバンド」「君の街まで」「転がる岩、君に朝が降る」「ソラニン」「或る街の群青」「荒野を歩け」ほか全16曲。</p>
+        <p>シングル曲だけを並べていないところに、アルバムごと聴き込んできた時間が出ています。全量で数え直したことで、2位以下を大きく引き離しているのが分かりました。</p>
+        <a class="sp-btn" href="https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32c-.22.36-.68.47-1.03.25-2.82-1.72-6.36-2.11-10.54-1.16-.4.1-.8-.16-.9-.56-.1-.4.16-.8.56-.9 4.56-1.04 8.48-.6 11.64 1.35.36.22.47.68.27 1.02zm1.47-3.27c-.27.44-.85.58-1.29.31-3.23-1.98-8.15-2.56-11.96-1.4-.5.15-1.03-.13-1.18-.62-.15-.5.13-1.02.62-1.18 4.36-1.32 9.78-.68 13.5 1.6.44.27.58.85.31 1.29zm.13-3.4C15.06 8.35 8.7 8.13 5.03 9.25c-.6.18-1.23-.16-1.4-.76-.18-.6.16-1.23.76-1.4 4.2-1.28 11.24-1.03 15.66 1.6.53.32.7 1.01.39 1.55-.32.53-1.02.7-1.55.38z"/></svg>
-          Spotifyで羊文学を開く
+          SpotifyでASIAN KUNG-FU GENERATIONを開く
         </a>
         <div class="embed-full">
-          <iframe src="https://open.spotify.com/embed/artist/6S8w5rLsEwjN21jQeRES0n?utm_source=generator&theme=0"
+          <iframe src="https://open.spotify.com/embed/artist/0MK8l3nURwwQIjafvXoJJt?utm_source=generator&theme=0"
                   height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy" title="羊文学 on Spotify"></iframe>
+                  loading="lazy" title="ASIAN KUNG-FU GENERATION on Spotify"></iframe>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= ジャンル別 ================= -->
+<!-- ================= 邦楽ジャンル別 ================= -->
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-kicker">Record Shelf</div>
-      <h2>棚を覗く ─ ジャンル別</h2>
-      <p>括弧内の数字は視聴履歴で確認できた本数。★は特に再生の多いアーティスト。<b style="color:var(--ink)">アーティスト名をクリック</b>すると、紹介とSpotifyリンクがポップアップで開きます。</p>
+      <div class="sec-kicker">Crate A ─ fav</div>
+      <h2>邦楽の棚を覗く</h2>
+      <p>プレイリスト「fav」に入っている127組。数字は収録曲数、★（赤枠）は4曲以上。<b style="color:var(--ink)">アーティスト名をクリック</b>すると、紹介・収録曲・Spotifyリンクがポップアップで開きます。</p>
     </div>
     <div class="genres">
       <div class="genre" style="--gc:var(--accent)">
-        <h3>🎸 邦ロック／ギターバンド</h3>
-        <p class="cap">音楽趣味の中心</p>
+        <h3>🎸 邦ロック／ギターロック</h3>
+        <p class="cap">2枚の棚のうち fav の軸（17組）</p>
         <div class="chips">
-          <span class="chip star" data-artist="sakanaction">サカナクション<span class="n">22</span></span>
-          <span class="chip" data-artist="hitsujibungaku">羊文学</span>
-          <span class="chip" data-artist="radwimps">RADWIMPS<span class="n">11</span></span>
-          <span class="chip" data-artist="ajikan">ASIAN KUNG-FU GENERATION</span>
-          <span class="chip" data-artist="humpback">Hump Back</span>
+          <span class="chip star" data-artist="ajikan">ASIAN KUNG-FU GENERATION<span class="n">16曲</span></span>
+          <span class="chip star" data-artist="sakanaction">サカナクション<span class="n">13曲</span></span>
+          <span class="chip star" data-artist="bump">BUMP OF CHICKEN<span class="n">11曲</span></span>
+          <span class="chip star" data-artist="ellegarden">ELLEGARDEN<span class="n">8曲</span></span>
+          <span class="chip star" data-artist="mrchildren">Mr.Children<span class="n">6曲</span></span>
+          <span class="chip star" data-artist="radwimps">RADWIMPS<span class="n">4曲</span></span>
+          <span class="chip" data-artist="does">DOES<span class="n">3曲</span></span>
+          <span class="chip" data-artist="mwam">MAN WITH A MISSION<span class="n">3曲</span></span>
+          <span class="chip" data-artist="alexandros">[Alexandros]<span class="n">2曲</span></span>
+          <span class="chip" data-artist="larc">L'Arc-en-Ciel<span class="n">2曲</span></span>
+          <span class="chip" data-artist="9mm">9mm Parabellum Bullet</span>
           <span class="chip" data-artist="kanaboon">KANA-BOON</span>
-          <span class="chip" data-artist="frederic">フレデリック</span>
-          <span class="chip" data-artist="vaundy">Vaundy</span>
-          <span class="chip" data-artist="backnumber">back number</span>
-          <span class="chip" data-artist="mrchildren">Mr.Children</span>
+          <span class="chip" data-artist="okamotos">OKAMOTO'S</span>
+          <span class="chip" data-artist="shishamo">SHISHAMO</span>
           <span class="chip" data-artist="tacica">tacica</span>
-          <span class="chip" data-artist="does">DOES</span>
-          <span class="chip" data-artist="larcenciel">L'Arc-en-Ciel</span>
-          <span class="chip" data-artist="ginnanboyz">銀杏BOYZ</span>
-        </div>
-      </div>
-      <div class="genre" style="--gc:var(--accent-2)">
-        <h3>🎤 J-POP／SSW</h3>
-        <p class="cap">シンガーソングライター</p>
-        <div class="chips">
-          <span class="chip" data-artist="higedan">Official髭男dism</span>
-          <span class="chip" data-artist="ryokushaka">緑黄色社会</span>
-          <span class="chip" data-artist="tomoo">TOMOO</span>
-          <span class="chip" data-artist="yoasobi">YOASOBI</span>
-          <span class="chip star" data-artist="ushioreira">汐れいら</span>
-          <span class="chip" data-artist="superfly">Superfly</span>
-          <span class="chip" data-artist="nanawoakari">ナナヲアカリ</span>
-          <span class="chip" data-artist="ikutalila">幾田りら</span>
-          <span class="chip" data-artist="uru">Uru</span>
+          <span class="chip" data-artist="straightener">ストレイテナー</span>
+          <span class="chip" data-artist="negoto">ねごと</span>
         </div>
       </div>
       <div class="genre" style="--gc:var(--accent-3)">
-        <h3>🎧 日本語ラップ／HIP-HOP</h3>
-        <p class="cap">バトル系まで</p>
+        <h3>🌀 オルタナ／インディー</h3>
+        <p class="cap">轟音と衝動（29組）</p>
         <div class="chips">
-          <span class="chip star" data-artist="creepynuts">Creepy Nuts<span class="n">15</span></span>
-          <span class="chip" data-artist="awich">Awich</span>
-          <span class="chip" data-artist="chanmina">CHANMINA</span>
-          <span class="chip" data-artist="suglawd">SugLawd Familiar</span>
-          <span class="chip" data-artist="umedacypher">umedacypher</span>
+          <span class="chip star" data-artist="chatmonchy">チャットモンチー<span class="n">9曲</span></span>
+          <span class="chip star" data-artist="vaundy">Vaundy<span class="n">7曲</span></span>
+          <span class="chip star" data-artist="hitsujibungaku">Hitsujibungaku<span class="n">4曲</span></span>
+          <span class="chip" data-artist="fujifabric">Fujifabric<span class="n">3曲</span></span>
+          <span class="chip" data-artist="shiinaringo">椎名林檎<span class="n">3曲</span></span>
+          <span class="chip" data-artist="andymori">andymori<span class="n">2曲</span></span>
+          <span class="chip" data-artist="goingsteady">GOING STEADY<span class="n">2曲</span></span>
+          <span class="chip" data-artist="nybeach">never young beach<span class="n">2曲</span></span>
+          <span class="chip" data-artist="michelle">Thee Michelle Gun Elephant<span class="n">2曲</span></span>
+          <span class="chip" data-artist="ginnanboyz">銀杏BOYZ<span class="n">2曲</span></span>
+          <span class="chip" data-artist="tokyojihen">東京事変<span class="n">2曲</span></span>
+          <span class="chip" data-artist="ainatheend">AiNA THE END</span>
+          <span class="chip" data-artist="ano">ano</span>
+          <span class="chip" data-artist="francycata">Francycata</span>
+          <span class="chip" data-artist="gesu">Gesu No Kiwami Otome</span>
+          <span class="chip" data-artist="gogo7188">GO!GO!7188</span>
+          <span class="chip" data-artist="jo0ji">jo0ji</span>
+          <span class="chip" data-artist="quruli">Quruli</span>
+          <span class="chip" data-artist="skirt">Skirt</span>
+          <span class="chip" data-artist="soutaiseiriron">Soutaiseiriron</span>
+          <span class="chip" data-artist="subwaydaydream">Subway Daydream</span>
+          <span class="chip" data-artist="thepillows">the pillows</span>
+          <span class="chip" data-artist="yama">yama</span>
+          <span class="chip" data-artist="yorushika">Yorushika</span>
+          <span class="chip" data-artist="creephyp">クリープハイプ</span>
+          <span class="chip" data-artist="supertozanbu">スーパー登山部</span>
+          <span class="chip" data-artist="frederic">フレデリック</span>
+          <span class="chip" data-artist="kamattechan">神聖かまってちゃん</span>
+          <span class="chip" data-artist="nisshoku">日食なつこ</span>
         </div>
       </div>
-      <div class="genre" style="--gc:#4ade80">
-        <h3>🌴 レゲエ／ミクスチャー</h3>
-        <p class="cap">縦ノリも守備範囲</p>
+      <div class="genre" style="--gc:#ff6b3d">
+        <h3>🔥 パンク／メロコア／青春</h3>
+        <p class="cap">熱量で押し切る組（11組）</p>
         <div class="chips">
-          <span class="chip" data-artist="hannya">HANNYA</span>
-          <span class="chip" data-artist="chehon">CHEHON</span>
-          <span class="chip" data-artist="shonannokaze">湘南乃風</span>
-          <span class="chip" data-artist="hormone">マキシマム ザ ホルモン</span>
-          <span class="chip" data-artist="orangerange">ORANGE RANGE</span>
+          <span class="chip star" data-artist="sambomaster">サンボマスター<span class="n">8曲</span></span>
+          <span class="chip star" data-artist="yabat">ヤバイTシャツ屋さん<span class="n">5曲</span></span>
+          <span class="chip" data-artist="tenfeet">10-FEET<span class="n">2曲</span></span>
+          <span class="chip" data-artist="bish">BiSH<span class="n">2曲</span></span>
+          <span class="chip" data-artist="roadofmajor">ロードオブメジャー<span class="n">2曲</span></span>
+          <span class="chip" data-artist="okazakitaiiku">岡崎体育<span class="n">2曲</span></span>
+          <span class="chip" data-artist="175r">175R</span>
+          <span class="chip" data-artist="hawaiian6">Hawaiian6</span>
+          <span class="chip" data-artist="histandard">Hi-STANDARD</span>
+          <span class="chip" data-artist="mongol800">MONGOL800</span>
+          <span class="chip" data-artist="harukamirai">ハルカミライ</span>
         </div>
       </div>
-      <div class="genre" style="--gc:#c084fc">
-        <h3>🌆 シティポップ／昭和歌謡</h3>
-        <p class="cap">新旧問わず</p>
+      <div class="genre" style="--gc:var(--amber)">
+        <h3>📻 歌モノ／歌謡ロック</h3>
+        <p class="cap">90s〜00sを中心に（26組）</p>
         <div class="chips">
-          <span class="chip" data-artist="takeuchimariya">竹内まりや</span>
-          <span class="chip" data-artist="shiinaringo">椎名林檎</span>
-          <span class="chip" data-artist="komeicomeiclub">米米CLUB</span>
-          <span class="chip" data-artist="otsukaai">大塚愛</span>
+          <span class="chip star" data-artist="judyandmary">JUDY AND MARY<span class="n">9曲</span></span>
+          <span class="chip star" data-artist="spitz">スピッツ<span class="n">8曲</span></span>
+          <span class="chip star" data-artist="remioromen">Remioromen<span class="n">5曲</span></span>
+          <span class="chip star" data-artist="ulfuls">ウルフルズ<span class="n">4曲</span></span>
+          <span class="chip star" data-artist="okudatamio">奥田民生<span class="n">4曲</span></span>
+          <span class="chip" data-artist="yuki">YUKI<span class="n">3曲</span></span>
+          <span class="chip" data-artist="elekashi">エレファントカシマシ<span class="n">3曲</span></span>
+          <span class="chip" data-artist="porno">ポルノグラフィティ<span class="n">3曲</span></span>
+          <span class="chip" data-artist="yamazaki">山崎まさよし<span class="n">3曲</span></span>
+          <span class="chip" data-artist="chara">Chara<span class="n">2曲</span></span>
+          <span class="chip" data-artist="southernallstars">SOUTHERN ALL STARS<span class="n">2曲</span></span>
+          <span class="chip" data-artist="saitokazuyoshi">斉藤和義<span class="n">2曲</span></span>
+          <span class="chip" data-artist="baad">BAAD</span>
+          <span class="chip" data-artist="ohtaki">Eiichi Ohtaki</span>
+          <span class="chip" data-artist="flumpool">flumpool</span>
+          <span class="chip" data-artist="kuwata">Keisuke Kuwata</span>
+          <span class="chip" data-artist="maoabe">Mao Abe</span>
+          <span class="chip" data-artist="yellowmonkey">THE YELLOW MONKEY</span>
+          <span class="chip" data-artist="undergraph">UNDER GRAPH</span>
+          <span class="chip" data-artist="kinmokusei">キンモクセイ</span>
+          <span class="chip" data-artist="happyend">はっぴいえんど</span>
+          <span class="chip" data-artist="flocom">フラワーカンパニーズ</span>
+          <span class="chip" data-artist="unicorn">ユニコーン</span>
+          <span class="chip" data-artist="takeharapistol">竹原ピストル</span>
+          <span class="chip" data-artist="higuchi">樋口了一</span>
+          <span class="chip" data-artist="yaida">矢井田瞳</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#8b7cf6">
+        <h3>🎧 ラップ／ミクスチャー</h3>
+        <p class="cap">縦ノリも守備範囲（8組）</p>
+        <div class="chips">
+          <span class="chip star" data-artist="creepynuts">Creepy Nuts<span class="n">6曲</span></span>
+          <span class="chip" data-artist="orangerange">ORANGE RANGE<span class="n">3曲</span></span>
+          <span class="chip" data-artist="chehon">CHEHON<span class="n">2曲</span></span>
+          <span class="chip" data-artist="dragonash">Dragon Ash<span class="n">2曲</span></span>
+          <span class="chip" data-artist="chelmico">chelmico</span>
+          <span class="chip" data-artist="kreva">KREVA</span>
+          <span class="chip" data-artist="punpee">PUNPEE</span>
+          <span class="chip" data-artist="satoh">SATOH</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#31c48d">
+        <h3>🌸 J-POP／ポップス</h3>
+        <p class="cap">ロック以外の引き出し（31組）</p>
+        <div class="chips">
+          <span class="chip star" data-artist="shioreira">汐れいら<span class="n">4曲</span></span>
+          <span class="chip" data-artist="kaela">Kaela Kimura<span class="n">3曲</span></span>
+          <span class="chip" data-artist="kinggnu">King Gnu<span class="n">3曲</span></span>
+          <span class="chip" data-artist="higedan">OFFICIAL HIGE DANDISM<span class="n">3曲</span></span>
+          <span class="chip" data-artist="aimyon">あいみょん<span class="n">3曲</span></span>
+          <span class="chip" data-artist="utada">宇多田ヒカル<span class="n">3曲</span></span>
+          <span class="chip" data-artist="yonezu">米津玄師<span class="n">3曲</span></span>
+          <span class="chip" data-artist="mrsgreenapple">Mrs. GREEN APPLE<span class="n">2曲</span></span>
+          <span class="chip" data-artist="momoclo">ももいろクローバーZ<span class="n">2曲</span></span>
+          <span class="chip" data-artist="hoshinogen">星野源<span class="n">2曲</span></span>
+          <span class="chip" data-artist="choqmay">ChoQMay</span>
+          <span class="chip" data-artist="doasinfinity">Do As Infinity</span>
+          <span class="chip" data-artist="furuiriho">Furui Riho</span>
+          <span class="chip" data-artist="imase">imase</span>
+          <span class="chip" data-artist="kariyushi58">kariyushi58</span>
+          <span class="chip" data-artist="knoak">knoak</span>
+          <span class="chip" data-artist="marihiko">Marihiko Hara</span>
+          <span class="chip" data-artist="miwa">miwa</span>
+          <span class="chip" data-artist="monkeymajik">Monkey Majik</span>
+          <span class="chip" data-artist="neguse">neguse.</span>
+          <span class="chip" data-artist="perfume">Perfume</span>
+          <span class="chip" data-artist="retroriron">RETRORIRON</span>
+          <span class="chip" data-artist="sekaowa">SEKAI NO OWARI</span>
+          <span class="chip" data-artist="sukimaswitch">Sukima Switch</span>
+          <span class="chip" data-artist="superfly">Superfly</span>
+          <span class="chip" data-artist="tomoo">TOMOO</span>
+          <span class="chip" data-artist="yoasobi">YOASOBI</span>
+          <span class="chip" data-artist="zard">ZARD</span>
+          <span class="chip" data-artist="ikimono">いきものがかり</span>
+          <span class="chip" data-artist="iguchisatoru">井口理</span>
+          <span class="chip" data-artist="morinana">森七菜</span>
         </div>
       </div>
       <div class="genre" style="--gc:#f472b6">
-        <h3>🎀 アイドル／アニメ・ボカロ</h3>
-        <p class="cap">FIRST TAKE 経由中心</p>
+        <h3>🎤 ボカロ／ネット発</h3>
+        <p class="cap">全量で見えた層（5組）</p>
         <div class="chips">
-          <span class="chip" data-artist="fruitszipper">FRUITS ZIPPER</span>
-          <span class="chip" data-artist="cutiestreet">CUTIE STREET</span>
-          <span class="chip" data-artist="niziu">NiziU</span>
-          <span class="chip" data-artist="mygo">MyGO!!!!!</span>
-          <span class="chip" data-artist="ado">Ado</span>
+          <span class="chip" data-artist="honeyworks">HoneyWorks</span>
+          <span class="chip" data-artist="rokudenashi">Rokudenashi</span>
+          <span class="chip" data-artist="syudou">syudou</span>
+          <span class="chip" data-artist="abaraya">あばらや</span>
+          <span class="chip" data-artist="chuutan">ちゅーたん(CV:早見沙織)</span>
         </div>
       </div>
     </div>
@@ -573,241 +703,302 @@
 <section class="alt">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-kicker">Overseas</div>
-      <h2>洋楽 ─ 軸はUK/USのギターロック</h2>
-      <p>邦楽と同じくらい洋楽もしっかり。60〜70年代のクラシックロックから現行USポップまで縦断。とりわけイギリス勢への愛着が強い。直近のSpotify再生では <b style="color:var(--ink)">Van Halen「Panama」</b>・<b style="color:var(--ink)">Mötley Crüe「Kickstart My Heart」</b> といった80sアメリカンハードロックも顔を出している。</p>
+      <div class="sec-kicker">Crate B ─ fav2</div>
+      <h2>洋楽の棚を覗く</h2>
+      <p>プレイリスト「fav2」に入っている92組。US/UKのロックが中心だが、メタルもパンクもクラシックロックも、ポップスもレゲエも同じ棚に並んでいる。</p>
     </div>
 
     <div class="uk-band">
-      <div class="big">Oasis<small>いちばんの洋楽推し ・ 約29本</small></div>
+      <div class="big">12<small>Red Hot Chili Peppers</small></div>
       <div class="txt">
-        <p>2025年の再結成 <b>Oasis Live '25</b>（Cardiff / Knebworth）のライブ／プレビュー映像を多数視聴し、再結成に強く反応。定番曲も網羅。</p>
-        <p class="songs">Don't Look Back In Anger ／ Live Forever ／ Champagne Supernova ／ Rock 'N' Roll Star ／ Some Might Say</p>
+        <p><b style="color:var(--ink)">Red Hot Chili Peppers</b>が12曲で fav2 の単独最多。「Californication」「Can't Stop」「By the Way」「Dani California」「Snow (Hey Oh)」「Give It Away」…と、代表曲がほぼ揃っています。</p>
+        <p class="songs">続くのは Bob Marley &amp; The Wailers（9曲）／ Green Day（8曲）／ Oasis（7曲）／ The Beatles（6曲）／ The Offspring（5曲）。</p>
       </div>
     </div>
 
     <div class="genres">
       <div class="genre" style="--gc:var(--uk)">
         <h3>🇬🇧 UK ロック／ブリットポップ</h3>
-        <p class="cap">マッドチェスターも</p>
+        <p class="cap">fav2 の主役のひとつ（8組）</p>
         <div class="chips">
-          <span class="chip" data-artist="stoneroses">The Stone Roses</span>
-          <span class="chip" data-artist="theview">The View</span>
-          <span class="chip" data-artist="thebeatles">The Beatles</span>
-          <span class="chip" data-artist="ledzeppelin">Led Zeppelin</span>
+          <span class="chip star" data-artist="oasis">Oasis<span class="n">7曲</span></span>
+          <span class="chip star" data-artist="rooster">Rooster<span class="n">4曲</span></span>
+          <span class="chip" data-artist="coldplay">Coldplay<span class="n">3曲</span></span>
+          <span class="chip" data-artist="blur">Blur</span>
+          <span class="chip" data-artist="primalscream">Primal Scream</span>
           <span class="chip" data-artist="radiohead">Radiohead</span>
-          <span class="chip" data-artist="queen">Queen</span>
+          <span class="chip" data-artist="snowpatrol">Snow Patrol</span>
+          <span class="chip" data-artist="theview">The View</span>
         </div>
       </div>
       <div class="genre" style="--gc:#ff6b3d">
-        <h3>🇺🇸 US オルタナ／グランジ／パンク</h3>
-        <p class="cap">ミクスチャーまで</p>
+        <h3>🎸 ロックンロール・リバイバル</h3>
+        <p class="cap">2000年代のギターロック（8組）</p>
         <div class="chips">
-          <span class="chip" data-artist="thestrokes">The Strokes</span>
-          <span class="chip" data-artist="nirvana">Nirvana</span>
-          <span class="chip" data-artist="rhcp">Red Hot Chili Peppers</span>
-          <span class="chip" data-artist="theoffspring">The Offspring</span>
-          <span class="chip" data-artist="ratm">Rage Against The Machine</span>
-          <span class="chip star" data-artist="mcr">My Chemical Romance<span class="n">13</span></span>
+          <span class="chip star" data-artist="thestrokes">The Strokes<span class="n">4曲</span></span>
+          <span class="chip" data-artist="kingsofleon">Kings of Leon<span class="n">2曲</span></span>
+          <span class="chip" data-artist="arcticmonkeys">Arctic Monkeys</span>
+          <span class="chip" data-artist="briansetzer">Brian Setzer</span>
+          <span class="chip" data-artist="caesars">Caesars</span>
+          <span class="chip" data-artist="franzferdinand">Franz Ferdinand</span>
+          <span class="chip" data-artist="jet">Jet</span>
+          <span class="chip" data-artist="whitestripes">The White Stripes</span>
         </div>
       </div>
-      <div class="genre" style="--gc:#9ca3af">
+      <div class="genre" style="--gc:var(--accent-3)">
+        <h3>🔊 90s〜00s ロック／ミクスチャー</h3>
+        <p class="cap">もう一方の主役（11組）</p>
+        <div class="chips">
+          <span class="chip star" data-artist="rhcp">Red Hot Chili Peppers<span class="n">12曲</span></span>
+          <span class="chip star" data-artist="foofighters">Foo Fighters<span class="n">4曲</span></span>
+          <span class="chip star" data-artist="linkinpark">Linkin Park<span class="n">4曲</span></span>
+          <span class="chip" data-artist="ratm">Rage Against The Machine<span class="n">3曲</span></span>
+          <span class="chip" data-artist="nirvana">Nirvana<span class="n">2曲</span></span>
+          <span class="chip" data-artist="stonetemplepilots">Stone Temple Pilots<span class="n">2曲</span></span>
+          <span class="chip" data-artist="gorillaz">Gorillaz</span>
+          <span class="chip" data-artist="hoobastank">Hoobastank</span>
+          <span class="chip" data-artist="lennykravitz">Lenny Kravitz</span>
+          <span class="chip" data-artist="pearljam">Pearl Jam</span>
+          <span class="chip" data-artist="u2">U2</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#31c48d">
+        <h3>⚡ メロディックパンク／エモ</h3>
+        <p class="cap">疾走するやつ（6組）</p>
+        <div class="chips">
+          <span class="chip star" data-artist="greenday">Green Day<span class="n">8曲</span></span>
+          <span class="chip star" data-artist="theoffspring">The Offspring<span class="n">5曲</span></span>
+          <span class="chip star" data-artist="mcr">My Chemical Romance<span class="n">4曲</span></span>
+          <span class="chip" data-artist="avril">Avril Lavigne<span class="n">3曲</span></span>
+          <span class="chip" data-artist="falloutboy">Fall Out Boy<span class="n">3曲</span></span>
+          <span class="chip" data-artist="yellowcard">Yellowcard</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:var(--accent)">
         <h3>🤘 ハードロック／メタル</h3>
-        <p class="cap">80sアメリカンロックまで</p>
+        <p class="cap">重い棚も厚い（11組）</p>
         <div class="chips">
-          <span class="chip" data-artist="vanhalen">Van Halen</span>
-          <span class="chip" data-artist="motleycrue">Mötley Crüe</span>
-          <span class="chip" data-artist="slayer">Slayer</span>
-          <span class="chip" data-artist="metallica">Metallica</span>
-          <span class="chip" data-artist="gunsnroses">Guns N' Roses</span>
-          <span class="chip" data-artist="extreme">Extreme</span>
-          <span class="chip" data-artist="lynyrdskynyrd">Lynyrd Skynyrd</span>
-          <span class="chip" data-artist="cheaptrick">Cheap Trick</span>
+          <span class="chip star" data-artist="bonjovi">Bon Jovi<span class="n">4曲</span></span>
+          <span class="chip star" data-artist="gnr">Guns N' Roses<span class="n">4曲</span></span>
+          <span class="chip star" data-artist="metallica">Metallica<span class="n">4曲</span></span>
+          <span class="chip" data-artist="kiss">KISS<span class="n">3曲</span></span>
+          <span class="chip" data-artist="pantera">Pantera<span class="n">3曲</span></span>
+          <span class="chip" data-artist="aerosmith">Aerosmith<span class="n">2曲</span></span>
+          <span class="chip" data-artist="extreme">Extreme<span class="n">2曲</span></span>
+          <span class="chip" data-artist="vanhalen">Van Halen<span class="n">2曲</span></span>
+          <span class="chip" data-artist="motley">Mötley Crüe</span>
+          <span class="chip" data-artist="ozzy">Ozzy Osbourne</span>
+          <span class="chip" data-artist="velvetrevolver">Velvet Revolver</span>
         </div>
       </div>
-      <div class="genre" style="--gc:#e879f9">
-        <h3>🌊 現行 US ポップ</h3>
-        <p class="cap">今の音も</p>
+      <div class="genre" style="--gc:var(--amber)">
+        <h3>🏛 60〜70s クラシックロック</h3>
+        <p class="cap">ロックの原点まで遡る（12組）</p>
         <div class="chips">
-          <span class="chip" data-artist="sabrinacarpenter">Sabrina Carpenter<span class="n">7</span></span>
-          <span class="chip" data-artist="billieeilish">Billie Eilish</span>
-          <span class="chip" data-artist="arianagrande">Ariana Grande</span>
-          <span class="chip" data-artist="eminem">Eminem</span>
+          <span class="chip star" data-artist="beatles">The Beatles<span class="n">6曲</span></span>
+          <span class="chip star" data-artist="stones">The Rolling Stones<span class="n">4曲</span></span>
+          <span class="chip" data-artist="ledzeppelin">Led Zeppelin<span class="n">3曲</span></span>
+          <span class="chip" data-artist="queen">Queen<span class="n">3曲</span></span>
+          <span class="chip" data-artist="thewho">The Who<span class="n">3曲</span></span>
+          <span class="chip" data-artist="sexpistols">Sex Pistols<span class="n">2曲</span></span>
+          <span class="chip" data-artist="billyjoel">Billy Joel</span>
+          <span class="chip" data-artist="bobdylan">Bob Dylan</span>
+          <span class="chip" data-artist="clapton">Eric Clapton</span>
+          <span class="chip" data-artist="mickeyfinn">Mickey Finn's T.Rex</span>
+          <span class="chip" data-artist="steppenwolf">Steppenwolf</span>
+          <span class="chip" data-artist="trex">T. Rex</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#8b7cf6">
+        <h3>🌊 ポップ／ダンス</h3>
+        <p class="cap">ロック以外も普通に鳴る（25組）</p>
+        <div class="chips">
+          <span class="chip star" data-artist="maroon5">Maroon 5<span class="n">4曲</span></span>
+          <span class="chip" data-artist="camila">Camila Cabello<span class="n">2曲</span></span>
+          <span class="chip" data-artist="carlyraejepsen">Carly Rae Jepsen<span class="n">2曲</span></span>
+          <span class="chip" data-artist="edsheeran">Ed Sheeran<span class="n">2曲</span></span>
+          <span class="chip" data-artist="fun">fun.<span class="n">2曲</span></span>
+          <span class="chip" data-artist="taylorswift">Taylor Swift<span class="n">2曲</span></span>
+          <span class="chip" data-artist="adele">Adele</span>
+          <span class="chip" data-artist="alessiacara">Alessia Cara</span>
+          <span class="chip" data-artist="avicii">Avicii</span>
+          <span class="chip" data-artist="billie">Billie Eilish</span>
+          <span class="chip" data-artist="calvinharris">Calvin Harris</span>
+          <span class="chip" data-artist="charlieputh">Charlie Puth</span>
+          <span class="chip" data-artist="christinaaguilera">Christina Aguilera</span>
+          <span class="chip" data-artist="daftpunk">Daft Punk</span>
+          <span class="chip" data-artist="danielpowter">Daniel Powter</span>
+          <span class="chip" data-artist="gayle">GAYLE</span>
+          <span class="chip" data-artist="jessglynne">Jess Glynne</span>
+          <span class="chip" data-artist="katyperry">Katy Perry</span>
+          <span class="chip" data-artist="magic">MAGIC!</span>
+          <span class="chip" data-artist="meghantrainor">Meghan Trainor</span>
+          <span class="chip" data-artist="owlcity">Owl City</span>
+          <span class="chip" data-artist="pharrell">Pharrell Williams</span>
+          <span class="chip" data-artist="sia">Sia</span>
+          <span class="chip" data-artist="walkthemoon">WALK THE MOON</span>
+          <span class="chip" data-artist="zedd">Zedd</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#2dd4bf">
+        <h3>🌴 レゲエ</h3>
+        <p class="cap">棚の端に確かにある（3組）</p>
+        <div class="chips">
+          <span class="chip star" data-artist="bobmarley">Bob Marley &amp; The Wailers<span class="n">9曲</span></span>
+          <span class="chip" data-artist="bobmarleysolo">Bob Marley</span>
+          <span class="chip" data-artist="chineke">Chineke! Orchestra</span>
+        </div>
+      </div>
+      <div class="genre" style="--gc:#f472b6">
+        <h3>🎧 ヒップホップ／R&amp;B</h3>
+        <p class="cap">ロック以外の柱（8組）</p>
+        <div class="chips">
+          <span class="chip" data-artist="eminem">Eminem<span class="n">3曲</span></span>
+          <span class="chip" data-artist="delasoul">De La Soul</span>
+          <span class="chip" data-artist="featurecast">Featurecast</span>
+          <span class="chip" data-artist="janellemonae">Janelle Monáe</span>
+          <span class="chip" data-artist="koolkeith">Kool Keith</span>
+          <span class="chip" data-artist="laurynhill">Ms. Lauryn Hill</span>
+          <span class="chip" data-artist="wizkhalifa">Wiz Khalifa</span>
+          <span class="chip" data-artist="youngthug">Young Thug</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= 聴き込みの波 ================= -->
-<section class="alt">
+<!-- ================= 年代 ================= -->
+<section>
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-kicker">On the Timeline</div>
-      <h2>聴き込みの波</h2>
-      <p>ベースはYouTube視聴履歴の分析。そこに直近のSpotify再生（トップ・最近の再生）を重ねた“いま”の波。</p>
+      <h2>棚の年代</h2>
+      <p>収録曲のリリース年で見た2枚の棚の重心。邦楽は2000年代以降、洋楽はぐっと古いところまで遡ります。</p>
     </div>
     <div class="timeline">
-      <div class="tl-item"><div class="when">2025.05–07</div><div class="what">多め。<b>月40〜52本</b>のペースで聴き込む。</div></div>
-      <div class="tl-item"><div class="when">2025 通年</div><div class="what">Oasis 再結成ツアー <b>Live '25</b> の映像を継続的に視聴。</div></div>
-      <div class="tl-item"><div class="when">2026.02</div><div class="what"><b>急増（約130本）</b>。18ヶ月で最も集中的に聴き込んだ月。</div></div>
-      <div class="tl-item"><div class="when">2026 春〜夏</div><div class="what"><b>汐れいら</b>をヘビロテ。THE FIRST TAKE は変わらず入り口に。</div></div>
-      <div class="tl-item"><div class="when">2026.08 現在</div><div class="what">Spotifyのトップは <b>羊文学・King Gnu・スピッツ・サカナクション・Creepy Nuts</b>。洋楽は <b>Radiohead「Creep」</b> や80sハードロック（Van Halen／Mötley Crüe）。芸人ラジオの<b>ポッドキャスト</b>も日常の一部に。</div></div>
+      <div class="tl-item"><div class="when">1960〜70年代</div><div class="what">洋楽に<b>29曲</b>。The Beatles ／ The Rolling Stones ／ The Who ／ Led Zeppelin ／ Bob Dylan ／ Billy Joel ／ Bob Marley &amp; The Wailers。fav2 の土台にあたる層。</div></div>
+      <div class="tl-item"><div class="when">1980年代</div><div class="what">洋楽に<b>15曲</b>。Guns N' Roses ／ Bon Jovi ／ Metallica ／ Van Halen ／ KISS ／ Aerosmith。ハードロックの厚みはここ。</div></div>
+      <div class="tl-item"><div class="when">1990年代</div><div class="what">洋楽<b>36曲</b>・邦楽<b>28曲</b>。Oasis ／ Nirvana ／ Red Hot Chili Peppers ／ Pearl Jam ／ Stone Temple Pilots と、JUDY AND MARY ／ ZARD ／ THE YELLOW MONKEY ／ ミッシェル・ガン・エレファント。</div></div>
+      <div class="tl-item"><div class="when">2000年代</div><div class="what"><b>2枚とも最も厚い年代</b>。邦楽<b>105曲</b>・洋楽<b>60曲</b>。ASIAN KUNG-FU GENERATION ／ BUMP OF CHICKEN ／ ELLEGARDEN ／ サカナクション と、The Strokes ／ Green Day ／ Foo Fighters ／ Fall Out Boy。</div></div>
+      <div class="tl-item"><div class="when">2010年代</div><div class="what">邦楽<b>92曲</b>・洋楽<b>35曲</b>。ヤバイTシャツ屋さん ／ あいみょん ／ 米津玄師 ／ Creepy Nuts と、Coldplay ／ Taylor Swift ／ WALK THE MOON。</div></div>
+      <div class="tl-item"><div class="when">2020年代〜</div><div class="what">邦楽<b>57曲</b>・洋楽<b>8曲</b>と、<b>ほぼ邦楽だけが伸びている</b>。Vaundy ／ 羊文学 ／ 汐れいら ／ YOASOBI ／ Mrs. GREEN APPLE。いま棚に足されているのはこの層。</div></div>
     </div>
-    <p class="embed-note" style="max-width:680px;margin-top:20px">※ Spotifyは再生回数や月別の推移までは公開しないため、直近分は本数ではなく“観測できた傾向”で記載しています。</p>
+    <p class="embed-note" style="max-width:680px;margin-top:20px">※ 年はSpotifyが返すリリース年です。リマスター盤・再発盤は「その音源が出た年」になるため、原曲の発表年より新しく出るものがあります（The Rolling Stones や Bob Marley など）。あくまで目安として見てください。</p>
   </div>
 </section>
 
 <!-- ================= アーティスト写真ギャラリー ================= -->
-<section>
+<section class="alt">
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-kicker">Faces</div>
-      <h2>よく聴く顔ぶれ</h2>
-      <p>アーティスト（全13組）をクリックすると、紹介とSpotifyへのリンクがポップアップで開きます。画像はいずれも Spotify 公式アーティストイメージ。</p>
+      <h2>収録数トップ15</h2>
+      <p>2枚のプレイリスト（全482曲）に多く入っている順。クリックすると紹介と収録曲がポップアップで開きます。画像はいずれも Spotify の公式画像（アーティスト写真、無い場合はジャケット）。</p>
     </div>
     <div class="artist-grid">
-      <a class="artist-card" href="https://open.spotify.com/artist/6S8w5rLsEwjN21jQeRES0n" target="_blank" rel="noopener"
-         data-name="羊文学" data-rome="Hitsujibungaku"
-         data-img="https://i.scdn.co/image/ab676161000051741833f4534ed3dd88d9e12c8b"
-         data-desc="轟音のギターと透明なメロディが同居する3ピース。塩塚モエカのささやくようなボーカルが、爆音のシューゲイザー・サウンドの中で際立つ。アニメ主題歌でも知られ、代表曲は「more than words」「光るとき」「あいまいでいいよ」。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab676161000051741833f4534ed3dd88d9e12c8b" alt="羊文学" loading="lazy"></div>
-        <div class="meta"><b>羊文学</b><span>邦ロック / シューゲイザー</span></div>
+      <a class="artist-card" href="https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt" target="_blank" rel="noopener"
+         data-artist="ajikan">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb7640113b83bd03884a0bb258" alt="ASIAN KUNG-FU GENERATION" loading="lazy"></div>
+        <div class="meta"><b>ASIAN KUNG-FU GENERATION</b><span>fav（邦楽） ・ 16曲</span></div>
       </a>
       <a class="artist-card" href="https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq" target="_blank" rel="noopener"
-         data-name="サカナクション" data-rome="sakanaction"
-         data-img="https://i.scdn.co/image/ab6761610000517436e29d377fba222834f257cd"
-         data-desc="バンドサウンドとエレクトロニカを高い次元で融合させた孤高の存在。山口一郎の詩世界と踊れるビートが同居する。代表曲は「新宝島」「アイデンティティ」「夜の踊り子」「ミュージック」。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000517436e29d377fba222834f257cd" alt="サカナクション" loading="lazy"></div>
-        <div class="meta"><b>サカナクション</b><span>邦ロック / エレクトロ</span></div>
+         data-artist="sakanaction">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb36e29d377fba222834f257cd" alt="サカナクション" loading="lazy"></div>
+        <div class="meta"><b>サカナクション</b><span>fav（邦楽） ・ 13曲</span></div>
       </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/6GVsZoMbMt0jmqwcvz1a1F" target="_blank" rel="noopener"
-         data-name="汐れいら" data-rome="Ushio Reira"
-         data-img="https://i.scdn.co/image/ab67616100005174b4491721bbd81f7bef5adc63"
-         data-desc="いま特にハマっているシンガーソングライター。日常のひとコマを掬い取る歌詞と、伸びやかで芯のある歌声が持ち味。THE FIRST TAKE でも注目を集めた。代表曲は「味噌汁とバター」「センチメンタル・キス」。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174b4491721bbd81f7bef5adc63" alt="汐れいら" loading="lazy"></div>
-        <div class="meta"><b>汐れいら</b><span>直近の推し / SSW</span></div>
+      <a class="artist-card" href="https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5" target="_blank" rel="noopener"
+         data-artist="rhcp">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5ebc33cc15260b767ddec982ce8" alt="Red Hot Chili Peppers" loading="lazy"></div>
+        <div class="meta"><b>Red Hot Chili Peppers</b><span>fav2（洋楽） ・ 12曲</span></div>
       </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE" target="_blank" rel="noopener"
-         data-name="Creepy Nuts" data-rome="Creepy Nuts"
-         data-img="https://i.scdn.co/image/ab6761610000517471c03bb9c1fe71f40a5fe1dc"
-         data-desc="ラッパー R-指定 と DJ松永 による2人組。緻密なワードプレイと圧倒的なスキルで日本語ラップを牽引。「Bling-Bang-Bang-Born」「オトノケ」で世界的ヒットを記録した。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000517471c03bb9c1fe71f40a5fe1dc" alt="Creepy Nuts" loading="lazy"></div>
-        <div class="meta"><b>Creepy Nuts</b><span>日本語ラップ</span></div>
+      <a class="artist-card" href="https://open.spotify.com/artist/0hSFeqPehe7FtCNWuQ6Bsy" target="_blank" rel="noopener"
+         data-artist="bump">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb14784e52826dcdaa6358ecd8" alt="BUMP OF CHICKEN" loading="lazy"></div>
+        <div class="meta"><b>BUMP OF CHICKEN</b><span>fav（邦楽） ・ 11曲</span></div>
       </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/1EowJ1WwkMzkCkRomFhui7" target="_blank" rel="noopener"
-         data-name="RADWIMPS" data-rome="RADWIMPS"
-         data-img="https://i.scdn.co/image/ab67616100005174f7374b42bee7c71b9649ac83"
-         data-desc="文学的で内省的な歌詞と、ジャンルを跨ぐ変幻自在のサウンドが武器のバンド。映画『君の名は。』『天気の子』の劇伴でも広く知られる。野田洋次郎のボーカルが象徴的。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174f7374b42bee7c71b9649ac83" alt="RADWIMPS" loading="lazy"></div>
-        <div class="meta"><b>RADWIMPS</b><span>邦ロック</span></div>
+      <a class="artist-card" href="https://open.spotify.com/artist/2QsynagSdAqZj3U9HgDzjD" target="_blank" rel="noopener"
+         data-artist="bobmarley">
+        <div class="ph"><img src="https://i.scdn.co/image/357fe6ef3655b1b33855e33546e3c174a38a1a36" alt="Bob Marley &amp; The Wailers" loading="lazy"></div>
+        <div class="meta"><b>Bob Marley &amp; The Wailers</b><span>fav2（洋楽） ・ 9曲</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/7unNuvk3OEqGmegHTaxRA9" target="_blank" rel="noopener"
+         data-artist="judyandmary">
+        <div class="ph"><img src="https://i.scdn.co/image/ab67616d0000b273cf8805ce8411879bc7673fb6" alt="JUDY AND MARY" loading="lazy"></div>
+        <div class="meta"><b>JUDY AND MARY</b><span>fav（邦楽） ・ 9曲</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/0GtBUVp1cWdIUKwm2GHTHc" target="_blank" rel="noopener"
+         data-artist="chatmonchy">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb5ae576fde46279ab0d3cfaa3" alt="チャットモンチー" loading="lazy"></div>
+        <div class="meta"><b>チャットモンチー</b><span>fav（邦楽） ・ 9曲</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/3cbd5GWGOknxmFAe77MDbk" target="_blank" rel="noopener"
+         data-artist="ellegarden">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb299e65296cc1d467bbee678d" alt="ELLEGARDEN" loading="lazy"></div>
+        <div class="meta"><b>ELLEGARDEN</b><span>fav（邦楽） ・ 8曲</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY" target="_blank" rel="noopener"
+         data-artist="greenday">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb6ff0cd5ef2ecf733804984bb" alt="Green Day" loading="lazy"></div>
+        <div class="meta"><b>Green Day</b><span>fav2（洋楽） ・ 8曲</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/5ydDSP9qSxEOlHWnpbblFB" target="_blank" rel="noopener"
+         data-artist="sambomaster">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb756dc22354913b0eb25e2d62" alt="サンボマスター" loading="lazy"></div>
+        <div class="meta"><b>サンボマスター</b><span>fav（邦楽） ・ 8曲</span></div>
+      </a>
+      <a class="artist-card" href="https://open.spotify.com/artist/5kjGRHClVacSyllOUqU1S0" target="_blank" rel="noopener"
+         data-artist="spitz">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb14d0c0355c57727a30e120d4" alt="スピッツ" loading="lazy"></div>
+        <div class="meta"><b>スピッツ</b><span>fav（邦楽） ・ 8曲</span></div>
       </a>
       <a class="artist-card" href="https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4" target="_blank" rel="noopener"
-         data-name="Oasis" data-rome="United Kingdom"
-         data-img="https://i.scdn.co/image/ab67616100005174b4ddbc39706ef0f2ae0f7c9b"
-         data-desc="90年代ブリットポップを代表するマンチェスターのバンド。ギャラガー兄弟の楽曲は世代を超えて愛される。2025年に電撃再結成し「Live '25」ツアーを実施。代表曲は「Don't Look Back In Anger」「Live Forever」。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174b4ddbc39706ef0f2ae0f7c9b" alt="Oasis" loading="lazy"></div>
-        <div class="meta"><b>Oasis</b><span>UK / いちばんの洋楽推し</span></div>
-      </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V" target="_blank" rel="noopener"
-         data-name="The Strokes" data-rome="New York, USA"
-         data-img="https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9"
-         data-desc="2000年代のロックンロール・リバイバルを象徴するニューヨークのバンド。ざらついたギターとクールなボーカルが都会的。代表曲は「Last Nite」「Reptilia」「You Only Live Once」。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9" alt="The Strokes" loading="lazy"></div>
-        <div class="meta"><b>The Strokes</b><span>US オルタナ</span></div>
-      </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/5Vo1hnCRmCM6M4thZCInCj" target="_blank" rel="noopener"
-         data-name="Official髭男dism" data-rome="Higedan"
-         data-img="https://i.scdn.co/image/ab67616100005174a603edbfe14a6bced859d7e1"
-         data-desc="卓越したメロディセンスと藤原聡のハイトーンボーカルで日本のポップシーンを席巻するピアノPOPロックバンド。代表曲は「Pretender」「I LOVE...」「Subtitle」「ミックスナッツ」。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174a603edbfe14a6bced859d7e1" alt="Official髭男dism" loading="lazy"></div>
-        <div class="meta"><b>Official髭男dism</b><span>J-POP / ピアノロック</span></div>
+         data-artist="oasis">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5ebb4ddbc39706ef0f2ae0f7c9b" alt="Oasis" loading="lazy"></div>
+        <div class="meta"><b>Oasis</b><span>fav2（洋楽） ・ 7曲</span></div>
       </a>
       <a class="artist-card" href="https://open.spotify.com/artist/2IUl3m1H1EQ7QfNbNWvgru" target="_blank" rel="noopener"
-         data-name="Vaundy" data-rome="Vaundy"
-         data-img="https://i.scdn.co/image/ab67616100005174b718d2d3988005d3a72f22c9"
-         data-desc="作詞作曲からアートワークまで自ら手掛けるマルチクリエイター。ロック、ファンク、バラードを軽やかに横断する。代表曲は「怪獣の花唄」「napori」「花占い」「踊り子」。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab67616100005174b718d2d3988005d3a72f22c9" alt="Vaundy" loading="lazy"></div>
-        <div class="meta"><b>Vaundy</b><span>邦ロック / SSW</span></div>
+         data-artist="vaundy">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5ebb718d2d3988005d3a72f22c9" alt="Vaundy" loading="lazy"></div>
+        <div class="meta"><b>Vaundy</b><span>fav（邦楽） ・ 7曲</span></div>
       </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/6wxfx1yhyqjCPYwwxJktR2" target="_blank" rel="noopener"
-         data-name="King Gnu" data-rome="King Gnu"
-         data-img="https://i.scdn.co/image/ab676161000051744ec795dffef81475326da642"
-         data-desc="混沌と美メロを行き来する常田大希率いる4人組ミクスチャーバンド。ハイトーンと低音の二枚看板ボーカルが特徴。代表曲は「白日」「一途」、そしてお気に入りの一曲『雨燦々』。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab676161000051744ec795dffef81475326da642" alt="King Gnu" loading="lazy"></div>
-        <div class="meta"><b>King Gnu</b><span>邦ロック / ミクスチャー</span></div>
+      <a class="artist-card" href="https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE" target="_blank" rel="noopener"
+         data-artist="creepynuts">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb71c03bb9c1fe71f40a5fe1dc" alt="Creepy Nuts" loading="lazy"></div>
+        <div class="meta"><b>Creepy Nuts</b><span>fav（邦楽） ・ 6曲</span></div>
       </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt" target="_blank" rel="noopener"
-         data-name="ASIAN KUNG-FU GENERATION" data-rome="Ajikan"
-         data-img="https://i.scdn.co/image/ab676161000051747640113b83bd03884a0bb258"
-         data-desc="日本のギターロックを象徴する4人組。疾走感あるサウンドと後藤正文の飾らない歌声が世代を超えて支持される。代表曲は「リライト」「ソラニン」「遥か彼方」「転がる岩、君に朝が降る」。">
-        <div class="ph"><img src="https://i.scdn.co/image/ab676161000051747640113b83bd03884a0bb258" alt="ASIAN KUNG-FU GENERATION" loading="lazy"></div>
-        <div class="meta"><b>ASIAN KUNG-FU GENERATION</b><span>邦ロック</span></div>
-      </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/1lYT0A0LV5DUfxr6doRP3d" target="_blank" rel="noopener"
-         data-name="The Stone Roses" data-rome="Manchester, UK"
-         data-img="https://i.scdn.co/image/b0854d19e48d0f2c8e3c0cc83f04813600529a0b"
-         data-desc="ダンスビートとギターロックを融合させ、マッドチェスター・ムーブメントを象徴したマンチェスターのバンド。UKロック史に残る1stアルバムで知られる。代表曲は「I Wanna Be Adored」「Waterfall」「I Am the Resurrection」。">
-        <div class="ph"><img src="https://i.scdn.co/image/b0854d19e48d0f2c8e3c0cc83f04813600529a0b" alt="The Stone Roses" loading="lazy"></div>
-        <div class="meta"><b>The Stone Roses</b><span>UK / マッドチェスター</span></div>
-      </a>
-      <a class="artist-card" href="https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh" target="_blank" rel="noopener"
-         data-name="Nirvana" data-rome="Seattle, USA"
-         data-img="https://i.scdn.co/image/42ae0f180f16e2f21c1f2212717fc436f5b95451"
-         data-desc="90年代グランジを世界に知らしめた伝説的バンド。カート・コバーンの生々しいギターサウンドは、いまも音作りの研究対象として掘り下げられる。代表曲は「Smells Like Teen Spirit」「Come as You Are」「Heart-Shaped Box」。">
-        <div class="ph"><img src="https://i.scdn.co/image/42ae0f180f16e2f21c1f2212717fc436f5b95451" alt="Nirvana" loading="lazy"></div>
-        <div class="meta"><b>Nirvana</b><span>US / グランジ</span></div>
-      </a>
-      <a class="artist-card" href="https://open.spotify.com/playlist/1tx56U5W3tLNw8deOdznQw" target="_blank" rel="noopener"
-         style="background:linear-gradient(135deg,rgba(29,185,84,.16),rgba(255,59,92,.08))">
-        <div class="ph" style="display:flex;align-items:center;justify-content:center">
-          <span style="font-family:var(--serif);font-size:38px;line-height:1;text-align:center;padding:16px">♪<br><span style="font-size:14px;color:var(--ink-dim)">プレイリストへ</span></span>
-        </div>
-        <div class="meta"><b>and more…</b><span>雑食ミックスを聴く</span></div>
+      <a class="artist-card" href="https://open.spotify.com/artist/1qma7XhwZotCAucL7NHVLY" target="_blank" rel="noopener"
+         data-artist="mrchildren">
+        <div class="ph"><img src="https://i.scdn.co/image/ab6761610000e5eb41c848bbc09aaee85e93675d" alt="Mr.Children" loading="lazy"></div>
+        <div class="meta"><b>Mr.Children</b><span>fav（邦楽） ・ 6曲</span></div>
       </a>
     </div>
   </div>
 </section>
 
 <!-- ================= Spotify プレイリスト ================= -->
-<section class="alt">
+<section>
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-kicker">Listen Now</div>
-      <h2>この趣味を、1本のプレイリストに</h2>
-      <p>中西さんの音楽の趣味を映して作った<b>「雑食ミックス」</b>。邦ロックを軸に、J-POP・日本語ラップ・UK/USギターロックを行き来する30曲です。</p>
-    </div>
-    <div class="embed-wrap">
-      <iframe src="https://open.spotify.com/embed/playlist/1tx56U5W3tLNw8deOdznQw?utm_source=generator&theme=0"
-              height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy" title="雑食ミックス プレイリスト"></iframe>
-      <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1KNg2uX9Ngk?utm_source=generator&theme=0"
-              height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy" title="Oasis Live '25 Tour Official Setlist"></iframe>
-    </div>
-    <p class="embed-note">
-      左：楓が作成した中西さん用プレイリスト「雑食ミックス」（Spotifyアカウントに保存済み・プライベート）。
-      右：Oasis 再結成 <b>Live '25</b> 公式セットリスト。&nbsp;
-      <a href="https://open.spotify.com/playlist/1tx56U5W3tLNw8deOdznQw" target="_blank" rel="noopener" style="color:#1DB954">→ 雑食ミックスをSpotifyで開く</a>
-    </p>
-
-    <div class="sec-head" style="margin-top:64px;margin-bottom:28px">
-      <div class="sec-kicker">Your Own Crates</div>
-      <h2>中西さん自身がつくった棚から</h2>
-      <p>Spotifyアカウントにある、中西さんご本人のお気に入りプレイリスト <b>「fav」</b> と <b>「fav2」</b>。ふだん繰り返し聴いている本命の2本です。</p>
+      <h2>棚そのものを聴く</h2>
+      <p>このページのすべての元データ。中西さんご本人がSpotifyで作った<b>「fav」（邦楽）</b>と<b>「fav2」（洋楽）</b>です。</p>
     </div>
     <div class="embed-wrap">
       <iframe src="https://open.spotify.com/embed/playlist/16qW9BrAvcGavQW64bNGBE?utm_source=generator&theme=0"
               height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy" title="fav（中西さん作成のプレイリスト）"></iframe>
+              loading="lazy" title="fav ─ 邦楽のお気に入りプレイリスト"></iframe>
       <iframe src="https://open.spotify.com/embed/playlist/5OnUbHZC7Ly6tyqsnMJYcg?utm_source=generator&theme=0"
               height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy" title="fav2（中西さん作成のプレイリスト）"></iframe>
+              loading="lazy" title="fav2 ─ 洋楽のお気に入りプレイリスト"></iframe>
     </div>
     <p class="embed-note">
-      いずれも中西さんご本人が作成・保存しているプレイリスト。&nbsp;
+      左：<b style="color:var(--ink)">fav</b>（邦楽）／右：<b style="color:var(--ink)">fav2</b>（洋楽）。&nbsp;
       <a href="https://open.spotify.com/playlist/16qW9BrAvcGavQW64bNGBE" target="_blank" rel="noopener" style="color:#1DB954">→ fav</a> ／
       <a href="https://open.spotify.com/playlist/5OnUbHZC7Ly6tyqsnMJYcg" target="_blank" rel="noopener" style="color:#1DB954">→ fav2</a> をSpotifyで開く
+    </p>
+    <p class="embed-note" style="border-left:2px solid var(--accent);padding-left:14px;margin-top:22px">
+      <b style="color:var(--ink)">集計の範囲について</b><br>
+      このページの曲数は、<b style="color:var(--ink)">fav 全295曲・fav2 全187曲</b>を集計したものです（中西さんご本人に書き出していただいたプレイリストのCSVが元データ）。同じ曲のリマスター違い・別バージョンは1曲にまとめているため、集計上の曲数は fav 284曲・fav2 185曲になります。複数アーティスト名義の曲は、参加している全員にそれぞれ数えています。
     </p>
   </div>
 </section>
@@ -818,7 +1009,7 @@
     <div class="fmark">♪ Liner Notes</div>
     <p>
       中西 恒貴 の音楽の趣味まとめ<br>
-      出典：Spotifyの再生履歴（よく聴くアーティスト・曲・ポッドキャスト）を中心に、YouTube視聴履歴もあわせて分析。<br>
+      出典：中西さんご本人のSpotifyプレイリスト<b>「fav」（邦楽・295曲）</b>・<b>「fav2」（洋楽・187曲）</b>の全収録曲を集計（219組）。<br>
       アーティスト画像・試聴・プレイリストは <a href="https://open.spotify.com" target="_blank" rel="noopener">Spotify</a> 公式データ／埋め込みを使用。
     </p>
     <p style="margin-top:18px;opacity:.7">Compiled by 楓 &nbsp;·&nbsp; 2026</p>
@@ -836,6 +1027,7 @@
       <p class="rome" id="modalRome"></p>
       <h3 id="modalName"></h3>
       <p id="modalDesc"></p>
+      <div class="modal-songs" id="modalSongs" hidden></div>
       <a class="sp-btn" id="modalLink" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32c-.22.36-.68.47-1.03.25-2.82-1.72-6.36-2.11-10.54-1.16-.4.1-.8-.16-.9-.56-.1-.4.16-.8.56-.9 4.56-1.04 8.48-.6 11.64 1.35.36.22.47.68.27 1.02zm1.47-3.27c-.27.44-.85.58-1.29.31-3.23-1.98-8.15-2.56-11.96-1.4-.5.15-1.03-.13-1.18-.62-.15-.5.13-1.02.62-1.18 4.36-1.32 9.78-.68 13.5 1.6.44.27.58.85.31 1.29zm.13-3.4C15.06 8.35 8.7 8.13 5.03 9.25c-.6.18-1.23-.16-1.4-.76-.18-.6.16-1.23.76-1.4 4.2-1.28 11.24-1.03 15.66 1.6.53.32.7 1.01.39 1.55-.32.53-1.02.7-1.55.38z"/></svg>
         <span id="modalLinkLabel">Spotifyでアーティストページを開く</span>
@@ -852,82 +1044,225 @@
   // img と exact:true を持つものは Spotify 公式画像＆アーティストページ直リンク。
   // それ以外は情報＋Spotify検索リンクの軽量モーダル。
   var ARTISTS = {
-    // 邦ロック
-    sakanaction:{name:"サカナクション",rome:"sakanaction",exact:true,url:"https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq",img:"https://i.scdn.co/image/ab6761610000517436e29d377fba222834f257cd",genre:"邦ロック / エレクトロ",desc:"バンドサウンドとエレクトロニカを高次元で融合させた孤高の存在。山口一郎の詩世界と踊れるビートが同居する。代表曲は「新宝島」「アイデンティティ」「夜の踊り子」「ミュージック」。"},
-    hitsujibungaku:{name:"羊文学",rome:"Hitsujibungaku",exact:true,url:"https://open.spotify.com/artist/6S8w5rLsEwjN21jQeRES0n",img:"https://i.scdn.co/image/ab676161000051741833f4534ed3dd88d9e12c8b",genre:"邦ロック / シューゲイザー",desc:"轟音のギターと透明なメロディが同居する3ピース。塩塚モエカのささやくようなボーカルが際立つ。代表曲は「more than words」「光るとき」「あいまいでいいよ」。"},
-    radwimps:{name:"RADWIMPS",rome:"RADWIMPS",exact:true,url:"https://open.spotify.com/artist/1EowJ1WwkMzkCkRomFhui7",img:"https://i.scdn.co/image/ab67616100005174f7374b42bee7c71b9649ac83",genre:"邦ロック",desc:"文学的で内省的な歌詞と、ジャンルを跨ぐ変幻自在のサウンドが武器のバンド。映画『君の名は。』『天気の子』の劇伴でも知られる。野田洋次郎のボーカルが象徴的。"},
-    ajikan:{name:"ASIAN KUNG-FU GENERATION",rome:"Ajikan",exact:true,url:"https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt",img:"https://i.scdn.co/image/ab676161000051747640113b83bd03884a0bb258",genre:"邦ロック",desc:"日本のギターロックを象徴する4人組。疾走感あるサウンドと後藤正文の飾らない歌声が世代を超えて支持される。代表曲は「リライト」「ソラニン」「遥か彼方」。"},
-    humpback:{name:"Hump Back",rome:"Hump Back",genre:"邦ロック / ガールズバンド",desc:"大阪発の3ピース・ガールズバンド。まっすぐで青春感のあるメロディと、林萌々子の伸びやかな歌声が持ち味。代表曲は「拝啓、少年よ」「番狂わせ」「LILLY」。"},
-    kanaboon:{name:"KANA-BOON",rome:"KANA-BOON",genre:"邦ロック",desc:"疾走感あるギターロックとキャッチーなメロディで知られる4人組。代表曲は「シルエット」（NARUTO主題歌）「ないものねだり」「フルドライブ」。"},
-    frederic:{name:"フレデリック",rome:"frederic",genre:"邦ロック / ダンスロック",desc:"中毒性のあるリズムと反復するフレーズが特徴のダンスロックバンド。代表曲は「オドループ」「オンリーワンダー」「かなしいうれしい」。"},
-    vaundy:{name:"Vaundy",rome:"Vaundy",exact:true,url:"https://open.spotify.com/artist/2IUl3m1H1EQ7QfNbNWvgru",img:"https://i.scdn.co/image/ab67616100005174b718d2d3988005d3a72f22c9",genre:"邦ロック / SSW",desc:"作詞作曲からアートワークまで自ら手掛けるマルチクリエイター。ロック、ファンク、バラードを軽やかに横断する。代表曲は「怪獣の花唄」「napori」「花占い」「踊り子」。"},
-    backnumber:{name:"back number",rome:"back number",genre:"邦ロック / ラブソング",desc:"切ないラブソングの名手として絶大な人気を誇る3人組。清水依与吏の歌詞が響く。代表曲は「クリスマスソング」「高嶺の花子さん」「水平線」。"},
-    mrchildren:{name:"Mr.Children",rome:"Mr.Children",genre:"邦ロック / 国民的バンド",desc:"日本を代表する国民的ロックバンド。桜井和寿の紡ぐ歌詞世界と普遍的なメロディが世代を超えて愛される。代表曲は「innocent world」「Tomorrow never knows」「Sign」。"},
-    tacica:{name:"tacica",rome:"tacica",genre:"邦ロック",desc:"硬質なバンドサウンドと文学的で叙情的な歌詞が魅力の3ピース。アニメ主題歌でも知られる。代表曲は「HALO」（宇宙兄弟）「LEO」（ハイキュー!!）。"},
-    does:{name:"DOES",rome:"DOES",genre:"邦ロック / ロックンロール",desc:"骨太で疾走感あるロックンロールを鳴らす3人組。アニメ主題歌でも知られる。代表曲は「曇天」「修羅」（ともに『銀魂』主題歌）「バクチ・ダンサー」。"},
-    larcenciel:{name:"L'Arc-en-Ciel",rome:"L'Arc-en-Ciel",genre:"邦ロック / ヴィジュアル系",desc:"日本のロックシーンを牽引してきたバンド。hyde の歌声と多彩な楽曲で幅広い支持を得る。代表曲は「READY STEADY GO」「HONEY」「花葬」「Driver's High」。"},
-    ginnanboyz:{name:"銀杏BOYZ",rome:"Ginnan Boyz",genre:"邦ロック / オルタナ",desc:"峯田和伸率いる、衝動と純情が同居するロックバンド。剥き出しの言葉と轟音が胸を打つ。代表曲は「BABY BABY」「駆け抜けて性春」「愛してるって言ってるだろ」。"},
-    // J-POP / SSW
-    higedan:{name:"Official髭男dism",rome:"Higedan",exact:true,url:"https://open.spotify.com/artist/5Vo1hnCRmCM6M4thZCInCj",img:"https://i.scdn.co/image/ab67616100005174a603edbfe14a6bced859d7e1",genre:"J-POP / ピアノロック",desc:"卓越したメロディセンスと藤原聡のハイトーンボーカルで日本のポップシーンを席巻するピアノPOPロックバンド。代表曲は「Pretender」「I LOVE...」「Subtitle」「ミックスナッツ」。"},
-    ryokushaka:{name:"緑黄色社会",rome:"Ryokushaka",genre:"J-POP / ポップロック",desc:"長屋晴子のパワフルで表情豊かな歌声を軸にしたポップロックバンド。通称「リョクシャカ」。代表曲は「Mela!」「キャラクター」「サボテン」「花になって」。"},
-    tomoo:{name:"TOMOO",rome:"TOMOO",genre:"J-POP / SSW",desc:"卓越したソングライティングと表現力で近年注目を集めるシンガーソングライター。代表曲は「Ginger」「誰も」「Super Ball」。"},
-    yoasobi:{name:"YOASOBI",rome:"YOASOBI",genre:"J-POP",desc:"小説を音楽にするコンセプトのユニット。Ayaseの楽曲とikuraの歌声で世界的人気。代表曲は「夜に駆ける」「アイドル」「群青」「怪物」。"},
-    ushioreira:{name:"汐れいら",rome:"Ushio Reira",exact:true,url:"https://open.spotify.com/artist/6GVsZoMbMt0jmqwcvz1a1F",img:"https://i.scdn.co/image/ab67616100005174b4491721bbd81f7bef5adc63",genre:"直近の推し / SSW",desc:"いま特にハマっているシンガーソングライター。日常のひとコマを掬い取る歌詞と、伸びやかで芯のある歌声が持ち味。THE FIRST TAKE でも注目を集めた。代表曲は「味噌汁とバター」「センチメンタル・キス」。"},
-    superfly:{name:"Superfly",rome:"Superfly",genre:"J-POP / ロック",desc:"越智志帆の圧倒的な歌唱力を誇るロックプロジェクト。ソウルフルな歌声が魅力。代表曲は「愛をこめて花束を」「Beautiful」「タマシイレボリューション」。"},
-    nanawoakari:{name:"ナナヲアカリ",rome:"Nanawoakari",genre:"J-POP / ネット発",desc:"ネットシーン発の個性派シンガー。キャッチーでポップな楽曲が持ち味。代表曲は「チューリングラブ」「ハッピーになりたい」「ワンルームシュガーライフ」。"},
-    ikutalila:{name:"幾田りら",rome:"Ikuta Lilas",genre:"J-POP / SSW",desc:"YOASOBIのボーカルikuraのソロ名義。透明感のある歌声と繊細なメロディが魅力。代表曲は「レオ」「Answer」「スパークル」。"},
-    uru:{name:"Uru",rome:"Uru",genre:"J-POP / SSW",desc:"素顔を明かさず歌声で魅せるシンガーソングライター。カバー動画でも人気を博した。代表曲は「プロローグ」「振り子」「あなたがいることで」。"},
-    // 日本語ラップ
-    creepynuts:{name:"Creepy Nuts",rome:"Creepy Nuts",exact:true,url:"https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE",img:"https://i.scdn.co/image/ab6761610000517471c03bb9c1fe71f40a5fe1dc",genre:"日本語ラップ",desc:"ラッパー R-指定 と DJ松永 による2人組。緻密なワードプレイと圧倒的なスキルで日本語ラップを牽引。「Bling-Bang-Bang-Born」「オトノケ」で世界的ヒットを記録した。"},
-    awich:{name:"Awich",rome:"Awich",genre:"日本語ラップ",desc:"沖縄出身、日本語ラップシーンの女王と称される女性ラッパー。凄みのあるフロウとメッセージ性が武器。代表曲は「洗脳」「GILA GILA」「口に出して」。"},
-    chanmina:{name:"CHANMINA",rome:"Chanmina",genre:"日本語ラップ / ポップ",desc:"日韓のルーツを持つラッパー／シンガー。鋭いリリックと歌唱を自在に行き来する。代表曲は「Bijin」「ハレンチ」「Never Grow Up」。"},
-    suglawd:{name:"SugLawd Familiar",rome:"SugLawd Familiar",genre:"日本語ラップ",desc:"沖縄発のヒップホップクルー。フリースタイルバトルシーンでも存在感を放つ。"},
-    umedacypher:{name:"umedacypher",rome:"Umeda Cypher",genre:"日本語ラップ / バトル",desc:"大阪・梅田発のフリースタイルバトル／ラップ集団。関西のバトルシーンを象徴する存在。"},
-    // レゲエ / ミクスチャー
-    hannya:{name:"HANNYA",rome:"Hannya",genre:"レゲエ / ダンスホール",desc:"日本のレゲエ／ダンスホールシーンを支えるベテランのディージェイ。骨太なマイクさばきが持ち味。"},
-    chehon:{name:"CHEHON",rome:"Chehon",genre:"レゲエ",desc:"伸びやかな歌声と説得力のあるリリックで人気の実力派レゲエディージェイ。代表曲は「輝きながら…」。"},
-    shonannokaze:{name:"湘南乃風",rome:"Shonan no Kaze",genre:"レゲエ",desc:"日本のレゲエを大衆に広めた4人組。熱いメッセージと歌い上げが特徴。代表曲は「純恋歌」「睡蓮花」「Rider」。"},
-    hormone:{name:"マキシマム ザ ホルモン",rome:"Maximum the Hormone",genre:"ミクスチャー / ラウド",desc:"爆音とユーモア、緩急が同居するミクスチャーバンド。強烈な個性で唯一無二。代表曲は「恋のメガラバ」「What's up, people?!」「ぶっ生き返す!!」。"},
-    orangerange:{name:"ORANGE RANGE",rome:"Orange Range",genre:"ミクスチャー",desc:"沖縄発、ジャンル横断のミクスチャーバンド。ポップからロックまで自在。代表曲は「花」「上海ハニー」「以心電信」「ロコローション」。"},
-    // シティポップ / 昭和歌謡
-    takeuchimariya:{name:"竹内まりや",rome:"Mariya Takeuchi",genre:"シティポップ / 歌謡",desc:"シティポップ〜歌謡の名匠。近年は「プラスティック・ラブ」が世界的に再評価された。代表曲は「駅」「元気を出して」「純愛ラプソディ」。"},
-    shiinaringo:{name:"椎名林檎",rome:"Sheena Ringo",genre:"オルタナ / 歌謡",desc:"妖艶で唯一無二の世界観を持つアーティスト。東京事変でも活躍。代表曲は「本能」「丸ノ内サディスティック」「歌舞伎町の女王」。"},
-    komeicomeiclub:{name:"米米CLUB",rome:"Kome Kome Club",genre:"歌謡 / エンタメ",desc:"石井竜也（カールスモーキー石井）率いる、エンタメ性抜群のバンド。代表曲は「浪漫飛行」「君がいるだけで」「Shake Hip!」。"},
-    otsukaai:{name:"大塚愛",rome:"Ai Otsuka",genre:"J-POP / SSW",desc:"2000年代を代表するシンガーソングライター。キュートでポップな楽曲が魅力。代表曲は「さくらんぼ」「プラネタリウム」「金魚花火」。"},
-    // アイドル / アニメ・ボカロ
-    fruitszipper:{name:"FRUITS ZIPPER",rome:"Fruits Zipper",genre:"アイドル",desc:"「わたしの一番かわいいところ」で一躍話題になった新世代アイドルグループ。原宿系のカラフルな世界観。"},
-    cutiestreet:{name:"CUTIE STREET",rome:"Cutie Street",genre:"アイドル",desc:"「かわいいだけじゃだめですか?」（通称かわだめ）で人気急上昇の新鋭アイドルグループ。"},
-    niziu:{name:"NiziU",rome:"NiziU",genre:"アイドル / K-POP系",desc:"日韓グローバルオーディション発の9人組ガールズグループ。キレのあるダンスが魅力。代表曲は「Make you happy」「Chopstick」「Take a picture」。"},
-    mygo:{name:"MyGO!!!!!",rome:"MyGO!!!!!",genre:"アニメ / リアルバンド",desc:"メディアミックス『BanG Dream!』発のリアルバンド。感情を抉る楽曲とライブ表現で高評価。代表曲は「春日影」「壱雫空」。"},
-    ado:{name:"Ado",rome:"Ado",genre:"歌い手 / J-POP",desc:"圧倒的な表現力と声量を誇る歌い手。素顔を明かさず活動する。代表曲は「うっせぇわ」「新時代」「唱」「踊」。"},
-    // UK
-    stoneroses:{name:"The Stone Roses",rome:"Manchester, UK",exact:true,url:"https://open.spotify.com/artist/1lYT0A0LV5DUfxr6doRP3d",img:"https://i.scdn.co/image/b0854d19e48d0f2c8e3c0cc83f04813600529a0b",genre:"UK / マッドチェスター",desc:"ダンスビートとギターロックを融合させ、マッドチェスター・ムーブメントを象徴したマンチェスターのバンド。代表曲は「I Wanna Be Adored」「Waterfall」「I Am the Resurrection」。"},
-    theview:{name:"The View",rome:"Scotland, UK",genre:"UK / インディーロック",desc:"スコットランド出身のインディーロックバンド。若々しく疾走感のあるギターロックが持ち味。代表曲は「Same Jeans」「Wasted Little DJ's」。"},
-    thebeatles:{name:"The Beatles",rome:"Liverpool, UK",genre:"UK / ロックの原点",desc:"言わずと知れた20世紀最大のバンド。ポピュラー音楽のすべてを塗り替えた。代表曲は「Hey Jude」「Let It Be」「Yesterday」「Come Together」。"},
-    ledzeppelin:{name:"Led Zeppelin",rome:"United Kingdom",genre:"ハードロック",desc:"ハードロック／ヘヴィロックの礎を築いた伝説的バンド。重厚なリフと幻想的な世界観。代表曲は「Stairway to Heaven」「Whole Lotta Love」「Kashmir」。"},
-    radiohead:{name:"Radiohead",rome:"Oxford, UK",genre:"UK / オルタナ",desc:"実験精神で音楽の可能性を拡張し続けるUKバンド。憂いと革新を併せ持つ。代表曲は「Creep」「Karma Police」「No Surprises」「Paranoid Android」。"},
-    queen:{name:"Queen",rome:"United Kingdom",genre:"ロック / 不朽の名盤",desc:"フレディ・マーキュリー擁する不朽のロックバンド。壮大でドラマティックな楽曲群。代表曲は「Bohemian Rhapsody」「Don't Stop Me Now」「We Will Rock You」。"},
-    // US
-    thestrokes:{name:"The Strokes",rome:"New York, USA",exact:true,url:"https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V",img:"https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9",genre:"US オルタナ",desc:"2000年代のロックンロール・リバイバルを象徴するニューヨークのバンド。ざらついたギターとクールなボーカルが都会的。代表曲は「Last Nite」「Reptilia」「You Only Live Once」。"},
-    nirvana:{name:"Nirvana",rome:"Seattle, USA",exact:true,url:"https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh",img:"https://i.scdn.co/image/42ae0f180f16e2f21c1f2212717fc436f5b95451",genre:"US / グランジ",desc:"90年代グランジを世界に知らしめた伝説的バンド。カート・コバーンの生々しいギターサウンドが象徴的。代表曲は「Smells Like Teen Spirit」「Come as You Are」「Heart-Shaped Box」。"},
-    rhcp:{name:"Red Hot Chili Peppers",rome:"California, USA",genre:"US / ファンクロック",desc:"ファンクとロックを融合させたカリフォルニアの怪物バンド。躍動するベースが特徴。代表曲は「Californication」「Can't Stop」「Under the Bridge」「Snow」。"},
-    theoffspring:{name:"The Offspring",rome:"California, USA",genre:"US / メロディックパンク",desc:"90年代のメロディックパンクを代表するバンド。キャッチーで疾走感のある楽曲。代表曲は「Self Esteem」「The Kids Aren't Alright」「Pretty Fly (for a White Guy)」。"},
-    ratm:{name:"Rage Against The Machine",rome:"Los Angeles, USA",genre:"ミクスチャー / ラップメタル",desc:"ラップメタル／ミクスチャーの先駆にして頂点。強烈な反骨のメッセージを鳴らす。代表曲は「Killing in the Name」「Bulls on Parade」「Guerrilla Radio」。"},
-    mcr:{name:"My Chemical Romance",rome:"New Jersey, USA",genre:"US / エモ・オルタナ",desc:"エモ／オルタナを象徴するバンド。ドラマティックでシアトリカルな世界観。代表曲は「Welcome to the Black Parade」「Helena」「I'm Not Okay」。"},
-    // ハードロック / メタル
-    slayer:{name:"Slayer",rome:"California, USA",genre:"スラッシュメタル",desc:"スラッシュメタル四天王のひとつ。攻撃的で容赦のないサウンドが信条。代表曲は「Raining Blood」「Angel of Death」「South of Heaven」。"},
-    metallica:{name:"Metallica",rome:"USA",genre:"メタル",desc:"世界最大のヘヴィメタルバンド。重厚なリフと幅広い楽曲性で頂点に君臨する。代表曲は「Enter Sandman」「Master of Puppets」「Nothing Else Matters」。"},
-    gunsnroses:{name:"Guns N' Roses",rome:"Los Angeles, USA",genre:"ハードロック",desc:"80〜90年代を象徴するハードロックバンド。危うさと美メロが同居する。代表曲は「Sweet Child O' Mine」「November Rain」「Welcome to the Jungle」。"},
-    extreme:{name:"Extreme",rome:"Boston, USA",genre:"ハードロック",desc:"高い演奏力とヌーノ・ベッテンコートのギターで知られるロックバンド。代表曲は「More Than Words」「Get the Funk Out」。"},
-    lynyrdskynyrd:{name:"Lynyrd Skynyrd",rome:"Florida, USA",genre:"サザンロック",desc:"サザンロックの代表格。土臭くも壮大なギターロックを鳴らす。代表曲は「Sweet Home Alabama」「Free Bird」。"},
-    cheaptrick:{name:"Cheap Trick",rome:"Illinois, USA",genre:"パワーポップ / ロック",desc:"キャッチーなメロディと骨太なロックを両立するパワーポップの名バンド。代表曲は「Surrender」「I Want You to Want Me」「Dream Police」。"},
-    vanhalen:{name:"Van Halen",rome:"California, USA",genre:"ハードロック",desc:"エディ・ヴァン・ヘイレンの革新的なギターで一時代を築いたアメリカのハードロックバンド。直近のSpotify再生で浮上。代表曲は「Jump」「Panama」「Runnin' with the Devil」。"},
-    motleycrue:{name:"Mötley Crüe",rome:"Los Angeles, USA",genre:"グラムメタル / LAメタル",desc:"80年代のLAメタル／グラムメタルを代表するバンド。享楽的で派手なサウンドが持ち味。直近のSpotify再生で浮上。代表曲は「Kickstart My Heart」「Girls, Girls, Girls」「Dr. Feelgood」。"},
-    // 現行 US ポップ
-    sabrinacarpenter:{name:"Sabrina Carpenter",rome:"USA",genre:"US ポップ",desc:"いま世界を席巻するポップスター。機知に富んだ歌詞とキャッチーな楽曲で人気爆発。代表曲は「Espresso」「Please Please Please」「Taste」。"},
-    billieeilish:{name:"Billie Eilish",rome:"Los Angeles, USA",genre:"US ポップ / オルタナ",desc:"ウィスパーボイスとダークで繊細なサウンドで一時代を築いた才媛。代表曲は「bad guy」「Happier Than Ever」「BIRDS OF A FEATHER」。"},
-    arianagrande:{name:"Ariana Grande",rome:"USA",genre:"US ポップ / R&B",desc:"圧巻の歌唱力と広い音域を誇るポップ／R&Bのディーヴァ。代表曲は「thank u, next」「7 rings」「positions」「we can't be friends」。"},
-    eminem:{name:"Eminem",rome:"Detroit, USA",genre:"ヒップホップ",desc:"ヒップホップ史上最も影響力のあるラッパーの一人。超絶技巧のラップと赤裸々なリリック。代表曲は「Lose Yourself」「Stan」「Without Me」「Rap God」。"}
+    "ajikan":{name:"ASIAN KUNG-FU GENERATION",rome:"Ajikan",genre:"邦ロック / ギターロック",url:"https://open.spotify.com/artist/0MK8l3nURwwQIjafvXoJJt",img:"https://i.scdn.co/image/ab6761610000e5eb7640113b83bd03884a0bb258",exact:true,pl:"fav",n:16,songs:["江ノ島エスカー","君という花","マーチングバンド","ムスタング (mix for 芽衣子)","アフターダーク","遥か彼方","迷子犬と雨のビート","転がる岩、君に朝が降る","ループ＆ループ","君の街まで","アンダースタンド","海岸通り","エンパシー","ソラニン","荒野を歩け","或る街の群青"],desc:"日本のギターロックを象徴する4人組。疾走感のあるアンサンブルと後藤正文の飾らない歌声。シングルだけでなくアルバム曲まで選ばれているのが特徴。"},
+    "sakanaction":{name:"サカナクション",rome:"sakanaction",genre:"邦ロック / エレクトロ",url:"https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq",img:"https://i.scdn.co/image/ab6761610000e5eb36e29d377fba222834f257cd",exact:true,pl:"fav",n:13,songs:["ナイトフィッシングイズグッド","目が明く藍色","アイデンティティ","Aoi","夜の踊り子","セントレイ","僕と花","ミュージック","アルクアラウンド","新宝島","多分、風。","なんてったって春","グッドバイ"],desc:"バンドサウンドとエレクトロニカを高い次元で融合させた5人組。山口一郎の詩世界と踊れるビートが同居する。"},
+    "rhcp":{name:"Red Hot Chili Peppers",rome:"California, USA",genre:"US / ファンクロック",url:"https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5",img:"https://i.scdn.co/image/ab6761610000e5ebc33cc15260b767ddec982ce8",exact:true,pl:"fav2",n:12,songs:["Californication","Can't Stop","By the Way","Dani California","The Adventures of Rain Dance Maggie","Snow (Hey Oh)","Give It Away","Around the World","Tell Me Baby","Parallel Universe","Look Around","Monarchy of Roses"],desc:"ファンクとロックを融合させたカリフォルニアの怪物バンド。躍動するベースが特徴。fav2 の最多収録タイ。"},
+    "bump":{name:"BUMP OF CHICKEN",rome:"Bump of Chicken",genre:"邦ロック / ギターロック",url:"https://open.spotify.com/artist/0hSFeqPehe7FtCNWuQ6Bsy",img:"https://i.scdn.co/image/ab6761610000e5eb14784e52826dcdaa6358ecd8",exact:true,pl:"fav",n:11,songs:["ギルド","ホリデイ","sailing day","オンリー ロンリー グローリー","ダイヤモンド","天体観測","車輪の唄","ダンデライオン","才悩人応援歌","fire sign","ガラスのブルース"],desc:"物語のような歌詞と、まっすぐなバンドサウンド。藤原基央の言葉選びで長く支持されるバンド。"},
+    "bobmarley":{name:"Bob Marley & The Wailers",rome:"Jamaica",genre:"レゲエ",url:"https://open.spotify.com/artist/2QsynagSdAqZj3U9HgDzjD",img:"https://i.scdn.co/image/357fe6ef3655b1b33855e33546e3c174a38a1a36",exact:true,pl:"fav2",n:9,songs:["Stir It Up - Alternate Jamaican","I Shot The Sheriff","Is This Love","Could You Be Loved","Get Up, Stand Up","Three Little Birds","Buffalo Soldier","One Love / People Get Ready","No Woman, No Cry - Live At The Lyceum, London/1975"],desc:"レゲエを世界に届けた不朽の存在。fav2 には別名義のクレジットを含めて3曲入っている。"},
+    "chatmonchy":{name:"チャットモンチー",rome:"Chatmonchy",genre:"邦ロック / ガールズバンド",url:"https://open.spotify.com/artist/0GtBUVp1cWdIUKwm2GHTHc",img:"https://i.scdn.co/image/ab6761610000e5eb5ae576fde46279ab0d3cfaa3",exact:true,pl:"fav",n:9,songs:["風吹けば恋","ここだけの話","シャングリラ","とび魚のバタフライ","ハナノユメ","8cmのピンヒール","ヒラヒラヒラク秘密ノ扉","真夜中遊園地","染まるよ"],desc:"徳島発のガールズバンド。鋭い言葉選びと軽やかな演奏で愛された。"},
+    "judyandmary":{name:"JUDY AND MARY",rome:"Judy and Mary",genre:"90sロック / ポップ",url:"https://open.spotify.com/artist/7unNuvk3OEqGmegHTaxRA9",img:"https://i.scdn.co/image/ab67616d0000b273cf8805ce8411879bc7673fb6",exact:true,pl:"fav",n:9,songs:["motto","ドキドキ","くじら12号","LOVER SOUL","そばかす","散歩道","Over Drive","ラッキープール","クラシック"],desc:"YUKIのボーカルとカラフルなポップセンスで90年代を象徴したバンド。"},
+    "ellegarden":{name:"ELLEGARDEN",rome:"Ellegarden",genre:"邦ロック / メロディックロック",url:"https://open.spotify.com/artist/3cbd5GWGOknxmFAe77MDbk",img:"https://i.scdn.co/image/ab6761610000e5eb299e65296cc1d467bbee678d",exact:true,pl:"fav",n:8,songs:["ジターバグ","スターフィッシュ","Red Hot","虹","金星","Supernova","風の日","Stereoman"],desc:"英詞と日本語詞を行き来する疾走感で、日本のメロディックロックを代表する4人組。"},
+    "greenday":{name:"Green Day",rome:"California, USA",genre:"メロディックパンク",url:"https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY",img:"https://i.scdn.co/image/ab6761610000e5eb6ff0cd5ef2ecf733804984bb",exact:true,pl:"fav2",n:8,songs:["Holiday / Boulevard of Broken Dreams","Basket Case","American Idiot","Welcome to Paradise","When I Come Around","Warning","Minority","Jesus of Suburbia"],desc:"パンクをメインストリームへ押し上げたバンド。fav2 には初期の代表曲から『American Idiot』期まで。"},
+    "sambomaster":{name:"サンボマスター",rome:"Sambomaster",genre:"ロック / ソウル",url:"https://open.spotify.com/artist/5ydDSP9qSxEOlHWnpbblFB",img:"https://i.scdn.co/image/ab6761610000e5eb756dc22354913b0eb25e2d62",exact:true,pl:"fav",n:8,songs:["世界はそれを愛と呼ぶんだぜ","できっこないを　やらなくちゃ","世界をかえさせておくれよ","ミラクルをキミとおこしたいんです","できっこないを やらなくちゃ","花束","世界はそれを愛と呼ぶんだぜ（アルバムバージョン）","輝きだして走ってく"],desc:"山口隆の魂の叫びで励ましてくる3ピース・ロックバンド。"},
+    "spitz":{name:"スピッツ",rome:"Spitz",genre:"邦ロック / ポップ",url:"https://open.spotify.com/artist/5kjGRHClVacSyllOUqU1S0",img:"https://i.scdn.co/image/ab6761610000e5eb14d0c0355c57727a30e120d4",exact:true,pl:"fav",n:8,songs:["正夢","スターゲイザー","春の歌","渚","美しい鰭","魔法のコトバ","楓","君が思い出になる前に"],desc:"草野マサムネの透明な歌声と、切なさをたたえた美しいメロディで長く愛されるバンド。"},
+    "oasis":{name:"Oasis",rome:"Manchester, UK",genre:"UK / ブリットポップ",url:"https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4",img:"https://i.scdn.co/image/ab6761610000e5ebb4ddbc39706ef0f2ae0f7c9b",exact:true,pl:"fav2",n:7,songs:["Live Forever","Stand by Me","Supersonic","Some Might Say","Rock 'N' Roll Star","Don't Look Back in Anger","Wonderwall"],desc:"90年代ブリットポップを代表するマンチェスターのバンド。ギャラガー兄弟の楽曲は世代を超えて歌い継がれる。fav2 の最多収録タイ。"},
+    "vaundy":{name:"Vaundy",rome:"Vaundy",genre:"J-POP / オルタナ",url:"https://open.spotify.com/artist/2IUl3m1H1EQ7QfNbNWvgru",img:"https://i.scdn.co/image/ab6761610000e5ebb718d2d3988005d3a72f22c9",exact:true,pl:"fav",n:7,songs:["怪獣の花唄","踊り子","東京フラッシュ","napori","不可幸力","Tokimeki","mabataki"],desc:"作詞作曲編曲からアートワークまで自分で手がけるシンガーソングライター。ロックもファンクもJ-POPも横断する。全量で見ると fav 上位の常連。"},
+    "creepynuts":{name:"Creepy Nuts",rome:"Creepy Nuts",genre:"日本語ラップ",url:"https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE",img:"https://i.scdn.co/image/ab6761610000e5eb71c03bb9c1fe71f40a5fe1dc",exact:true,pl:"fav",n:6,songs:["かつて天才だった俺たちへ","よふかしのうた","合法的トビ方ノススメ","たりないふたり","Bling-Bang-Bang-Born","二度寝 - Nidone"],desc:"ラッパー R-指定 と DJ松永 による2人組。緻密なワードプレイと圧倒的なスキルで日本語ラップを牽引する。"},
+    "mrchildren":{name:"Mr.Children",rome:"Mr.Children",genre:"邦ロック / 国民的バンド",url:"https://open.spotify.com/artist/1qma7XhwZotCAucL7NHVLY",img:"https://i.scdn.co/image/ab6761610000e5eb41c848bbc09aaee85e93675d",exact:true,pl:"fav",n:6,songs:["箒星","PADDLE","彩り","名もなき詩","innocent world","シーソーゲーム～勇敢な恋の歌～"],desc:"日本を代表する国民的ロックバンド。桜井和寿の紡ぐ歌詞と普遍的なメロディ。"},
+    "beatles":{name:"The Beatles",rome:"Liverpool, UK",genre:"ロックの原点",url:"https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2",img:"https://i.scdn.co/image/ab6761610000e5eb119b61b35985e3b957c5ecb7",exact:true,pl:"fav2",n:6,songs:["Yesterday","Hey Jude","Let It Be","Help!","All You Need Is Love","Ob-La-Di, Ob-La-Da"],desc:"ポピュラー音楽のすべてを塗り替えた20世紀最大のバンド。"},
+    "remioromen":{name:"Remioromen",rome:"Remioromen",genre:"邦ロック / 歌モノ",url:"https://open.spotify.com/artist/4Yz1LjHwgQ5DFWJrZL8bC8",img:"https://i.scdn.co/image/ab6761610000e5eb603546ce2d7ff0fede4b9702",exact:true,pl:"fav",n:5,songs:["ビールとプリン","アカシア","南風","スタンドバイミー","3月9日"],desc:"「3月9日」「粉雪」で知られる3ピース。素朴なバンドサウンドと、季節の情景を描く歌詞。"},
+    "theoffspring":{name:"The Offspring",rome:"California, USA",genre:"メロディックパンク",url:"https://open.spotify.com/artist/5LfGQac0EIXyAN8aUwmNAQ",img:"https://i.scdn.co/image/ab6761610000e5ebffb1ffb7c417745cdad67b88",exact:true,pl:"fav2",n:5,songs:["Why Don't You Get A Job","Hit That","Want You Bad","The Kids Aren't Alright","Pretty Fly (For A White Guy)"],desc:"90年代のメロディックパンクを代表するバンド。キャッチーで疾走感のある楽曲。"},
+    "yabat":{name:"ヤバイTシャツ屋さん",rome:"Yabai T-shirts Yasan",genre:"ロック / コミカル",url:"https://open.spotify.com/artist/3GP0RQRnBvpYVgdVYfcaGS",img:"https://i.scdn.co/image/ab6761610000e5eba4942c76d42f415e9d903ed9",exact:true,pl:"fav",n:5,songs:["かわE","あつまれ！パーティーピーポー","ハッピーウェディング前ソング","鬼POP激キャッチー最強ハイパーウルトラミュージック","ウェイウェイ大学生"],desc:"笑いと轟音を同居させる関西発の3ピース。通称ヤバT。"},
+    "bonjovi":{name:"Bon Jovi",rome:"New Jersey, USA",genre:"アリーナロック",url:"https://open.spotify.com/artist/58lV9VcRSjABbAbfWS6skp",img:"https://i.scdn.co/image/ab6761610000e5eb52aade0d2ea19706074da4b9",exact:true,pl:"fav2",n:4,songs:["Livin' On A Prayer","It's My Life","Have A Nice Day","You Give Love A Bad Name"],desc:"アリーナロックの代名詞。合唱を誘うアンセムを数多く持つ。"},
+    "foofighters":{name:"Foo Fighters",rome:"Seattle, USA",genre:"US / オルタナ",url:"https://open.spotify.com/artist/7jy3rLJdDQY21OgRLCZ9sD",img:"https://i.scdn.co/image/ab6761610000e5eb1db35bc9c01d2b1c151e44ce",exact:true,pl:"fav2",n:4,songs:["All My Life","Best of You","The Pretender","Monkey Wrench"],desc:"Nirvana のドラマーだったデイヴ・グロールが始めたバンド。骨太で開けたロック。"},
+    "gnr":{name:"Guns N' Roses",rome:"Los Angeles, USA",genre:"ハードロック",url:"https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC",img:"https://i.scdn.co/image/ab6761610000e5eb50defaf9fc059a1efc541f4c",exact:true,pl:"fav2",n:4,songs:["Welcome To The Jungle","Sweet Child O' Mine","Paradise City","Knockin' On Heaven's Door"],desc:"80〜90年代を象徴するハードロックバンド。危うさと美メロが同居する。"},
+    "hitsujibungaku":{name:"Hitsujibungaku",rome:"羊文学",genre:"オルタナ / ギターロック",url:"https://open.spotify.com/artist/6S8w5rLsEwjN21jQeRES0n",img:"https://i.scdn.co/image/ab6761610000e5eb1833f4534ed3dd88d9e12c8b",exact:true,pl:"fav",n:4,songs:["more than words","Burning","未来地図2025","mild days"],desc:"塩塚モエカ率いる3ピース。まろやかな歌声と歪んだギターの轟音が同居するオルタナティブロックバンド。"},
+    "linkinpark":{name:"Linkin Park",rome:"California, USA",genre:"ミクスチャー",url:"https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz",img:"https://i.scdn.co/image/ab6761610000e5eb527d95dabbe8b8b527e8136f",exact:true,pl:"fav2",n:4,songs:["Numb","Faint","One Step Closer","Given Up"],desc:"ラップとロックを融合させ、2000年代を代表したバンド。"},
+    "maroon5":{name:"Maroon 5",rome:"Los Angeles, USA",genre:"ポップ / ロック",url:"https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP",img:"https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",exact:true,pl:"fav2",n:4,songs:["Moves Like Jagger - Studio Recording","Payphone","This Love","She Will Be Loved"],desc:"ロックバンドとして出発し、ポップの本流へ広がったバンド。fav2 には初期のヒットから2010年代の曲まで4曲。"},
+    "metallica":{name:"Metallica",rome:"USA",genre:"メタル",url:"https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB",img:"https://i.scdn.co/image/ab6761610000e5eb69ca98dd3083f1082d740e44",exact:true,pl:"fav2",n:4,songs:["Enter Sandman","Master Of Puppets","Battery","Fuel"],desc:"世界最大のヘヴィメタルバンド。重厚なリフと幅広い楽曲性で頂点に君臨する。"},
+    "mcr":{name:"My Chemical Romance",rome:"New Jersey, USA",genre:"エモ / オルタナ",url:"https://open.spotify.com/artist/7FBcuc1gsnv6Y1nwFtNRCb",img:"https://i.scdn.co/image/ab6761610000e5eb9c00ad0308287b38b8fdabc2",exact:true,pl:"fav2",n:4,songs:["Welcome to the Black Parade","Teenagers","I'm Not Okay (I Promise)","Dead!"],desc:"エモ／オルタナを象徴するバンド。ドラマティックでシアトリカルな世界観。"},
+    "radwimps":{name:"RADWIMPS",rome:"RADWIMPS",genre:"邦ロック",url:"https://open.spotify.com/artist/1EowJ1WwkMzkCkRomFhui7",img:"https://i.scdn.co/image/ab6761610000e5ebf7374b42bee7c71b9649ac83",exact:true,pl:"fav",n:4,songs:["愛にできることはまだあるかい","me me she","おしゃかしゃま","七ノ歌"],desc:"文学的で内省的な歌詞と、ジャンルを跨ぐ変幻自在のサウンド。映画『君の名は。』『天気の子』の音楽でも知られる。"},
+    "rooster":{name:"Rooster",rome:"United Kingdom",genre:"UK / ロック",url:"https://open.spotify.com/artist/0ujqMKVYj188ib9akGEjrM",img:"https://i.scdn.co/image/ab67616d0000b273749736f0858a4df0c0d7269d",exact:true,pl:"fav2",n:4,songs:["Deep and Meaningless","Come Get Some","Staring at the Sun","Joyride"],desc:"2000年代半ばに登場したUKのロックバンド。fav2 には4曲＝上位に並ぶ収録数で、隠れた愛聴盤であることがうかがえる。"},
+    "okudatamio":{name:"奥田民生",rome:"Tamio Okuda",genre:"ロック / SSW",url:"https://open.spotify.com/artist/3ZWE1TnryM03rfzVin17K0",img:"https://i.scdn.co/image/ab6761610000e5ebd5b19d64f694b7b0edb8efc2",exact:true,pl:"fav",n:4,songs:["さすらい","風は西から","イージュー★ライダー","愛のために"],desc:"ユニコーンを経てソロへ。力の抜けた歌と骨太なロックを両立する。fav の中でも収録数が多い一人。"},
+    "stones":{name:"The Rolling Stones",rome:"United Kingdom",genre:"ロックンロール",url:"https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe",img:"https://i.scdn.co/image/ab6761610000e5eb2b72b000ac948eba03bb3afe",exact:true,pl:"fav2",n:4,songs:["Start Me Up","Gimme Shelter","Jumpin' Jack Flash","She's A Rainbow"],desc:"60年代から現役を続ける、ロックンロールの生きた歴史。"},
+    "thestrokes":{name:"The Strokes",rome:"New York, USA",genre:"US / オルタナ",url:"https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V",img:"https://i.scdn.co/image/ab6761610000e5eb98856eea770468af6dd999d9",exact:true,pl:"fav2",n:4,songs:["Last Nite","You Only Live Once","Under Cover of Darkness","12:51"],desc:"2000年代のロックンロール・リバイバルを象徴するニューヨークのバンド。ざらついたギターとクールなボーカル。"},
+    "ulfuls":{name:"ウルフルズ",rome:"Ulfuls",genre:"ロック / ソウル",url:"https://open.spotify.com/artist/6e9Wgn2800cCQcM0b4cNwt",img:"https://i.scdn.co/image/ab6761610000e5ebbb06f7d66424e300096ceb55",exact:true,pl:"fav",n:4,songs:["借金大王","ええねん","笑えれば","かわいいひと"],desc:"トータス松本のソウルフルな歌声で愛される大阪のバンド。"},
+    "shioreira":{name:"汐れいら",rome:"Shio Reira",genre:"J-POP / SSW",url:"https://open.spotify.com/artist/6GVsZoMbMt0jmqwcvz1a1F",img:"https://i.scdn.co/image/ab6761610000e5ebb4491721bbd81f7bef5adc63",exact:true,pl:"fav",n:4,songs:["味噌汁とバター - Miso Soup and Butter","センチメンタル・キス","織姫とBABY","ハレの日に - Harenohini"],desc:"等身大の言葉と伸びやかな歌声のシンガーソングライター。2020年代に入ってからの追加が並ぶ。"},
+    "aimyon":{name:"あいみょん",rome:"Aimyon",genre:"J-POP / SSW",url:"https://open.spotify.com/artist/5kVZa4lFUmAQlBogl1fkd6",img:"https://i.scdn.co/image/ab6761610000e5eb87c4f7794417bdb0265c4f70",exact:true,pl:"fav",n:3,songs:["ハルノヒ","君はロックを聴かない","愛を伝えたいだとか"],desc:"日常と恋を等身大の言葉で描くシンガーソングライター。"},
+    "avril":{name:"Avril Lavigne",rome:"Canada",genre:"ポップパンク",url:"https://open.spotify.com/artist/0p4nmQO2msCgU4IF37Wi3j",img:"https://i.scdn.co/image/ab6761610000e5ebcea575e8c9519d4367984256",exact:true,pl:"fav2",n:3,songs:["Sk8er Boi","Girlfriend","What the Hell"],desc:"カナダ出身。ポップパンクを世界的なヒットにしたシンガー。"},
+    "coldplay":{name:"Coldplay",rome:"London, UK",genre:"UK / スタジアムロック",url:"https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU",img:"https://i.scdn.co/image/ab6761610000e5eb1ba8fc5f5c73e7e9313cc6eb",exact:true,pl:"fav2",n:3,songs:["A Sky Full of Stars","Viva La Vida","Speed of Sound"],desc:"叙情的なメロディとスタジアム級のスケールを併せ持つUKのバンド。"},
+    "does":{name:"DOES",rome:"DOES",genre:"邦ロック / ガレージ",url:"https://open.spotify.com/artist/2zwGPEFviyaICCDiAWxLjy",img:"https://i.scdn.co/image/ab6761610000e5ebded019673ad82669500f86db",exact:true,pl:"fav",n:3,songs:["曇天","修羅","バクチ・ダンサー"],desc:"骨太なロックンロールを鳴らす3ピース。『銀魂』の主題歌「曇天」「修羅」「バクチ・ダンサー」がまとめて入っている。"},
+    "elekashi":{name:"エレファントカシマシ",rome:"Elephant Kashimashi",genre:"ロック",url:"https://open.spotify.com/artist/24ljrnVUlUZ2apxF6GZsrm",img:"https://i.scdn.co/image/ab6761610000e5ebd8f58347cd51590a2dbfe233",exact:true,pl:"fav",n:3,songs:["悲しみの果て","俺たちの明日","今宵の月のように"],desc:"宮本浩次の圧倒的な歌と、飾らないまっすぐなロック。"},
+    "eminem":{name:"Eminem",rome:"Eminem",genre:"ヒップホップ",url:"https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR",img:"https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b",exact:true,pl:"fav2",n:3,songs:["Lose Yourself","Just Lose It","My Name Is"],desc:"言葉数と技巧で世界のラップを塗り替えたラッパー。「Lose Yourself」は映画『8 Mile』の主題歌。"},
+    "falloutboy":{name:"Fall Out Boy",rome:"Fall Out Boy",genre:"エモ / ポップパンク",url:"https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX",img:"https://i.scdn.co/image/ab6761610000e5eb362011ebe6064c38e97e9aac",exact:true,pl:"fav2",n:3,songs:["Dance, Dance","Thnks fr th Mmrs","I Don't Care"],desc:"2000年代のエモ／ポップパンクを牽引したバンド。キャッチーなサビと饒舌な歌詞。"},
+    "fujifabric":{name:"Fujifabric",rome:"フジファブリック",genre:"オルタナ / ポップ",url:"https://open.spotify.com/artist/2QgdUzpKFNxey5IuwvsGBL",img:"https://i.scdn.co/image/ab6761610000e5eb59b5ea166180cc4bc4690a79",exact:true,pl:"fav",n:3,songs:["若者のすべて","夜明けのBEAT","茜色の夕日"],desc:"志村正彦が遺した名曲群と、その後も続くバンド。「若者のすべて」は晩夏の定番として歌い継がれている。"},
+    "utada":{name:"宇多田ヒカル",rome:"Hikaru Utada",genre:"J-POP",url:"https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2",img:"https://i.scdn.co/image/ab6761610000e5ebec39ca0a437af73deb84a09a",exact:true,pl:"fav",n:3,songs:["花束を君に","光","JANE DOE"],desc:"日本のポップスを塗り替えたシンガーソングライター。"},
+    "kaela":{name:"Kaela Kimura",rome:"木村カエラ",genre:"J-POP / ロック",url:"https://open.spotify.com/artist/56Eer6ASRcE4aJHJwejTuN",img:"https://i.scdn.co/image/ab6761610000e5ebb4ceed4093de84e9e715e868",exact:true,pl:"fav",n:3,songs:["リルラ リルハ","Magic Music","TREE CLIMBERS"],desc:"軽やかでポップな歌声と、ロックバンド編成のサウンド。2000年代の空気を代表するアーティスト。"},
+    "yonezu":{name:"米津玄師",rome:"Kenshi Yonezu",genre:"J-POP",url:"https://open.spotify.com/artist/1snhtMLeb2DYoMOcVbb8iB",img:"https://i.scdn.co/image/ab6761610000e5eba39642d6f3ba26f42d54ac98",exact:true,pl:"fav",n:3,songs:["ピースサイン - Peace Sign","IRIS OUT","JANE DOE"],desc:"ボカロP「ハチ」を経て、時代を象徴する存在になったアーティスト。"},
+    "kinggnu":{name:"King Gnu",rome:"King Gnu",genre:"邦ロック / ミクスチャー",url:"https://open.spotify.com/artist/6wxfx1yhyqjCPYwwxJktR2",img:"https://i.scdn.co/image/ab6761610000e5eb4ec795dffef81475326da642",exact:true,pl:"fav",n:3,songs:["Teenager Forever","雨燦々","飛行艇"],desc:"常田大希率いる4人組。混沌と美メロを行き来する楽曲と、二枚看板のボーカルが特徴。"},
+    "kiss":{name:"KISS",rome:"KISS",genre:"グラムロック / ハードロック",url:"https://open.spotify.com/artist/07XSN3sPlIlB2L2XNcTwJw",img:"https://i.scdn.co/image/ab6761610000e5ebd8205a492a79bfe4b34c567a",exact:true,pl:"fav2",n:3,songs:["I Was Made For Lovin' You","Rock And Roll All Nite","Detroit Rock City"],desc:"白塗りのメイクと派手なステージで知られるアメリカのロックバンド。"},
+    "ledzeppelin":{name:"Led Zeppelin",rome:"United Kingdom",genre:"ハードロック",url:"https://open.spotify.com/artist/36QJpDe2go2KgaRleHCDTp",img:"https://i.scdn.co/image/16eb3cdae0d824b520ac17710e943a99d3ef6602",exact:true,pl:"fav2",n:3,songs:["Immigrant Song","Black Dog","Rock and Roll"],desc:"ハードロック／ヘヴィロックの礎を築いた伝説的バンド。重厚なリフと幻想的な世界観。"},
+    "mwam":{name:"MAN WITH A MISSION",rome:"Man with a Mission",genre:"邦ロック / ラウド",url:"https://open.spotify.com/artist/3NTbOmzlj2cL86XFuDVFvZ",img:"https://i.scdn.co/image/ab6761610000e5ebe30959e15d3719dc8d9ffe65",exact:true,pl:"fav",n:3,songs:["Emotions","super stomper","FLY AGAIN 2019"],desc:"狼の頭を持つメンバーによるロックバンド。ラウドさとメロディを両立する。"},
+    "yamazaki":{name:"山崎まさよし",rome:"Masayoshi Yamazaki",genre:"SSW / ブルース",url:"https://open.spotify.com/artist/6gvedX0HcRQYMD5IhY8KKt",img:"https://i.scdn.co/image/ab6761610000e5ebe25fcaf9da92ef60daf73aa0",exact:true,pl:"fav",n:3,songs:["僕と不良と校庭で","未完成","セロリ"],desc:"ギター1本で聴かせる、卓越した弾き語りのシンガーソングライター。"},
+    "higedan":{name:"OFFICIAL HIGE DANDISM",rome:"Official髭男dism",genre:"J-POP / バンド",url:"https://open.spotify.com/artist/5Vo1hnCRmCM6M4thZCInCj",img:"https://i.scdn.co/image/ab6761610000e5eba603edbfe14a6bced859d7e1",exact:true,pl:"fav",n:3,songs:["ミックスナッツ","らしさ","Pretender"],desc:"高い演奏力とポップなメロディを両立する4人組。藤原聡のハイトーンが持ち味。"},
+    "orangerange":{name:"ORANGE RANGE",rome:"Orange Range",genre:"ミクスチャー",url:"https://open.spotify.com/artist/4upiYMjsFfLRieGo8RVRzD",img:"https://i.scdn.co/image/ab6761610000e5ebac2b83edd94711a30aaafd83",exact:true,pl:"fav",n:3,songs:["以心電信","上海ハニー","イケナイ太陽"],desc:"沖縄発、ジャンル横断のミクスチャーバンド。ポップからロックまで自在。"},
+    "pantera":{name:"Pantera",rome:"Texas, USA",genre:"グルーヴメタル",url:"https://open.spotify.com/artist/14pVkFUHDL207LzLHtSA18",img:"https://i.scdn.co/image/ab6761610000e5ebe21999c0102c240bdf094d9b",exact:true,pl:"fav2",n:3,songs:["Walk","Cowboys","This Love"],desc:"90年代のヘヴィネスを決定づけたバンド。"},
+    "porno":{name:"ポルノグラフィティ",rome:"Porno Graffitti",genre:"ロック / ポップ",url:"https://open.spotify.com/artist/5jQa0f5MIMPEK7udL7UpI6",img:"https://i.scdn.co/image/ab6761610000e5eb3cac31b07a4c40489c207340",exact:true,pl:"fav",n:3,songs:["幸せについて本気出して考えてみた","愛が呼ぶほうへ","ハネウマライダー"],desc:"岡野昭仁の歌唱力とドラマティックな楽曲で知られる2人組。"},
+    "queen":{name:"Queen",rome:"United Kingdom",genre:"ロック",url:"https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d",img:"https://i.scdn.co/image/ab6761610000e5eb73e4d22612ac8d944b5789b4",exact:true,pl:"fav2",n:3,songs:["Bohemian Rhapsody","Somebody To Love","I Was Born To Love You"],desc:"フレディ・マーキュリー擁する不朽のロックバンド。壮大でドラマティックな楽曲群。"},
+    "ratm":{name:"Rage Against The Machine",rome:"Los Angeles, USA",genre:"ラップメタル",url:"https://open.spotify.com/artist/2d0hyoQ5ynDBnkvAbJKORj",img:"https://i.scdn.co/image/ab6761610000e5ebda4bd2b213cae330e2a4a901",exact:true,pl:"fav2",n:3,songs:["Killing In The Name","Guerrilla Radio","Bulls On Parade"],desc:"ラップメタル／ミクスチャーの先駆にして頂点。強烈な反骨のメッセージを鳴らす。"},
+    "shiinaringo":{name:"椎名林檎",rome:"Sheena Ringo",genre:"オルタナ / 歌謡",url:"https://open.spotify.com/artist/2XjqKvB2Xz9IdyjWPIHaXi",img:"https://i.scdn.co/image/ab6761610000e5eb8378fc68491c113e5379ceca",exact:true,pl:"fav",n:3,songs:["ＮＩＰＰＯＮ","正しい街","ここでキスして。"],desc:"妖艶で唯一無二の世界観を持つアーティスト。バンド・東京事変でも活動する。"},
+    "thewho":{name:"The Who",rome:"United Kingdom",genre:"ロック",url:"https://open.spotify.com/artist/67ea9eGLXYMsO2eYQRui3w",img:"https://i.scdn.co/image/ab6772690000dd22456d5397bdf11547ef38ca93",exact:true,pl:"fav2",n:3,songs:["My Generation","Pinball Wizard","A Quick One, While He's Away"],desc:"爆発的な演奏とロックオペラで知られる、UKロックの重要バンド。"},
+    "yuki":{name:"YUKI",rome:"Yuki",genre:"ポップ / SSW",url:"https://open.spotify.com/artist/380DW51qbu5pSP8crFRIII",img:"https://i.scdn.co/image/ab6761610000e5ebc655f8d3d60b0e4562c9811d",exact:true,pl:"fav",n:3,songs:["COSMIC BOX","ビスケット","プリズム"],desc:"JUDY AND MARY を経てソロへ。跳ねるようなポップスを歌い続ける。"},
+    "alexandros":{name:"[Alexandros]",rome:"Alexandros",genre:"邦ロック",url:"https://open.spotify.com/artist/1luOe8HkZQ7zwuaO2wuJqI",img:"https://i.scdn.co/image/ab6761610000e5ebbbde0ca8aa8b0dbbc2240eb1",exact:true,pl:"fav",n:2,songs:["ワタリドリ","閃光"],desc:"洋楽的なサウンド感覚とキャッチーさを併せ持つロックバンド。川上洋平のハイトーンが持ち味。"},
+    "tenfeet":{name:"10-FEET",rome:"10-Feet",genre:"ミクスチャー / パンク",url:"https://open.spotify.com/artist/0QZqdhoRQkn1VphAa5eX8h",img:"https://i.scdn.co/image/ab6761610000e5eb05ed35259d8d1e118764c1ea",exact:true,pl:"fav",n:2,songs:["super stomper","風"],desc:"京都発の3ピース。ミクスチャー感覚と熱量の高いライブで知られる。"},
+    "aerosmith":{name:"Aerosmith",rome:"Boston, USA",genre:"ハードロック",url:"https://open.spotify.com/artist/7Ey4PD4MYsKc5I2dolUwbH",img:"https://i.scdn.co/image/ab6761610000e5ebc5733401b4689b2064458e7d",exact:true,pl:"fav2",n:2,songs:["Walk This Way","Dude (Looks Like A Lady)"],desc:"アメリカを代表するロックンロールバンド。"},
+    "andymori":{name:"andymori",rome:"andymori",genre:"オルタナ / インディー",url:"https://open.spotify.com/artist/6bCInSZj1C1H8Mz7m4LqYA",img:"https://i.scdn.co/image/ab6761610000e5eb40090969d50f465d799a0b73",exact:true,pl:"fav",n:2,songs:["1984","革命"],desc:"小山田壮平を中心とした3ピース。短くも鮮烈な楽曲で語り継がれるバンド。"},
+    "bish":{name:"BiSH",rome:"BiSH",genre:"楽器を持たないパンクバンド",url:"https://open.spotify.com/artist/0ebinq3ZTOQAJNag4sBTJj",img:"https://i.scdn.co/image/ab6761610000e5eb765f42d3446eee276c4321fe",exact:true,pl:"fav",n:2,songs:["BiSH-星が瞬く夜に","オーケストラ"],desc:"「楽器を持たないパンクバンド」を名乗った6人組。アイドルの形式でロックの衝動を鳴らした。"},
+    "camila":{name:"Camila Cabello",rome:"USA",genre:"US ポップ",url:"https://open.spotify.com/artist/4nDoRrQiYLoBzwC5BhVJzF",img:"https://i.scdn.co/image/ab6761610000e5eb76470faf6330235edbcb90a9",exact:true,pl:"fav2",n:2,songs:["Havana (feat. Young Thug)","Never Be the Same"],desc:"Fifth Harmony を経てソロへ。ラテンの香りを持つポップ。"},
+    "carlyraejepsen":{name:"Carly Rae Jepsen",rome:"Carly Rae Jepsen",genre:"ポップ",url:"https://open.spotify.com/artist/6sFIWsNpZYqfjUpaCgueju",img:"https://i.scdn.co/image/ab6761610000e5eb55e3a8d4fe7f0053fffca258",exact:true,pl:"fav2",n:2,songs:["Good Time","I Really Like You"],desc:"きらめくシンセポップを得意とするカナダのシンガー。"},
+    "chara":{name:"Chara",rome:"Chara",genre:"SSW / ポップ",url:"https://open.spotify.com/artist/2v3eFzDOUnyWP1drW2dPTp",img:"https://i.scdn.co/image/ab6761610000e5ebb1b382939c12ab77d8c3a964",exact:true,pl:"fav",n:2,songs:["やさしい気持ち","Swallowtail Butterfly〜あいのうた〜 (JEWEL ver.)"],desc:"唯一無二の声と、恋愛の機微を描く歌詞で愛されるシンガーソングライター。"},
+    "chehon":{name:"CHEHON",rome:"CHEHON",genre:"レゲエ / ジャパニーズDJ",url:"https://open.spotify.com/artist/6tQMcZAnZhztsJfTeZ5UYY",img:"https://i.scdn.co/image/ab6761610000e5eb8eae94bc44b847986e78e860",exact:true,pl:"fav",n:2,songs:["韻波句徒","みどり"],desc:"滋賀出身のレゲエDJ。日本語の譜割りを活かした高速なフロウで知られる。"},
+    "dragonash":{name:"Dragon Ash",rome:"Dragon Ash",genre:"ミクスチャー",url:"https://open.spotify.com/artist/2wDlv5Qp9pffOqnO4vdn8L",img:"https://i.scdn.co/image/ab6761610000e5eb3eee12431ec79039d53f848a",exact:true,pl:"fav",n:2,songs:["Life goes on","Fantasista"],desc:"ロックとヒップホップの架け橋になったミクスチャーバンド。"},
+    "edsheeran":{name:"Ed Sheeran",rome:"United Kingdom",genre:"ポップ / SSW",url:"https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V",img:"https://i.scdn.co/image/ab6761610000e5ebd55c95ad400aed87da52daec",exact:true,pl:"fav2",n:2,songs:["Shape of You","Perfect"],desc:"ギター1本の弾き語りから世界最大級のポップスターになったアーティスト。"},
+    "extreme":{name:"Extreme",rome:"Boston, USA",genre:"ハードロック",url:"https://open.spotify.com/artist/6w7j5wQ5AI5OQYlcM15s2L",img:"https://i.scdn.co/image/ab6761610000e5eba2816ccc399c2c820c3d0bb6",exact:true,pl:"fav2",n:2,songs:["Decadence Dance","More Than Words"],desc:"ヌーノ・ベッテンコートの卓越したギターで知られるロックバンド。"},
+    "fun":{name:"fun.",rome:"fun.",genre:"インディーポップ",url:"https://open.spotify.com/artist/5nCi3BB41mBaMH9gfr6Su0",img:"https://i.scdn.co/image/3b24a69ed9c20a9a899d328b7aefc3750e4c712f",exact:true,pl:"fav2",n:2,songs:["We Are Young (feat. Janelle Monáe)","Some Nights"],desc:"「We Are Young」で一気に知られたニューヨークのバンド。合唱的なコーラスが特徴。"},
+    "hoshinogen":{name:"星野源",rome:"Gen Hoshino",genre:"J-POP / ファンク",url:"https://open.spotify.com/artist/1S2S00lgLYLGHWA44qGEUs",img:"https://i.scdn.co/image/ab6761610000e5eba8f478bba7af946e0754a207",exact:true,pl:"fav",n:2,songs:["SUN","Family Song"],desc:"音楽と俳優業を横断するアーティスト。ポップでファンキーな楽曲が持ち味。"},
+    "ginnanboyz":{name:"銀杏BOYZ",rome:"Ginnan Boyz",genre:"オルタナ / ロック",url:"https://open.spotify.com/artist/2dP0aHVXt8dDPCw5d2Jw0m",img:"https://i.scdn.co/image/ab6761610000e5eba309ee3bedd4e374eb4c02a9",exact:true,pl:"fav",n:2,songs:["BABY BABY","夢で逢えたら"],desc:"峯田和伸率いる、衝動と純情が同居するロックバンド。剥き出しの言葉と轟音が胸を打つ。"},
+    "goingsteady":{name:"GOING STEADY",rome:"Going Steady",genre:"青春パンク",url:"https://open.spotify.com/artist/7EyYmxeTBOeaZ09aaAAtCE",img:"https://i.scdn.co/image/ab67616d0000b27364548cebc12dfb26d5704379",exact:true,pl:"fav",n:2,songs:["銀河鉄道の夜","BABY BABY"],desc:"峯田和伸が銀杏BOYZの前に率いたバンド。青春パンクを代表する存在。"},
+    "saitokazuyoshi":{name:"斉藤和義",rome:"Kazuyoshi Saito",genre:"ロック / SSW",url:"https://open.spotify.com/artist/7sl3PZyhzAqUpL3M6WVD8G",img:"https://i.scdn.co/image/ab6761610000e5eb467796b5c3a7eb389c2fd5ce",exact:true,pl:"fav",n:2,songs:["ずっと好きだった","歩いて帰ろう"],desc:"渋くて洒脱なロックとバラードを行き来するシンガーソングライター。"},
+    "kingsofleon":{name:"Kings of Leon",rome:"Tennessee, USA",genre:"US / ロック",url:"https://open.spotify.com/artist/2qk9voo8llSGYcZ6xrBzKx",img:"https://i.scdn.co/image/ab6761610000e5eb5e97fb0c8918ed67408f9edc",exact:true,pl:"fav2",n:2,songs:["Use Somebody","Sex on Fire"],desc:"アメリカ南部出身。ガレージ寄りの出発点からスタジアムロックへ広がった4人組。"},
+    "larc":{name:"L'Arc-en-Ciel",rome:"L'Arc-en-Ciel",genre:"邦ロック",url:"https://open.spotify.com/artist/6jTjjAjvYvMYfaqi837p5x",img:"https://i.scdn.co/image/ab6761610000e5ebaca8e5ff6666f21a688a54b6",exact:true,pl:"fav",n:2,songs:["Driver's High","READY STEADY GO"],desc:"日本のロックシーンを長く牽引してきたバンド。hyde の歌声と多彩な楽曲で幅広い支持を得る。"},
+    "momoclo":{name:"ももいろクローバーZ",rome:"Momoiro Clover Z",genre:"アイドル",url:"https://open.spotify.com/artist/3Zl0EsuYV23OgNw6WqGelN",img:"https://i.scdn.co/image/ab6761610000e5ebc2709f1e4da1e0d58a6e0f99",exact:true,pl:"fav",n:2,songs:["行くぜっ!怪盗少女","走れ!"],desc:"全力のパフォーマンスと、ロック寄りの楽曲でも知られるアイドルグループ。"},
+    "mrsgreenapple":{name:"Mrs. GREEN APPLE",rome:"Mrs. GREEN APPLE",genre:"J-POP / バンド",url:"https://open.spotify.com/artist/4QvgGvpgzgyUOo8Yp8LDm9",img:"https://i.scdn.co/image/ab6761610000e5eb0b6fd24c14a46a5027d65e47",exact:true,pl:"fav",n:2,songs:["青と夏","ケセラセラ"],desc:"大森元貴を中心とした3人組。ポップで色彩豊かなサウンドと、スケールの大きな楽曲。"},
+    "nybeach":{name:"never young beach",rome:"never young beach",genre:"インディー / グッドミュージック",url:"https://open.spotify.com/artist/2YtvgEYiTH6jh7n2UmUdXX",img:"https://i.scdn.co/image/ab6761610000e5ebb33f0373a99fc56a7539457a",exact:true,pl:"fav",n:2,songs:["明るい未来","お別れの歌"],desc:"ゆるやかな演奏と日本語の響きを活かした歌で、独自の心地よさを持つバンド。"},
+    "nirvana":{name:"Nirvana",rome:"Seattle, USA",genre:"US / グランジ",url:"https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh",img:"https://i.scdn.co/image/e797ad36d56c3fc8fa06c6fe91263a15bf8391b8",exact:true,pl:"fav2",n:2,songs:["Smells Like Teen Spirit","School"],desc:"90年代グランジを世界に知らしめた伝説的バンド。カート・コバーンの生々しいギターサウンドが象徴的。"},
+    "okazakitaiiku":{name:"岡崎体育",rome:"Okazaki Taiiku",genre:"ポップ / コミカル",url:"https://open.spotify.com/artist/5yKQkcO2MWUp3Z5jUs70pW",img:"https://i.scdn.co/image/ab6761610000e5eb2b3299f60c71c184f045f22d",exact:true,pl:"fav",n:2,songs:["なにをやってもあかんわ","感情のピクセル"],desc:"全パートを自ら手掛ける宅録から登場した、笑いと音楽性を両立するアーティスト。"},
+    "roadofmajor":{name:"ロードオブメジャー",rome:"Road of Major",genre:"青春パンク",url:"https://open.spotify.com/artist/5m0p1hLwjTBVYdgUyQaNaQ",img:"https://i.scdn.co/image/ab67616d0000b27379b4f630c20f440bff4d3cca",exact:true,pl:"fav",n:2,songs:["大切なもの","心絵"],desc:"ストリート発の青春パンクバンド。まっすぐな歌詞で広く支持された。"},
+    "sexpistols":{name:"Sex Pistols",rome:"United Kingdom",genre:"パンク",url:"https://open.spotify.com/artist/1u7kkVrr14iBvrpYnZILJR",img:"https://i.scdn.co/image/ab6761610000e5ebd3fa01fd4baad1158dd2fd8b",exact:true,pl:"fav2",n:2,songs:["Anarchy In The UK","God Save The Queen"],desc:"パンクロックの象徴として時代を動かしたバンド。"},
+    "southernallstars":{name:"SOUTHERN ALL STARS",rome:"サザンオールスターズ",genre:"歌謡ロック / 国民的バンド",url:"https://open.spotify.com/artist/79nkC8XZ5ohEVU0Xlf5Ael",img:"https://i.scdn.co/image/ab6761610000e5eb63ce4f0c936577d7ce0cc37d",exact:true,pl:"fav",n:2,songs:["希望の轍","涙の海で抱かれたい～SEA OF LOVE～"],desc:"桑田佳祐率いる、日本の音楽シーンを40年以上牽引してきたバンド。"},
+    "stonetemplepilots":{name:"Stone Temple Pilots",rome:"Stone Temple Pilots",genre:"グランジ / オルタナ",url:"https://open.spotify.com/artist/2UazAtjfzqBF0Nho2awK4z",img:"https://i.scdn.co/image/ab6761610000e5eb4bb64f87db255d76538b905f",exact:true,pl:"fav2",n:2,songs:["Plush","Creep"],desc:"90年代アメリカのオルタナティブロックを代表するバンドのひとつ。"},
+    "taylorswift":{name:"Taylor Swift",rome:"Taylor Swift",genre:"ポップ",url:"https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02",img:"https://i.scdn.co/image/ab6761610000e5ebe2e8e7ff002a4afda1c7147e",exact:true,pl:"fav2",n:2,songs:["Shake It Off","We Are Never Ever Getting Back Together"],desc:"カントリーからポップへ、時代ごとに音楽性を更新し続ける世界最大級のシンガーソングライター。"},
+    "michelle":{name:"Thee Michelle Gun Elephant",rome:"ミッシェル・ガン・エレファント",genre:"ガレージロック",url:"https://open.spotify.com/artist/2DBcgbvakjiv4Yi9bRyjVX",img:"https://i.scdn.co/image/ab6761610000e5ebca7599a1fd1395952e78411b",exact:true,pl:"fav",n:2,songs:["世界の終わり","ドロップ"],desc:"轟音のギターとチバユウスケの吐き捨てるような歌で、90年代の日本のガレージロックを象徴したバンド。"},
+    "tokyojihen":{name:"東京事変",rome:"Tokyo Jihen",genre:"オルタナ / バンド",url:"https://open.spotify.com/artist/6KQWWzFLPQbqomJrieHAW5",img:"https://i.scdn.co/image/ab6761610000e5eb639df7299f923e8d87e6de82",exact:true,pl:"fav",n:2,songs:["閃光少女","群青日和"],desc:"椎名林檎を擁するバンド。技巧派メンバーの演奏と歌謡的なメロディが噛み合う。"},
+    "vanhalen":{name:"Van Halen",rome:"Van Halen",genre:"ハードロック",url:"https://open.spotify.com/artist/2cnMpRsOVqtPMfq7YiFE6K",img:"https://i.scdn.co/image/ab6761610000e5ebd8475001d2700686e1008dfb",exact:true,pl:"fav2",n:2,songs:["Panama","Jump"],desc:"エディ・ヴァン・ヘイレンのギターでロックの常識を変えたバンド。"},
+    "175r":{name:"175R",rome:"Inago Rider",genre:"青春パンク",url:"https://open.spotify.com/artist/40y1P1mpPSpiRxL5LDv6aI",img:"https://i.scdn.co/image/ab67616d0000b273e7102b4d7b6ae708e52c54aa",exact:true,pl:"fav",n:1,songs:["空に唄えば"],desc:"2000年代の青春パンクを代表するバンドのひとつ。"},
+    "9mm":{name:"9mm Parabellum Bullet",rome:"9mm Parabellum Bullet",genre:"邦ロック / ラウド",url:"https://open.spotify.com/artist/3v0nHmnUcf9GAhjQOTctQu",img:"https://i.scdn.co/image/ab6761610000e5ebcbf412f939ce0c6222f6705c",exact:true,pl:"fav",n:1,songs:["Black Market Blues"],desc:"疾走感と激情、そして叙情的なメロディが同居する4人組。"},
+    "adele":{name:"Adele",rome:"Adele",genre:"ソウル / ポップ",url:"https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY",img:"https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",exact:true,pl:"fav2",n:1,songs:["Someone Like You"],desc:"圧倒的な歌唱力で世界を席巻したイギリスのシンガー。"},
+    "ainatheend":{name:"AiNA THE END",rome:"アイナ・ジ・エンド",genre:"オルタナ / SSW",url:"https://open.spotify.com/artist/5k7KS34gxQbzdQaXWSOVKC",img:"https://i.scdn.co/image/ab6761610000e5ebc8800fcf49294bfef74b36d7",exact:true,pl:"fav",n:1,songs:["革命道中 - On The Way"],desc:"BiSH のメンバーとして活動したのち、独自の歌世界を築くシンガー。ざらついた歌声が特徴。"},
+    "alessiacara":{name:"Alessia Cara",rome:"Alessia Cara",genre:"ポップ / R&B",url:"https://open.spotify.com/artist/2wUjUUtkb5lvLKcGKsKqsR",img:"https://i.scdn.co/image/ab6761610000e5eb508ccc1e658fc54e5de6f8df",exact:true,pl:"fav2",n:1,songs:["Stay"],desc:"カナダ出身のシンガー。Zedd との「Stay」で大きなヒットを記録した。"},
+    "ano":{name:"ano",rome:"あの",genre:"オルタナ / J-POP",url:"https://open.spotify.com/artist/7Il739Q5W4yJUYC3hfnX6z",img:"https://i.scdn.co/image/ab6761610000e5ebd05879cab05c1e9a567ab1a6",exact:true,pl:"fav",n:1,songs:["ちゅ、多様性。"],desc:"「ちゅ、多様性。」で広く知られるアーティスト。可愛さと歪さを同時に鳴らす。"},
+    "arcticmonkeys":{name:"Arctic Monkeys",rome:"Sheffield, UK",genre:"UK / インディーロック",url:"https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH",img:"https://i.scdn.co/image/ab6761610000e5eb7da39dea0a72f581535fb11f",exact:true,pl:"fav2",n:1,songs:["I Bet You Look Good On The Dancefloor"],desc:"2000年代半ばのUKから登場し、以降もサウンドを変え続けるバンド。"},
+    "avicii":{name:"Avicii",rome:"Sweden",genre:"EDM / ダンス",url:"https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6",img:"https://i.scdn.co/image/ab6761610000e5ebae07171f989fb39736674113",exact:true,pl:"fav2",n:1,songs:["Wake Me Up"],desc:"EDMシーンを塗り替えたスウェーデンのプロデューサー。"},
+    "baad":{name:"BAAD",rome:"BAAD",genre:"90sロック / アニメ",url:"https://open.spotify.com/artist/4Vr72WhXydJkLyyWGvT9hG",img:"https://i.scdn.co/image/ab6761610000e5ebd0e411ed7db1f3e079a311ad",exact:true,pl:"fav",n:1,songs:["君が好きだと叫びたい"],desc:"「君が好きだと叫びたい」（『SLAM DUNK』OP）で記憶される90年代のバンド。"},
+    "billie":{name:"Billie Eilish",rome:"Los Angeles, USA",genre:"US ポップ / オルタナ",url:"https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH",img:"https://i.scdn.co/image/ab6761610000e5eb4a21b4760d2ecb7b0dcdc8da",exact:true,pl:"fav2",n:1,songs:["bad guy"],desc:"ウィスパーボイスとダークで繊細なサウンドで一時代を築いた。"},
+    "billyjoel":{name:"Billy Joel",rome:"Billy Joel",genre:"ピアノロック",url:"https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e",img:"https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",exact:true,pl:"fav2",n:1,songs:["Piano Man"],desc:"「Piano Man」をはじめ、物語のある歌で長く愛されるアメリカのシンガーソングライター。"},
+    "blur":{name:"Blur",rome:"United Kingdom",genre:"UK / ブリットポップ",url:"https://open.spotify.com/artist/7MhMgCo0Bl0Kukl93PZbYS",img:"https://i.scdn.co/image/ab6761610000e5eb00620d736644d2359ce99430",exact:true,pl:"fav2",n:1,songs:["Song 2"],desc:"Oasis と並んで90年代のUKシーンを牽引したバンド。"},
+    "bobdylan":{name:"Bob Dylan",rome:"Bob Dylan",genre:"フォークロック",url:"https://open.spotify.com/artist/74ASZWbe4lXaubB36ztrGX",img:"https://i.scdn.co/image/ab6761610000e5eb791742524609864273747ef5",exact:true,pl:"fav2",n:1,songs:["Blowin' in the Wind"],desc:"20世紀の音楽と言葉を変えた人。「Blowin' in the Wind」は今も歌い継がれる。"},
+    "bobmarleysolo":{name:"Bob Marley",rome:"Bob Marley",genre:"レゲエ",url:"https://open.spotify.com/artist/6BH2lormtpjy3X9DyrGHVj",img:"https://i.scdn.co/image/ab67616d0000b2730e49f543ecfc45f2abf83295",exact:true,pl:"fav2",n:1,songs:["Turn Your Lights Down Low"],desc:"レゲエを世界の音楽にしたアーティスト。こちらは Ms. Lauryn Hill との共演曲での名義。"},
+    "briansetzer":{name:"Brian Setzer",rome:"Brian Setzer",genre:"ロカビリー / スウィング",url:"https://open.spotify.com/artist/4xiBg5AwhlWtuxAJO9rO6f",img:"https://i.scdn.co/image/ab6761610000e5eb140f487609faafb6de3c7964",exact:true,pl:"fav2",n:1,songs:["Drugs & Alcohol(Bullet Holes)"],desc:"ストレイ・キャッツのギタリスト。ロカビリーとビッグバンドを行き来する。"},
+    "caesars":{name:"Caesars",rome:"Caesars",genre:"ガレージロック",url:"https://open.spotify.com/artist/4rGrN4XDYhP6dUAZMvcuHr",img:"https://i.scdn.co/image/0fecf9009bd152c1f404abb27c7c0d0055d00b90",exact:true,pl:"fav2",n:1,songs:["Jerk It Out"],desc:"スウェーデンのバンド。「Jerk It Out」はCMなどで広く使われた。"},
+    "calvinharris":{name:"Calvin Harris",rome:"Scotland, UK",genre:"ダンス / ポップ",url:"https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY",img:"https://i.scdn.co/image/ab6761610000e5eb8ebba5e60113b48de8c11f6b",exact:true,pl:"fav2",n:1,songs:["Summer"],desc:"ダンスミュージックのヒットメーカー。"},
+    "charlieputh":{name:"Charlie Puth",rome:"USA",genre:"US ポップ",url:"https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7",img:"https://i.scdn.co/image/ab6761610000e5eb6721f541fb123145d4cb3ace",exact:true,pl:"fav2",n:1,songs:["I Don’t Think That I Like Her"],desc:"緻密なプロデュースとメロディセンスを併せ持つシンガー。"},
+    "chelmico":{name:"chelmico",rome:"chelmico",genre:"ラップ / ポップ",url:"https://open.spotify.com/artist/6sAONleCsmAyP87OHsVAPV",img:"https://i.scdn.co/image/ab6761610000e5eb6ec2e978a2fe8c8ccbafac72",exact:true,pl:"fav",n:1,songs:["Easy Breezy"],desc:"Rachel と Mamiko によるラップユニット。軽やかで気持ちのいいフロウが持ち味。"},
+    "chineke":{name:"Chineke! Orchestra",rome:"Chineke! Orchestra",genre:"クラシック / オーケストラ",url:"https://open.spotify.com/artist/7FKUsKktgY7Zf8iAL6wOls",img:"https://i.scdn.co/image/ab6772690000dd22795c2fe771fad9e642b85986",exact:true,pl:"fav2",n:1,songs:["I Shot The Sheriff"],desc:"黒人・少数民族の演奏家を中心に結成されたイギリスのオーケストラ。ボブ・マーリーとの共演版で入っている。"},
+    "choqmay":{name:"ChoQMay",rome:"ChoQMay",genre:"J-POP / SSW",url:"https://open.spotify.com/artist/5ZFxExn8YICZm9JFo9dqTq",img:"https://i.scdn.co/image/ab6761610000e5eb5a7630ff10a1a47ae9411720",exact:true,pl:"fav",n:1,songs:["貴方の恋人になりたい"],desc:"柔らかな歌声で恋の機微を描くシンガーソングライター。"},
+    "christinaaguilera":{name:"Christina Aguilera",rome:"Christina Aguilera",genre:"ポップ / R&B",url:"https://open.spotify.com/artist/1l7ZsJRRS8wlW3WfJfPfNS",img:"https://i.scdn.co/image/ab6761610000e5eb4a69ef1c3d566709985ce452",exact:true,pl:"fav2",n:1,songs:["Moves Like Jagger - Studio Recording"],desc:"圧倒的な歌唱力を持つアメリカのシンガー。Maroon 5 との共演版で fav2 に入っている。"},
+    "creephyp":{name:"クリープハイプ",rome:"Creephyp",genre:"オルタナ / ロック",url:"https://open.spotify.com/artist/6POfB0fHdzXFLWL3RHxLv8",img:"https://i.scdn.co/image/ab6761610000e5ebbb66b102ab85c531397ec6b2",exact:true,pl:"fav",n:1,songs:["栞"],desc:"尾崎世界観の特徴的な高い声と、生々しい歌詞が持ち味のロックバンド。"},
+    "daftpunk":{name:"Daft Punk",rome:"Daft Punk",genre:"エレクトロ / ハウス",url:"https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi",img:"https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",exact:true,pl:"fav2",n:1,songs:["One More Time"],desc:"フランスの2人組。ダンスミュージックの景色を変えた「One More Time」。"},
+    "danielpowter":{name:"Daniel Powter",rome:"Daniel Powter",genre:"ポップ",url:"https://open.spotify.com/artist/7xTcuBOIAAIGDOSvwYFPzk",img:"https://i.scdn.co/image/ab6761610000e5eb1f1ea5c01092257885e0c627",exact:true,pl:"fav2",n:1,songs:["Bad Day"],desc:"カナダのシンガーソングライター。「Bad Day」が世界的なヒットとなった。"},
+    "delasoul":{name:"De La Soul",rome:"De La Soul",genre:"ヒップホップ",url:"https://open.spotify.com/artist/1Z8ODXyhEBi3WynYw0Rya6",img:"https://i.scdn.co/image/ab6761610000e5ebc443011311dcf7f6eeaf507d",exact:true,pl:"fav2",n:1,songs:["Feel Good Inc."],desc:"ヒップホップの幅を広げたニューヨークのグループ。Gorillaz「Feel Good Inc.」に参加している。"},
+    "doasinfinity":{name:"Do As Infinity",rome:"Do As Infinity",genre:"J-POP / ロック",url:"https://open.spotify.com/artist/0gakJs5JAKmJZ4KnAHMh9i",img:"https://i.scdn.co/image/ab6761610000e5eb410b449720dbaf663d019a3e",exact:true,pl:"fav",n:1,songs:["陽のあたる坂道"],desc:"伴都美子の歌声と D・A・I のギターによるユニット。2000年代のアニメ主題歌でも広く知られる。"},
+    "ohtaki":{name:"Eiichi Ohtaki",rome:"大滝詠一",genre:"シティポップ / 歌謡",url:"https://open.spotify.com/artist/0cFJWqLH2LZPzuTGS1ljV0",img:"https://i.scdn.co/image/ab6761610000e5ebedb3134b5522bac384dd1a96",exact:true,pl:"fav",n:1,songs:["君は天然色"],desc:"はっぴいえんどのメンバーで、『A LONG VACATION』で日本のポップスを更新した人。「君は天然色」は不朽の一曲。"},
+    "clapton":{name:"Eric Clapton",rome:"United Kingdom",genre:"ロック / ブルース",url:"https://open.spotify.com/artist/6PAt558ZEZl0DmdXlnjMgD",img:"https://i.scdn.co/image/ab6772690000dd22a60e8f215103f6841d8a83f0",exact:true,pl:"fav2",n:1,songs:["Tears in Heaven"],desc:"ギタリスト／シンガーとしてロック史に立つ存在。"},
+    "featurecast":{name:"Featurecast",rome:"Featurecast",genre:"ブレイクビーツ",url:"https://open.spotify.com/artist/4OZcFrBu7oCltVhvi9wVrd",img:"https://i.scdn.co/image/ab6761610000e5eb241e3022b0df057296d8615e",exact:true,pl:"fav2",n:1,songs:["Channel Surfing"],desc:"ファンクとヒップホップを繋ぐUKのプロデューサー／DJ。"},
+    "flocom":{name:"フラワーカンパニーズ",rome:"Flower Companyz",genre:"ロック",url:"https://open.spotify.com/artist/2VuMHYb1igsjfw1AXUFV7D",img:"https://i.scdn.co/image/ab6761610000e5eb513db310df4f3bf9832ff9ee",exact:true,pl:"fav",n:1,songs:["深夜高速〜25th Anniversary Ver.〜"],desc:"長いキャリアを歩み続けるロックバンド。「深夜高速」は多くのアーティストにカバーされている。"},
+    "flumpool":{name:"flumpool",rome:"flumpool",genre:"邦ロック / 歌モノ",url:"https://open.spotify.com/artist/5Kpt1mryjiwHa9goYPQG1o",img:"https://i.scdn.co/image/ab6761610000e5ebfb1f292057db8838d56dffd1",exact:true,pl:"fav",n:1,songs:["ちいさな日々"],desc:"まっすぐな歌詞とメロディで支持を集める4人組ロックバンド。"},
+    "francycata":{name:"Francycata",rome:"Francycata",genre:"インディー",url:"https://open.spotify.com/artist/4RuJ7KsDwXIrJGbd5WGjdj",img:"https://i.scdn.co/image/ab6761610000e5eb36ab5500f5e5154b6118483c",exact:true,pl:"fav",n:1,songs:["Still For Your Love"],desc:"Spotify上の公開情報が少ないアーティスト。fav には「Still For Your Love」が入っている。"},
+    "franzferdinand":{name:"Franz Ferdinand",rome:"Glasgow, UK",genre:"UK / ダンスロック",url:"https://open.spotify.com/artist/0XNa1vTidXlvJ2gHSsRi4A",img:"https://i.scdn.co/image/ab6761610000e5eb69ecfa7557856564c968640d",exact:true,pl:"fav2",n:1,songs:["Do You Want To"],desc:"踊れるギターロックでシーンを塗り替えたグラスゴーのバンド。"},
+    "frederic":{name:"フレデリック",rome:"frederic",genre:"ダンスロック",url:"https://open.spotify.com/artist/3srPc1Mytv5GmTWqsQuoXW",img:"https://i.scdn.co/image/ab6761610000e5eb446de2ce907f837e06169cfb",exact:true,pl:"fav",n:1,songs:["オドループ"],desc:"中毒性のあるリズムと反復するフレーズが特徴のダンスロックバンド。"},
+    "furuiriho":{name:"Furui Riho",rome:"Furui Riho",genre:"J-R&B / SSW",url:"https://open.spotify.com/artist/6OgsusVzVrkzCvbXpv6GWh",img:"https://i.scdn.co/image/ab6761610000e5ebff647d0f64da73922aad0cd5",exact:true,pl:"fav",n:1,songs:["Hello"],desc:"札幌出身のシンガーソングライター。R&Bのグルーヴと日本語の歌を自然に繋ぐ。"},
+    "gayle":{name:"GAYLE",rome:"GAYLE",genre:"ポップパンク",url:"https://open.spotify.com/artist/2VSHKHBTiXWplO8lxcnUC9",img:"https://i.scdn.co/image/ab6761610000e5ebbac9c010fcc0dec404115f1f",exact:true,pl:"fav2",n:1,songs:["abcdefu"],desc:"SNS発で広まったアメリカのシンガー。「abcdefu」が代表曲。"},
+    "gesu":{name:"Gesu No Kiwami Otome",rome:"ゲスの極み乙女",genre:"オルタナ / 変拍子ポップ",url:"https://open.spotify.com/artist/1ieluXFoq2RRxMXZIQksTz",img:"https://i.scdn.co/image/ab6761610000e5ebafa4735aa00736ee1783ea77",exact:true,pl:"fav",n:1,songs:["猟奇的なキスを私にして"],desc:"川谷絵音率いるバンド。凝った構成とポップさを両立させる。"},
+    "gogo7188":{name:"GO!GO!7188",rome:"GO!GO!7188",genre:"ガレージ / ガールズバンド",url:"https://open.spotify.com/artist/66ngkg99OYT8xfzYy660Wu",img:"https://i.scdn.co/image/ab67616d0000b273da9269aa35bfe7ad67cd4967",exact:true,pl:"fav",n:1,songs:["こいのうた"],desc:"歌謡曲的なメロディとガレージロックの荒さを併せ持つ3ピース。「こいのうた」で知られる。"},
+    "gorillaz":{name:"Gorillaz",rome:"United Kingdom",genre:"オルタナ / ヒップホップ",url:"https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ",img:"https://i.scdn.co/image/ab6761610000e5ebdd5b57b40cf2aaeccd07835e",exact:true,pl:"fav2",n:1,songs:["Feel Good Inc."],desc:"Blur のデーモン・アルバーンらによるバーチャルバンド。ジャンルを軽々と横断する。"},
+    "happyend":{name:"はっぴいえんど",rome:"Happy End",genre:"日本語ロックの原点",url:"https://open.spotify.com/artist/5cE4zmLUDdmvlYp8TP1YRn",img:"https://i.scdn.co/image/ab67616d0000b273a6075c947408319877187d97",exact:true,pl:"fav",n:1,songs:["風をあつめて"],desc:"日本語でロックを鳴らす道を切り拓いた、伝説的なバンド。"},
+    "hawaiian6":{name:"Hawaiian6",rome:"HAWAIIAN6",genre:"メロディックハードコア",url:"https://open.spotify.com/artist/5uZU1Q2bJFoFAqq1FcF1pw",img:"https://i.scdn.co/image/ab6761610000e5ebb7f3b490ed92b07f0c5e887e",exact:true,pl:"fav",n:1,songs:["MAGIC"],desc:"叙情的なメロディと疾走感で、日本のメロディックハードコアを支えてきたバンド。"},
+    "histandard":{name:"Hi-STANDARD",rome:"Hi-Standard",genre:"メロディックパンク",url:"https://open.spotify.com/artist/5bqCpmhZzNzRzzKSbbDkeH",img:"https://i.scdn.co/image/ab6761610000e5eb42c819a464e427397cc0613b",exact:true,pl:"fav",n:1,songs:["STAY GOLD"],desc:"日本のメロディックパンクを切り拓いた3ピース。"},
+    "yaida":{name:"矢井田瞳",rome:"Hitomi Yaida",genre:"SSW / ロック",url:"https://open.spotify.com/artist/4Xho9HlopbIH2VpxfDkVXn",img:"https://i.scdn.co/image/ab6761610000e5eb1f47653e4fa2f1c2658cde98",exact:true,pl:"fav",n:1,songs:["My Sweet Darlin'"],desc:"2000年前後に登場した、ギターを弾くシンガーソングライター。"},
+    "honeyworks":{name:"HoneyWorks",rome:"HoneyWorks",genre:"ボカロ / ネット発",url:"https://open.spotify.com/artist/40oxjbVm3kdeyJEiGsKrmd",img:"https://i.scdn.co/image/ab6761610000e5ebcc7b1d24a5cec3a30c4db7aa",exact:true,pl:"fav",n:1,songs:["可愛くてごめん"],desc:"ボカロシーンから広がったクリエイターチーム。恋愛を主題にした楽曲を数多く送り出している。"},
+    "hoobastank":{name:"Hoobastank",rome:"Hoobastank",genre:"ポストグランジ",url:"https://open.spotify.com/artist/2MqhkhX4npxDZ62ObR5ELO",img:"https://i.scdn.co/image/ab6761610000e5eb5be693bf4cb6f511fa92802a",exact:true,pl:"fav2",n:1,songs:["Just One"],desc:"2000年代のアメリカン・ロックを代表するバンドのひとつ。"},
+    "ikimono":{name:"いきものがかり",rome:"Ikimonogakari",genre:"J-POP",url:"https://open.spotify.com/artist/5YneEA2nLtAhkD5t2769lZ",img:"https://i.scdn.co/image/ab6761610000e5eb2fb3e753bdc81f5aa105233d",exact:true,pl:"fav",n:1,songs:["うるわしきひと"],desc:"誰の耳にも届く王道のメロディを書き続けるグループ。"},
+    "imase":{name:"imase",rome:"imase",genre:"J-POP / ネット発",url:"https://open.spotify.com/artist/4TaSvnT5o4REFwhqfrmK27",img:"https://i.scdn.co/image/ab6761610000e5eb3d2c025c71d75a0ba89718ed",exact:true,pl:"fav",n:1,songs:["NIGHT DANCER"],desc:"SNS発で一気に広まったシンガーソングライター。「NIGHT DANCER」は海外でも大きく再生された。"},
+    "janellemonae":{name:"Janelle Monáe",rome:"Janelle Monáe",genre:"R&B / ファンク",url:"https://open.spotify.com/artist/6ueGR6SWhUJfvEhqkvMsVs",img:"https://i.scdn.co/image/ab6761610000e5ebed797a18cbed9bf0ef9549d0",exact:true,pl:"fav2",n:1,songs:["We Are Young (feat. Janelle Monáe)"],desc:"コンセプチュアルな作品づくりで知られるアーティスト。fun.「We Are Young」に客演。"},
+    "jessglynne":{name:"Jess Glynne",rome:"Jess Glynne",genre:"ポップ / ソウル",url:"https://open.spotify.com/artist/4ScCswdRlyA23odg9thgIO",img:"https://i.scdn.co/image/ab6761610000e5eb954fa7ee5108a613c3f27edc",exact:true,pl:"fav2",n:1,songs:["Hold My Hand"],desc:"イギリスのシンガー。ハスキーで力強い歌声。"},
+    "jet":{name:"Jet",rome:"Melbourne, Australia",genre:"ガレージロック",url:"https://open.spotify.com/artist/5ypxebeHEIXjMtJb17uJlI",img:"https://i.scdn.co/image/ab6761610000e5eb7fee6883cc7e990e5b6de167",exact:true,pl:"fav2",n:1,songs:["Are You Gonna Be My Girl"],desc:"オーストラリア出身。ガレージロック・リバイバル期を代表する一曲を持つ。"},
+    "jo0ji":{name:"jo0ji",rome:"jo0ji",genre:"オルタナ / SSW",url:"https://open.spotify.com/artist/5Wfhi0FggHCfOSa3ux39fk",img:"https://i.scdn.co/image/ab6761610000e5eb9409491ce5f23b34cc10bf44",exact:true,pl:"fav",n:1,songs:["条司 - Jouji"],desc:"宮崎出身の宅録シンガーソングライター。くぐもった歌声と独特の浮遊感。"},
+    "kanaboon":{name:"KANA-BOON",rome:"KANA-BOON",genre:"邦ロック / ギターロック",url:"https://open.spotify.com/artist/3PWp9R5HvbQgxI5KBx5kVd",img:"https://i.scdn.co/image/ab6761610000e5ebefc58ab999928508a102151d",exact:true,pl:"fav",n:1,songs:["シルエット"],desc:"軽快なギターリフとキャッチーなメロディの4人組。「シルエット」は『NARUTO』主題歌。"},
+    "kariyushi58":{name:"kariyushi58",rome:"かりゆし58",genre:"沖縄 / J-POP",url:"https://open.spotify.com/artist/0JUEsKG18QuDt6SmyHDrnL",img:"https://i.scdn.co/image/ab6761610000e5ebfbe0f0e0bece5cdbec5bc07b",exact:true,pl:"fav",n:1,songs:["オワリはじまり"],desc:"沖縄発のバンド。人生の節目を歌う「オワリはじまり」で知られる。"},
+    "katyperry":{name:"Katy Perry",rome:"USA",genre:"US ポップ",url:"https://open.spotify.com/artist/6jJ0s89eD6GaHleKKya26X",img:"https://i.scdn.co/image/ab6761610000e5ebcd50e745cf782f905769f482",exact:true,pl:"fav2",n:1,songs:["Roar"],desc:"2010年代のポップを代表するシンガー。"},
+    "kuwata":{name:"Keisuke Kuwata",rome:"桑田佳祐",genre:"歌謡 / ソロ",url:"https://open.spotify.com/artist/6YIqgghQqnkNne8BKQpW6v",img:"https://i.scdn.co/image/ab6761610000e5ebf28ce2299171bdada79a6a06",exact:true,pl:"fav",n:1,songs:["波乗りジョニー"],desc:"サザンオールスターズのフロントマンによるソロ名義。「波乗りジョニー」は夏の定番。"},
+    "knoak":{name:"knoak",rome:"knoak",genre:"J-R&B",url:"https://open.spotify.com/artist/2JaKbKsQiaVksYmGSs2ZuP",img:"https://i.scdn.co/image/ab6761610000e5eb27812b7d19bc3a3bfaee892f",exact:true,pl:"fav",n:1,songs:["Hello"],desc:"Furui Riho との「Hello」で fav に入っているアーティスト。"},
+    "koolkeith":{name:"Kool Keith",rome:"Kool Keith",genre:"ヒップホップ",url:"https://open.spotify.com/artist/3zFaWPA8Jobgf5egh38KD2",img:"https://i.scdn.co/image/ab6761610000e5ebdee0ef132947fc1ec6fc8ca3",exact:true,pl:"fav2",n:1,songs:["Channel Surfing"],desc:"独創的な言語感覚で知られるアメリカのラッパー。"},
+    "kreva":{name:"KREVA",rome:"Kreva",genre:"日本語ラップ",url:"https://open.spotify.com/artist/6lAinPkC2U1Huibu6Vfr9R",img:"https://i.scdn.co/image/ab6761610000e5ebed6ca8ad2c1dbf1253ee0d27",exact:true,pl:"fav",n:1,songs:["イッサイガッサイ"],desc:"日本語ラップのトップランナー。ラップと歌を自在に往復する。"},
+    "lennykravitz":{name:"Lenny Kravitz",rome:"USA",genre:"ロック / ファンク",url:"https://open.spotify.com/artist/5gznATMVO85ZcLTkE9ULU7",img:"https://i.scdn.co/image/ab6761610000e5ebe0cf058473839f1c9f49937e",exact:true,pl:"fav2",n:1,songs:["Are You Gonna Go My Way"],desc:"ロック、ファンク、ソウルを横断するアーティスト。"},
+    "magic":{name:"MAGIC!",rome:"Canada",genre:"レゲエポップ",url:"https://open.spotify.com/artist/0DxeaLnv6SyYk2DOqkLO8c",img:"https://i.scdn.co/image/ab6761610000e5eb43a7fd3594d354aef0d6340c",exact:true,pl:"fav2",n:1,songs:["Rude"],desc:"レゲエポップのヒット「Rude」で知られるカナダのバンド。"},
+    "maoabe":{name:"Mao Abe",rome:"阿部真央",genre:"SSW / 弾き語り",url:"https://open.spotify.com/artist/5ajce5LoM5SK6a6zzyF4My",img:"https://i.scdn.co/image/ab6761610000e5eb9ecdfca44f99488d5959b330",exact:true,pl:"fav",n:1,songs:["I wanna see you"],desc:"ギター一本から始まったシンガーソングライター。飾らない言葉と伸びのある声。"},
+    "marihiko":{name:"Marihiko Hara",rome:"原摩利彦",genre:"ネオクラシカル / 環境音楽",url:"https://open.spotify.com/artist/16EpmlbvM3Zh46GMfxyunm",img:"https://i.scdn.co/image/ab6761610000e5eb27d588b3327efe80dce0725b",exact:true,pl:"fav",n:1,songs:["Luminance"],desc:"京都を拠点とする作曲家。ピアノと電子音による静かな作品で知られる。"},
+    "meghantrainor":{name:"Meghan Trainor",rome:"USA",genre:"US ポップ",url:"https://open.spotify.com/artist/6JL8zeS1NmiOftqZTRgdTz",img:"https://i.scdn.co/image/ab6761610000e5eb240d44db603d49305d3d7b56",exact:true,pl:"fav2",n:1,songs:["All About That Bass"],desc:"レトロなポップ感覚で世界的ヒットを放ったシンガー。"},
+    "mickeyfinn":{name:"Mickey Finn's T.Rex",rome:"Mickey Finn's T.Rex",genre:"グラムロック",url:"https://open.spotify.com/artist/6K475qagvEW2YAJfEqUM1J",img:"https://i.scdn.co/image/ab67616d0000b273509a84ea9868cd64983c515f",exact:true,pl:"fav2",n:1,songs:["20センチュリー・ボーイ"],desc:"T.Rex のパーカッショニストが率いた後継バンド。「20th Century Boy」が入っている。"},
+    "miwa":{name:"miwa",rome:"miwa",genre:"J-POP / SSW",url:"https://open.spotify.com/artist/3R3WEsfL1WC1zLiz3XG9K5",img:"https://i.scdn.co/image/ab6761610000e5eb201af6bf265849b54d2e6e26",exact:true,pl:"fav",n:1,songs:["ヒカリヘ"],desc:"ギターを弾きながら歌う、まっすぐなポップス。"},
+    "mongol800":{name:"MONGOL800",rome:"MONGOL800",genre:"沖縄 / パンク",url:"https://open.spotify.com/artist/2zUQjYvy0TevSi4d3PjqQO",img:"https://i.scdn.co/image/ab6761610000e5eb92f13c71198095f6a34fd36b",exact:true,pl:"fav",n:1,songs:["あなたに"],desc:"沖縄発の3ピース。「あなたに」はインディーズながら世代を超えて歌われている。"},
+    "monkeymajik":{name:"Monkey Majik",rome:"MONKEY MAJIK",genre:"ポップ / バイリンガル",url:"https://open.spotify.com/artist/6U2dgcU46Iy9pF3RQBj5hG",img:"https://i.scdn.co/image/ab6761610000e5ebfc84b496288ef7894631512c",exact:true,pl:"fav",n:1,songs:["Around The World"],desc:"カナダ出身の兄弟と日本人メンバーによるバンド。英語と日本語を行き来する歌。"},
+    "motley":{name:"Mötley Crüe",rome:"Los Angeles, USA",genre:"グラムメタル",url:"https://open.spotify.com/artist/0cc6vw3VN8YlIcvr1v7tBL",img:"https://i.scdn.co/image/ab6761610000e5ebab0922f900e6c22b8ef4c01c",exact:true,pl:"fav2",n:1,songs:["Kickstart My Heart"],desc:"80年代のLAメタル／グラムメタルを代表するバンド。享楽的で派手なサウンド。"},
+    "laurynhill":{name:"Ms. Lauryn Hill",rome:"Ms. Lauryn Hill",genre:"R&B / ヒップホップ",url:"https://open.spotify.com/artist/2Mu5NfyYm8n5iTomuKAEHl",img:"https://i.scdn.co/image/500d9d449b4ad8e8158d5417de875438c16fd9da",exact:true,pl:"fav2",n:1,songs:["Turn Your Lights Down Low"],desc:"フージーズを経てソロで金字塔を打ち立てたシンガー／ラッパー。"},
+    "nisshoku":{name:"日食なつこ",rome:"Natsuko Nisshoku",genre:"ピアノロック / SSW",url:"https://open.spotify.com/artist/4GnFg9D7Ds99UI0r5t9PZK",img:"https://i.scdn.co/image/ab6761610000e5ebf6dc1ce599e5f6e67baeefc0",exact:true,pl:"fav",n:1,songs:["水流のロック"],desc:"ピアノを叩きつけるように弾き語る、独自のスタイルのシンガーソングライター。"},
+    "negoto":{name:"ねごと",rome:"negoto",genre:"邦ロック / ガールズバンド",url:"https://open.spotify.com/artist/19oTSjL9FYG6cemjnNwiuF",img:"https://i.scdn.co/image/ab6761610000e5eb9c16677aa724571ec376df5a",exact:true,pl:"fav",n:1,songs:["カロン"],desc:"浮遊感のあるシンセとギターが重なるサウンドで知られた4人組バンド。"},
+    "neguse":{name:"neguse.",rome:"neguse.",genre:"インディー / ポップ",url:"https://open.spotify.com/artist/7jiFTNRWSw8zYgUj9wNJld",img:"https://i.scdn.co/image/ab6761610000e5ebfb3164dbfe5efbb266626c71",exact:true,pl:"fav",n:1,songs:["織姫とBABY"],desc:"汐れいらとの「織姫とBABY」で fav に入っているアーティスト。"},
+    "okamotos":{name:"OKAMOTO'S",rome:"OKAMOTO'S",genre:"邦ロック / ガレージ",url:"https://open.spotify.com/artist/3X1afU2VL6MV0AJacARH7T",img:"https://i.scdn.co/image/ab6761610000e5eb2058d3004e972fab493a112e",exact:true,pl:"fav",n:1,songs:["BROTHER"],desc:"10代から活動する4人組。R&Bやガレージロックを吸収した太いグルーヴ。"},
+    "owlcity":{name:"Owl City",rome:"Owl City",genre:"シンセポップ",url:"https://open.spotify.com/artist/07QEuhtrNmmZ0zEcqE9SF6",img:"https://i.scdn.co/image/ab6761610000e5ebce3fbd73ae4f8b3ff54a0a5c",exact:true,pl:"fav2",n:1,songs:["Good Time"],desc:"アダム・ヤングによるプロジェクト。きらきらしたシンセと囁くような歌。"},
+    "ozzy":{name:"Ozzy Osbourne",rome:"United Kingdom",genre:"ハードロック / メタル",url:"https://open.spotify.com/artist/6ZLTlhejhndI4Rh53vYhrY",img:"https://i.scdn.co/image/ab6761610000e5ebbe40717ab20a580f15ad3967",exact:true,pl:"fav2",n:1,songs:["Crazy Train"],desc:"Black Sabbath のボーカルとして知られ、ソロでも数々の名曲を残した。"},
+    "pearljam":{name:"Pearl Jam",rome:"Pearl Jam",genre:"グランジ",url:"https://open.spotify.com/artist/1w5Kfo2jwwIPruYS2UWh56",img:"https://i.scdn.co/image/ab6761610000e5ebe431fb8ba17cdee73e4ce08a",exact:true,pl:"fav2",n:1,songs:["Alive"],desc:"シアトル発、90年代グランジを代表するバンド。「Alive」は初期の代表曲。"},
+    "perfume":{name:"Perfume",rome:"Perfume",genre:"テクノポップ",url:"https://open.spotify.com/artist/2XMxWKPKCxoLkSdpCViCnr",img:"https://i.scdn.co/image/ab6761610000e5eb3955d594fd646c2b77f2ae03",exact:true,pl:"fav",n:1,songs:["Baby cruising Love"],desc:"中田ヤスタカのプロデュースによるテクノポップ・ユニット。"},
+    "pharrell":{name:"Pharrell Williams",rome:"Pharrell Williams",genre:"ポップ / ファンク",url:"https://open.spotify.com/artist/2RdwBSPQiwcmiDo9kixcl8",img:"https://i.scdn.co/image/ab6761610000e5ebf0789cd783c20985ec3deb4e",exact:true,pl:"fav2",n:1,songs:["Happy -"],desc:"プロデューサーとしても絶大な影響力を持つアーティスト。「Happy」で世界を明るくした。"},
+    "primalscream":{name:"Primal Scream",rome:"Primal Scream",genre:"オルタナ / ダンス",url:"https://open.spotify.com/artist/3wury2nd8idV4GecUg5xze",img:"https://i.scdn.co/image/ab6761610000e5eb67fc8710036b6a053baef3d5",exact:true,pl:"fav2",n:1,songs:["Movin' on Up"],desc:"ロックとダンスを繋いだスコットランドのバンド。"},
+    "punpee":{name:"PUNPEE",rome:"PUNPEE",genre:"ヒップホップ",url:"https://open.spotify.com/artist/0mP8A1qIoufScrsxq18Cw6",img:"https://i.scdn.co/image/ab6761610000e5eb9b7b550345809714f2a1dbc4",exact:true,pl:"fav",n:1,songs:["ODDTAXI"],desc:"日本のヒップホップを代表するラッパー／プロデューサー。物語性のあるリリックと遊び心のあるトラック。"},
+    "quruli":{name:"Quruli",rome:"くるり",genre:"オルタナ / インディー",url:"https://open.spotify.com/artist/26WuprsX7JRG69T0PXkze4",img:"https://i.scdn.co/image/ab6761610000e5ebf3e90defd394450bc6412001",exact:true,pl:"fav",n:1,songs:["ロックンロール"],desc:"京都発、岸田繁率いるバンド。作品ごとに大きく音楽性を変えながら活動を続ける。"},
+    "radiohead":{name:"Radiohead",rome:"Radiohead",genre:"オルタナ / アートロック",url:"https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",img:"https://i.scdn.co/image/ab6761610000e5eb4104fbd80f1f795728abbd59",exact:true,pl:"fav2",n:1,songs:["Creep"],desc:"ロックの形を更新し続けるイギリスのバンド。fav2 に入っているのは初期の代表曲「Creep」。"},
+    "retroriron":{name:"RETRORIRON",rome:"RETRORIRON",genre:"インディーポップ",url:"https://open.spotify.com/artist/47MRpWYlFaneZAlaXrt9bu",img:"https://i.scdn.co/image/ab6761610000e5ebcfbb1447667a9714d5bec4b4",exact:true,pl:"fav",n:1,songs:["UNITY"],desc:"fav に「UNITY」が入っているアーティスト。"},
+    "rokudenashi":{name:"Rokudenashi",rome:"ロクデナシ",genre:"ボカロ / ネット発",url:"https://open.spotify.com/artist/4kpQdAU7yPjqtiJsFcBTBb",img:"https://i.scdn.co/image/ab6761610000e5eb14043c4068014df671543a02",exact:true,pl:"fav",n:1,songs:["ただ声一つ"],desc:"ボカロシーン出身のプロジェクト。「ただ声一つ」は国内外で大きく再生された。"},
+    "higuchi":{name:"樋口了一",rome:"Ryoichi Higuchi",genre:"SSW",url:"https://open.spotify.com/artist/2ZyBE5rq3zn4n4YG4Ew4cn",img:"https://i.scdn.co/image/ab6761610000e5eb7bd3a4c65824805382bd40cc",exact:true,pl:"fav",n:1,songs:["1/6の夢旅人2002（オリジナル）"],desc:"「1/6の夢旅人2002」はテレビ番組『水曜どうでしょう』のテーマとして広く知られる。"},
+    "satoh":{name:"SATOH",rome:"SATOH",genre:"ラップ / オルタナ",url:"https://open.spotify.com/artist/5JHlNfEowjO3TBglD42vAi",img:"https://i.scdn.co/image/ab6761610000e5eb76ce4374d505707a313b4134",exact:true,pl:"fav",n:1,songs:["愛し合うとして"],desc:"ジャンルの枠に収まらないラッパー。歌とラップの境目を行き来する。"},
+    "sekaowa":{name:"SEKAI NO OWARI",rome:"Sekai no Owari",genre:"J-POP",url:"https://open.spotify.com/artist/7HwzlRPa9Ad0I8rK0FPzzK",img:"https://i.scdn.co/image/ab6761610000e5ebe819f4a2d148b4c10f359c86",exact:true,pl:"fav",n:1,songs:["RPG"],desc:"物語性の強い世界観をポップに鳴らすバンド。"},
+    "kamattechan":{name:"神聖かまってちゃん",rome:"Shinsei Kamattechan",genre:"オルタナ / ネット発",url:"https://open.spotify.com/artist/1ZnuqrjIR4q8zhgriUYsSo",img:"https://i.scdn.co/image/ab6761610000e5eb102d3358241328ae93540ed0",exact:true,pl:"fav",n:1,songs:["ロックンロールは鳴り止まないっ"],desc:"ネット発、剥き出しの叫びと歪んだポップさが同居するバンド。"},
+    "shishamo":{name:"SHISHAMO",rome:"Shishamo",genre:"邦ロック / ガールズバンド",url:"https://open.spotify.com/artist/6MGHit7sV38BhpChZYByFv",img:"https://i.scdn.co/image/ab6761610000e5eb0424d6894e37cdcbb6da32f1",exact:true,pl:"fav",n:1,songs:["明日も"],desc:"等身大の恋の歌をまっすぐ鳴らす3ピース・ガールズバンド。"},
+    "sia":{name:"Sia",rome:"Australia",genre:"ポップ",url:"https://open.spotify.com/artist/5WUlDfRSoLAfcVSX1WnrxN",img:"https://i.scdn.co/image/ab6761610000e5ebcc1806f0a2f6c9e449de9d3c",exact:true,pl:"fav2",n:1,songs:["Chandelier"],desc:"オーストラリア出身。強烈な声とソングライティングで知られる。"},
+    "skirt":{name:"Skirt",rome:"スカート",genre:"インディー / シティポップ",url:"https://open.spotify.com/artist/1rOnNKoQhifOY4rIH4wMtk",img:"https://i.scdn.co/image/ab6761610000e5eb98a0ea6829357e0ba08609a5",exact:true,pl:"fav",n:1,songs:["ODDTAXI"],desc:"澤部渡のソロプロジェクト。緻密なアレンジと日常を切り取る歌詞。PUNPEE との「ODDTAXI」が入っている。"},
+    "snowpatrol":{name:"Snow Patrol",rome:"United Kingdom",genre:"UK / オルタナ",url:"https://open.spotify.com/artist/3rIZMv9rysU7JkLzEaC5Jp",img:"https://i.scdn.co/image/ab6761610000e5eb9b328846dc38b0a620da1ce2",exact:true,pl:"fav2",n:1,songs:["Chasing Cars"],desc:"叙情的なメロディで広く知られるUKのロックバンド。"},
+    "soutaiseiriron":{name:"Soutaiseiriron",rome:"相対性理論",genre:"オルタナ / ニューウェーブ",url:"https://open.spotify.com/artist/1bj13qFAwnyM3ILOiFnn1Y",img:"https://i.scdn.co/image/ab6761610000e5ebe643b90908be97c37353fb69",exact:true,pl:"fav",n:1,songs:["LOVEずっきゅん"],desc:"やくしまるえつこの無機質な歌声と、精緻なバンドアンサンブル。「LOVEずっきゅん」で知られる。"},
+    "steppenwolf":{name:"Steppenwolf",rome:"Born To Be Wild",genre:"ロック",url:"https://open.spotify.com/artist/1WRM9i067hd2ujxxi8FI3m",img:"https://i.scdn.co/image/4d9f763b4d854a8c3a0d263d55be88ed02acfdd3",exact:true,pl:"fav2",n:1,songs:["Born To Be Wild"],desc:"「Born To Be Wild」で知られるロックバンド。"},
+    "straightener":{name:"ストレイテナー",rome:"Straightener",genre:"邦ロック / オルタナ",url:"https://open.spotify.com/artist/4q5fHrf0Q0R6imQ3etjXEG",img:"https://i.scdn.co/image/ab6761610000e5ebd0a6929bf2a6b77a4eafd915",exact:true,pl:"fav",n:1,songs:["Melodic Storm"],desc:"硬質でスケールの大きいサウンドを鳴らす、日本のオルタナ／ギターロックの実力派。"},
+    "subwaydaydream":{name:"Subway Daydream",rome:"Subway Daydream",genre:"シューゲイズ / インディー",url:"https://open.spotify.com/artist/4Iiidb9Wqw3kMFVEMxtEyf",img:"https://i.scdn.co/image/ab6761610000e5ebe46fcfb7ad3c46b48aa61d15",exact:true,pl:"fav",n:1,songs:["SUNDAY!"],desc:"浮遊感のあるギターサウンドを鳴らすインディーバンド。"},
+    "sukimaswitch":{name:"Sukima Switch",rome:"スキマスイッチ",genre:"J-POP / ピアノポップ",url:"https://open.spotify.com/artist/0wRzWf3I4lUl9hdFF5uL0m",img:"https://i.scdn.co/image/ab6761610000e5eb89aaa8561d1293f4347a2cbb",exact:true,pl:"fav",n:1,songs:["全力少年"],desc:"大橋卓弥と常田真太郎のユニット。「全力少年」は世代を超えて聴かれている。"},
+    "superfly":{name:"Superfly",rome:"Superfly",genre:"ロック / ポップ",url:"https://open.spotify.com/artist/5M8AXrOifBT8elkLKbGPQZ",img:"https://i.scdn.co/image/ab6761610000e5eb1b15afc624e84a07071c5c0c",exact:true,pl:"fav",n:1,songs:["Beautiful"],desc:"越智志帆の圧倒的な歌唱力を核にしたロックプロジェクト。"},
+    "syudou":{name:"syudou",rome:"syudou",genre:"ボカロ / ネット発",url:"https://open.spotify.com/artist/43XkWaoCS0wKjuMJrWFgoa",img:"https://i.scdn.co/image/ab6761610000e5eb74b5f841221f6c0d6fdc3199",exact:true,pl:"fav",n:1,songs:["爆笑"],desc:"ボカロP／シンガー。毒気のある言葉と中毒性の高いメロディ。"},
+    "trex":{name:"T. Rex",rome:"United Kingdom",genre:"グラムロック",url:"https://open.spotify.com/artist/3dBVyJ7JuOMt4GE9607Qin",img:"https://i.scdn.co/image/ab6761610000e5ebc2d410977cf0092bbded63ce",exact:true,pl:"fav2",n:1,songs:["Get It On"],desc:"グラムロックを象徴するバンド。"},
+    "tacica":{name:"tacica",rome:"tacica",genre:"邦ロック",url:"https://open.spotify.com/artist/6iglpAqZTAmvm0ffNKlaFS",img:"https://i.scdn.co/image/ab6761610000e5eb241c0fc4fea4bd8f71abf39a",exact:true,pl:"fav",n:1,songs:["HERO"],desc:"硬質なバンドサウンドと、叙情的で文学的な歌詞が魅力の3ピース。"},
+    "takeharapistol":{name:"竹原ピストル",rome:"Takehara Pistol",genre:"SSW / 弾き語り",url:"https://open.spotify.com/artist/0IRFQcZbbHHpFY5EUNA2XA",img:"https://i.scdn.co/image/ab6761610000e5eb76e0274ae77cac51fd58f3fd",exact:true,pl:"fav",n:1,songs:["よー、そこの若いの"],desc:"弾き語りで生々しく歌い上げるシンガーソングライター。"},
+    "thepillows":{name:"the pillows",rome:"the pillows",genre:"オルタナ / インディー",url:"https://open.spotify.com/artist/6ilYV5oF8whllOnm4VZlYR",img:"https://i.scdn.co/image/ab6761610000e5eb4d9a10fc0d12679d391b2520",exact:true,pl:"fav",n:1,songs:["Funny Bunny"],desc:"30年以上活動を続けるオルタナティブロックバンド。「Funny Bunny」は長く愛される代表曲。"},
+    "theview":{name:"The View",rome:"Scotland, UK",genre:"UK / インディーロック",url:"https://open.spotify.com/artist/1fy3AQc7grjf5LnCd7snSg",img:"https://i.scdn.co/image/ab6761610000e5eb2e5af35098af56ec2a6e2747",exact:true,pl:"fav2",n:1,songs:["Wasted Little DJ's"],desc:"スコットランド出身のインディーロックバンド。若々しく疾走感のあるギターロックが持ち味。"},
+    "whitestripes":{name:"The White Stripes",rome:"Detroit, USA",genre:"US / ガレージロック",url:"https://open.spotify.com/artist/4F84IBURUo98rz4r61KF70",img:"https://i.scdn.co/image/ab6761610000e5eb70cc06de8fc28226d4743cd9",exact:true,pl:"fav2",n:1,songs:["Seven Nation Army"],desc:"ギターとドラムだけの2人組。削ぎ落としたサウンドで時代を動かした。"},
+    "yellowmonkey":{name:"THE YELLOW MONKEY",rome:"THE YELLOW MONKEY",genre:"歌謡ロック / グラム",url:"https://open.spotify.com/artist/1xCdTZ5Wu70H6YwsmpgmHg",img:"https://i.scdn.co/image/ab6761610000e5ebe3a55eb99dc64a03864be8eb",exact:true,pl:"fav",n:1,songs:["バラ色の日々"],desc:"妖艶なグラムロックと歌謡曲的な旋律を併せ持つ4人組。「バラ色の日々」が版違いで複数入っている。"},
+    "tomoo":{name:"TOMOO",rome:"TOMOO",genre:"SSW / ピアノポップ",url:"https://open.spotify.com/artist/6rm1uaZjykvKCobTzRPs35",img:"https://i.scdn.co/image/ab6761610000e5eb5b66dccf8df7637112f8ff6d",exact:true,pl:"fav",n:1,songs:["LUCKY"],desc:"ピアノ弾き語りを軸にしたシンガーソングライター。言葉の運びが巧み。"},
+    "u2":{name:"U2",rome:"Dublin, Ireland",genre:"ロック",url:"https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ",img:"https://i.scdn.co/image/ab6761610000e5ebba9faec141011cab24faccf5",exact:true,pl:"fav2",n:1,songs:["Vertigo"],desc:"アイルランド出身。スケールの大きなロックで長く第一線に立ち続けるバンド。"},
+    "undergraph":{name:"UNDER GRAPH",rome:"アンダーグラフ",genre:"邦ロック / 歌モノ",url:"https://open.spotify.com/artist/2Ox7XO5C0tbbk9pfZVDGA1",img:"https://i.scdn.co/image/ab6761610000e5ebcaef2dbb10ea3163b4b2e13e",exact:true,pl:"fav",n:1,songs:["ツバサ"],desc:"「ツバサ」で知られる4人組。まっすぐな言葉を届けるバンド。"},
+    "unicorn":{name:"ユニコーン",rome:"Unicorn",genre:"ロック / ポップ",url:"https://open.spotify.com/artist/0z4FY376uhecutd5Adph8s",img:"https://i.scdn.co/image/ab6761610000e5ebeacef2b340f5054d11fdf072",exact:true,pl:"fav",n:1,songs:["すばらしい日々"],desc:"奥田民生を擁するバンド。ポップさと遊び心に満ちた楽曲で知られる。"},
+    "velvetrevolver":{name:"Velvet Revolver",rome:"Velvet Revolver",genre:"ハードロック",url:"https://open.spotify.com/artist/7CHilrn81OdYjkh4uSVnYM",img:"https://i.scdn.co/image/ab6761610000e5eb251aece71fda3df6a4232b72",exact:true,pl:"fav2",n:1,songs:["Slither"],desc:"ガンズ・アンド・ローゼズとストーン・テンプル・パイロッツのメンバーによるバンド。"},
+    "walkthemoon":{name:"WALK THE MOON",rome:"WALK THE MOON",genre:"ダンスロック",url:"https://open.spotify.com/artist/6DIS6PRrLS3wbnZsf7vYic",img:"https://i.scdn.co/image/ab6761610000e5ebab9610e36fae856c0fd9b46b",exact:true,pl:"fav2",n:1,songs:["Shut Up and Dance"],desc:"「Shut Up and Dance」で知られるアメリカのバンド。"},
+    "wizkhalifa":{name:"Wiz Khalifa",rome:"Wiz Khalifa",genre:"ヒップホップ",url:"https://open.spotify.com/artist/137W8MRPWKqSmrBGDBFSop",img:"https://i.scdn.co/image/ab6761610000e5ebc66b0a8c3268f0b6556f64a8",exact:true,pl:"fav2",n:1,songs:["Payphone"],desc:"アメリカのラッパー。Maroon 5「Payphone」に客演している。"},
+    "yama":{name:"yama",rome:"yama",genre:"オルタナ / ネット発",url:"https://open.spotify.com/artist/7kOrrFIBIBc8uCu2zbxbLv",img:"https://i.scdn.co/image/ab6761610000e5eb102509e6ae5000293ad834c5",exact:true,pl:"fav",n:1,songs:["天色"],desc:"中性的な歌声で知られるシンガー。ネット発から広く支持を集めた。"},
+    "yellowcard":{name:"Yellowcard",rome:"Yellowcard",genre:"ポップパンク",url:"https://open.spotify.com/artist/3zxKH0qp3nBCuPZCZT5Vaf",img:"https://i.scdn.co/image/ab6761610000e5eb6b950048b4781d0e95bd9c2c",exact:true,pl:"fav2",n:1,songs:["Ocean Avenue"],desc:"バイオリンを擁するアメリカのポップパンクバンド。「Ocean Avenue」が代表曲。"},
+    "yoasobi":{name:"YOASOBI",rome:"YOASOBI",genre:"J-POP / ネット発",url:"https://open.spotify.com/artist/64tJ2EAv1R6UaZqc4iOCyj",img:"https://i.scdn.co/image/ab6761610000e5eb192be4e9b455c2d5dd5dfe09",exact:true,pl:"fav",n:1,songs:["アイドル"],desc:"小説を音楽にするユニット。Ayase の楽曲と ikura の歌声。「アイドル」は世界的なヒットとなった。"},
+    "yorushika":{name:"Yorushika",rome:"ヨルシカ",genre:"オルタナ / 文学ポップ",url:"https://open.spotify.com/artist/4UK2Lzi6fBfUi9rpDt6cik",img:"https://i.scdn.co/image/ab6761610000e5ebe62cff9c6018ae5616b01eab",exact:true,pl:"fav",n:1,songs:["ただ君に晴れ"],desc:"n-buna と suis によるユニット。文学的な世界観とギターロック。"},
+    "youngthug":{name:"Young Thug",rome:"Young Thug",genre:"ヒップホップ / トラップ",url:"https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn",img:"https://i.scdn.co/image/ab6761610000e5eb9f2fb33940aac624dc5d100d",exact:true,pl:"fav2",n:1,songs:["Havana (feat. Young Thug)"],desc:"独特の節回しで2010年代以降のラップに影響を与えたアーティスト。"},
+    "zard":{name:"ZARD",rome:"ZARD",genre:"90s J-POP",url:"https://open.spotify.com/artist/2NKadilSWCwuqGp5QoDeUS",img:"https://i.scdn.co/image/ab6761610000e5ebebe8d7cb3a567c8724138c9f",exact:true,pl:"fav",n:1,songs:["揺れる想い"],desc:"坂井泉水の歌声で90年代を象徴したユニット。「揺れる想い」は今も流れ続けている。"},
+    "zedd":{name:"Zedd",rome:"Zedd",genre:"EDM",url:"https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq",img:"https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",exact:true,pl:"fav2",n:1,songs:["Stay"],desc:"ドイツ出身のプロデューサー／DJ。「Stay」「Clarity」などのヒットで知られる。"},
+    "abaraya":{name:"あばらや",rome:"Abaraya",genre:"ボカロ / ネット発",url:"https://open.spotify.com/artist/62BcD1onjN2mkljVC74jeJ",img:"https://i.scdn.co/image/ab6761610000e5ebda1b79f254146dd5be47c387",exact:true,pl:"fav",n:1,songs:["街の残像"],desc:"fav に「街の残像」が入っている、ボカロシーンのクリエイター。"},
+    "kinmokusei":{name:"キンモクセイ",rome:"Kinmokusei",genre:"歌謡ロック / インディー",url:"https://open.spotify.com/artist/14UjZg0MdiVjAkbqWNFsIt",img:"https://i.scdn.co/image/ab6761610000e5eb85ac521ad22a2c0897710c15",exact:true,pl:"fav",n:1,songs:["さらば"],desc:"昭和歌謡の空気をまとったバンド。「さらば」など郷愁を誘う楽曲。"},
+    "supertozanbu":{name:"スーパー登山部",rome:"Super Tozanbu",genre:"インディー",url:"https://open.spotify.com/artist/5evTVfgO40erEFI5qBxtQ9",img:"https://i.scdn.co/image/ab6761610000e5eb5a9db479f38605a35b066855",exact:true,pl:"fav",n:1,songs:["燕"],desc:"fav に「燕」が入っているインディーアーティスト。"},
+    "chuutan":{name:"ちゅーたん(CV:早見沙織)",rome:"Chuutan",genre:"キャラクターソング",url:"https://open.spotify.com/artist/6yKI6XBrsly4nzlmcn2nJU",pl:"fav",n:1,songs:["可愛くてごめん"],desc:"「可愛くてごめん」に HoneyWorks と連名で入っているキャラクター名義（CV: 早見沙織）。"},
+    "harukamirai":{name:"ハルカミライ",rome:"Haruka Mirai",genre:"パンク / ロック",url:"https://open.spotify.com/artist/75md6zjRjnsWICkdIzl8iI",img:"https://i.scdn.co/image/ab6761610000e5eb823fb233c770926b9a9e13db",exact:true,pl:"fav",n:1,songs:["世界を終わらせて"],desc:"衝動そのままの熱いライブで支持を広げた4人組ロックバンド。"},
+    "iguchisatoru":{name:"井口理",rome:"Satoru Iguchi",genre:"ボーカル / 客演",url:"https://open.spotify.com/artist/573aEcIHzIyX9guZtasykj",img:"https://i.scdn.co/image/ab6761610000e5ebf63ee47686a2c5291af02307",exact:true,pl:"fav",n:1,songs:["Luminance"],desc:"King Gnu の井口理。原摩利彦「Luminance」に歌で参加している。"},
+    "morinana":{name:"森七菜",rome:"Nana Mori",genre:"俳優 / 歌",url:"https://open.spotify.com/artist/1IDjyCsCk5Xjy7RA7AQ8vy",img:"https://i.scdn.co/image/ab6761610000e5ebfc515aa007855d4a635464fd",exact:true,pl:"fav",n:1,songs:["スマイル"],desc:"俳優としても活動。「スマイル」はホフディランの楽曲のカバー。"},
   };
 
   var modal   = document.getElementById('artistModal');
@@ -939,9 +1274,10 @@
   var mLink   = document.getElementById('modalLink');
   var mLabel  = document.getElementById('modalLinkLabel');
   var mGenre  = document.getElementById('modalGenre');
+  var mSongs  = document.getElementById('modalSongs');
   var lastFocused = null;
 
-  // 統一のオープン処理。d = {name, rome, desc, img, url, exact, genre}
+  // 統一のオープン処理。d = {name, rome, desc, img, url, exact, genre, pl, n, songs}
   function openWith(d, trigger){
     var hasImg = !!d.img;
     box.classList.toggle('no-photo', !hasImg);
@@ -952,6 +1288,25 @@
     mDesc.textContent = d.desc || '';
     if(d.genre){ mGenre.textContent = d.genre; mGenre.hidden = false; }
     else { mGenre.textContent = ''; mGenre.hidden = true; }
+
+    // 収録曲（中西さんのプレイリストに実際に入っている曲）
+    if(d.songs && d.songs.length){
+      var head = document.createElement('h4');
+      head.textContent = '「' + d.pl + '」の収録曲（' + d.songs.length + '曲）';
+      var ul = document.createElement('ul');
+      d.songs.forEach(function(s){
+        var li = document.createElement('li');
+        li.textContent = s;
+        ul.appendChild(li);
+      });
+      mSongs.textContent = '';
+      mSongs.appendChild(head);
+      mSongs.appendChild(ul);
+      mSongs.hidden = false;
+    } else {
+      mSongs.textContent = '';
+      mSongs.hidden = true;
+    }
     mLink.href        = d.url || (SEARCH + encodeURIComponent(d.name || ''));
     mLabel.textContent= d.exact ? 'Spotifyでアーティストページを開く' : 'Spotifyで探して聴く';
     lastFocused = trigger || null;
@@ -967,18 +1322,13 @@
     if(lastFocused && lastFocused.focus) lastFocused.focus();
   }
 
-  // ① 写真ギャラリーのカード（data属性から直接。画像あり）
-  document.querySelectorAll('.artist-card[data-desc]').forEach(function(card){
+  // ① 写真ギャラリーのカード（レジストリ経由。JS無効時は href の Spotify へ遷移）
+  document.querySelectorAll('.artist-card[data-artist]').forEach(function(card){
     card.addEventListener('click', function(e){
+      var d = ARTISTS[card.getAttribute('data-artist')];
+      if(!d) return;               // 未登録なら通常リンクとして Spotify を開く
       e.preventDefault();
-      openWith({
-        name: card.getAttribute('data-name'),
-        rome: card.getAttribute('data-rome'),
-        desc: card.getAttribute('data-desc'),
-        img:  card.getAttribute('data-img'),
-        url:  card.getAttribute('href'),
-        exact:true
-      }, card);
+      openWith(d, card);
     });
   });
 
@@ -991,7 +1341,7 @@
       var d = ARTISTS[key];
       if(!d){
         // 万一レジストリに無ければ、表示名（数字を除く）で検索フォールバック
-        var nm = (chip.textContent || '').replace(/\d+$/,'').trim();
+        var nm = (chip.textContent || '').replace(/\d+\s*曲$/,'').trim();
         d = { name: nm };
       }
       openWith(d, chip);

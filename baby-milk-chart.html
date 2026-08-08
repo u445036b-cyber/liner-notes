@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>月齢別 授乳・ミルクのめやす</title>
+<meta name="description" content="月齢別の授乳・ミルクのめやす。母乳のみ／ミルクのみ／混合の量と回数、回数から逆算した授乳間隔をまとめた1枚。">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  img, svg { max-width: 100%; }
+</style>
+<style>
+  :root {
+    --bg: #FFF6F1;
+    --card: #FFFFFF;
+    --tile: #F8F1ED;
+    --ink: #3A2E36;
+    --ink-2: #7C6B74;
+    --ink-3: #A2929A;
+    --line: #EBDCD5;
+    --shadow: 0 1px 2px rgba(58, 46, 54, .05), 0 8px 24px -12px rgba(58, 46, 54, .18);
+
+    --s1: #E2456C;
+    --s2: #D0701C;
+    --s3: #A38205;
+    --s4: #2C8C59;
+    --s5: #1C84A6;
+    --s6: #5462CE;
+    --s7: #9343B5;
+
+    --tint: 12%;
+
+    --display: "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ ProN", "Zen Maru Gothic",
+               "M PLUS Rounded 1c", "Quicksand", "Hiragino Sans", "Yu Gothic", sans-serif;
+    --body: "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP", "Yu Gothic",
+            "Meiryo", system-ui, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1E181C;
+      --card: #272029;
+      --tile: #322A33;
+      --ink: #F3EAEE;
+      --ink-2: #B6A5AE;
+      --ink-3: #8B7B84;
+      --line: #3F353F;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -12px rgba(0, 0, 0, .6);
+
+      --s1: #FF89A6;
+      --s2: #F0A059;
+      --s3: #D9B845;
+      --s4: #6BD09D;
+      --s5: #5FC4E2;
+      --s6: #9CA6FF;
+      --s7: #D18FE9;
+
+      --tint: 16%;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #1E181C;
+    --card: #272029;
+    --tile: #322A33;
+    --ink: #F3EAEE;
+    --ink-2: #B6A5AE;
+    --ink-3: #8B7B84;
+    --line: #3F353F;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -12px rgba(0, 0, 0, .6);
+
+    --s1: #FF89A6;
+    --s2: #F0A059;
+    --s3: #D9B845;
+    --s4: #6BD09D;
+    --s5: #5FC4E2;
+    --s6: #9CA6FF;
+    --s7: #D18FE9;
+
+    --tint: 16%;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .sheet {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 28px 18px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  /* ---------- header ---------- */
+
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    text-align: center;
+    padding-top: 12px;
+  }
+
+  .eyebrow {
+    font-size: .72rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(1.9rem, 7.4vw, 2.9rem);
+    line-height: 1.28;
+    font-weight: 800;
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: .01em;
+  }
+
+  h1 .hl {
+    background: linear-gradient(transparent 62%, color-mix(in srgb, var(--s1) 32%, transparent) 62%);
+    padding: 0 .06em;
+  }
+
+  .lede {
+    margin: 0;
+    max-width: 34em;
+    color: var(--ink-2);
+    font-size: .95rem;
+  }
+
+  /* ---------- stage nav ---------- */
+
+  .stagenav {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 4px 2px 10px;
+    width: 100%;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .stagenav a {
+    flex: 0 0 auto;
+    text-decoration: none;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: .84rem;
+    padding: 7px 14px;
+    border-radius: 999px;
+    color: var(--hue);
+    background: color-mix(in srgb, var(--hue) var(--tint), var(--card));
+    border: 1.5px solid color-mix(in srgb, var(--hue) 34%, transparent);
+    white-space: nowrap;
+    transition: transform .16s ease;
+  }
+
+  .stagenav a:hover { transform: translateY(-2px); }
+  .stagenav a:focus-visible { outline: 2.5px solid var(--hue); outline-offset: 2px; }
+
+  /* ---------- stage cards ---------- */
+
+  .stages {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .stage {
+    scroll-margin-top: 16px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stage.now {
+    border-color: color-mix(in srgb, var(--hue) 58%, transparent);
+    box-shadow: var(--shadow), 0 0 0 3px color-mix(in srgb, var(--hue) 20%, transparent);
+  }
+
+  .stage__head {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    padding: 16px 20px 14px;
+    background: color-mix(in srgb, var(--hue) var(--tint), var(--card));
+    border-bottom: 1px solid color-mix(in srgb, var(--hue) 22%, transparent);
+  }
+
+  .stage__age {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(1.25rem, 4.6vw, 1.55rem);
+    color: var(--hue);
+    letter-spacing: .01em;
+  }
+
+  .stage__now {
+    font-family: var(--display);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    color: var(--card);
+    background: var(--hue);
+    border-radius: 999px;
+    padding: 3px 11px;
+    align-self: center;
+  }
+
+  .stage__line {
+    flex: 1 1 100%;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: .95rem;
+    color: var(--ink);
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+
+  .stage__line.muted {
+    font-weight: 500;
+    color: var(--ink-3);
+    font-family: var(--body);
+    font-size: .84rem;
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  @media (min-width: 620px) {
+    .tiles { grid-template-columns: 1fr 1fr 1fr; }
+  }
+
+  .tile {
+    background: var(--tile);
+    border-radius: 14px;
+    padding: 13px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .tile__label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: .88rem;
+    letter-spacing: .04em;
+  }
+
+  .tile__label svg { flex: 0 0 auto; }
+
+  .tile--breast .tile__label { color: var(--s7); }
+  .tile--milk   .tile__label { color: var(--s5); }
+  .tile--mixed  .tile__label { color: var(--ink-2); }
+
+  .tile__value {
+    font-size: .93rem;
+    line-height: 1.65;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tile__value b {
+    font-weight: 700;
+    font-size: 1.06rem;
+  }
+
+  .tile__value .x {
+    display: inline-block;
+    color: var(--ink-2);
+  }
+
+  .tile__value.none {
+    color: var(--ink-3);
+    font-size: .82rem;
+  }
+
+  .tile__gap {
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px dashed color-mix(in srgb, var(--ink-3) 45%, transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: .79rem;
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+
+  .gaprow {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .gaprow svg { flex: 0 0 auto; opacity: .8; margin-top: .22em; }
+
+  .gaprow b {
+    color: var(--ink);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .gaprow--night { color: color-mix(in srgb, var(--s6) 78%, var(--ink-2)); }
+  .gaprow--night b { color: var(--s6); }
+
+  .stage__caveat {
+    margin: -6px 16px 16px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--s1) 9%, var(--tile));
+    border-left: 3px solid var(--s1);
+    font-size: .81rem;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+
+  .stage__caveat b { color: var(--s1); font-weight: 700; }
+
+  .stage__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 0 16px 16px;
+    padding: 11px 15px;
+    border-radius: 12px;
+    border: 1.5px dashed color-mix(in srgb, var(--hue) 42%, transparent);
+    font-size: .85rem;
+    color: var(--ink-2);
+  }
+
+  .stage__total strong {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1.12rem;
+    color: var(--hue);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stage__note {
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    margin: 0 16px 16px;
+    padding: 13px 15px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--hue) calc(var(--tint) / 1.7), var(--tile));
+    font-size: .88rem;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  .stage__note .who {
+    flex: 0 0 auto;
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: .7rem;
+    letter-spacing: .06em;
+    color: var(--hue);
+    border: 1.5px solid color-mix(in srgb, var(--hue) 40%, transparent);
+    border-radius: 999px;
+    padding: 2px 9px;
+    margin-top: 3px;
+    white-space: nowrap;
+  }
+
+  .stage__note b {
+    color: var(--hue);
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- table block ---------- */
+
+  section.block {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.4;
+    text-wrap: balance;
+  }
+
+  .block__sub {
+    margin: -8px 0 0;
+    font-size: .85rem;
+    color: var(--ink-2);
+  }
+
+  .tablewrap { overflow-x: auto; margin: 0 -4px; padding: 0 4px; }
+
+  table {
+    width: 100%;
+    min-width: 460px;
+    border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
+    font-size: .9rem;
+  }
+
+  thead th {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: .78rem;
+    letter-spacing: .05em;
+    color: var(--ink-2);
+    text-align: right;
+    padding: 0 10px 9px;
+    border-bottom: 2px solid var(--line);
+  }
+
+  thead th:first-child { text-align: left; }
+
+  tbody td {
+    padding: 11px 10px;
+    text-align: right;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  tbody th {
+    text-align: left;
+    padding: 11px 10px 11px 16px;
+    border-bottom: 1px solid var(--line);
+    font-weight: 700;
+    font-family: var(--display);
+    font-size: .92rem;
+    color: var(--ink);
+    position: relative;
+    white-space: nowrap;
+  }
+
+  tbody tr:last-child th { border-bottom: none; }
+
+  tbody th::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 22px;
+    border-radius: 3px;
+    background: var(--hue);
+  }
+
+  td.total {
+    font-weight: 700;
+    color: var(--hue);
+    white-space: nowrap;
+  }
+
+  /* ---------- night matrix ---------- */
+
+  table.matrix { min-width: 540px; }
+
+  table.matrix thead th { text-align: center; }
+  table.matrix thead th:first-child { text-align: left; }
+
+  table.matrix thead th.night {
+    color: var(--s6);
+    background: color-mix(in srgb, var(--s6) 9%, transparent);
+    border-radius: 8px 8px 0 0;
+  }
+
+  table.matrix td {
+    text-align: center;
+    white-space: nowrap;
+    font-size: .88rem;
+  }
+
+  table.matrix td.avg {
+    font-weight: 700;
+    color: var(--hue);
+  }
+
+  table.matrix td.night {
+    background: color-mix(in srgb, var(--s6) 6%, transparent);
+  }
+
+  table.matrix td.tight {
+    color: var(--s1);
+    font-weight: 700;
+  }
+
+  .warn-dot {
+    display: inline-block;
+    margin-left: 5px;
+    color: var(--s1);
+    font-weight: 800;
+    font-size: .8em;
+    vertical-align: super;
+  }
+
+  .howto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  @media (min-width: 620px) {
+    .howto { grid-template-columns: 1fr 1fr; }
+  }
+
+  .howto div {
+    background: var(--tile);
+    border-radius: 13px;
+    padding: 13px 15px;
+    font-size: .85rem;
+    line-height: 1.7;
+  }
+
+  .howto strong {
+    display: block;
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: .92rem;
+    margin-bottom: 3px;
+    color: var(--hue);
+  }
+
+  .formula {
+    font-variant-numeric: tabular-nums;
+    background: color-mix(in srgb, var(--s6) 10%, var(--tile));
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: .88em;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  /* ---------- sign lists ---------- */
+
+  .duo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  @media (min-width: 620px) {
+    .duo { grid-template-columns: 1fr 1fr; }
+  }
+
+  ul.checks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: .92rem;
+  }
+
+  ul.checks li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    line-height: 1.65;
+  }
+
+  ul.checks li::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 9px;
+    height: 9px;
+    border-radius: 3px;
+    margin-top: .55em;
+    background: var(--hue);
+  }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: .82rem;
+    line-height: 1.8;
+    color: var(--ink-2);
+    border-top: 1px solid var(--line);
+    padding-top: 22px;
+  }
+
+  .caution {
+    background: color-mix(in srgb, var(--s1) 10%, var(--card));
+    border: 1.5px solid color-mix(in srgb, var(--s1) 32%, transparent);
+    border-radius: 14px;
+    padding: 14px 16px;
+    color: var(--ink);
+    font-size: .87rem;
+  }
+
+  .caution b { color: var(--s1); font-family: var(--display); font-weight: 800; }
+
+  footer .legend { margin: 0; }
+  footer .src { margin: 0; color: var(--ink-3); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="eyebrow">0 – 11 months</div>
+    <h1>月齢別 <span class="hl">授乳・ミルク</span>のめやす</h1>
+    <p class="lede">保存したインスタ投稿10枚（助産師さん2アカウント）を、1枚にまとめたものです。母乳のみ・ミルクのみ・混合の3パターンを月齢帯ごとに並べ、<b>回数から逆算した「何時間おきか」</b>も添えています。</p>
+    <nav class="stagenav" aria-label="月齢帯へ移動">
+      <a href="#s1" style="--hue: var(--s1)">誕生〜1週間</a>
+      <a href="#s2" style="--hue: var(--s2)">2週目〜1ヶ月</a>
+      <a href="#s3" style="--hue: var(--s3)">1〜2ヶ月</a>
+      <a href="#s4" style="--hue: var(--s4)">3〜4ヶ月</a>
+      <a href="#s5" style="--hue: var(--s5)">5〜6ヶ月</a>
+      <a href="#s6" style="--hue: var(--s6)">7〜8ヶ月</a>
+      <a href="#s7" style="--hue: var(--s7)">9〜11ヶ月</a>
+    </nav>
+  </header>
+
+  <div class="stages">
+
+    <!-- S1 -->
+    <article class="stage" id="s1" style="--hue: var(--s1)">
+      <div class="stage__head">
+        <div class="stage__age">誕生〜1週間</div>
+        <p class="stage__line muted">この帯は、ミルク量の早見表にだけ記載がありました。</p>
+      </div>
+      <div class="tiles">
+        <div class="tile tile--breast">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="12" r="7"/><path d="M17 12c1.5 1.5 2.6 2.8 2.6 4a2.6 2.6 0 1 1-5.2 0c0-1.2 1.1-2.5 2.6-4Z"/></svg>
+            母乳のみ
+          </div>
+          <div class="tile__value none">記載なし</div>
+        </div>
+        <div class="tile tile--milk">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 2.5h4M11 2.5v2.2M13 2.5v2.2M8.5 8.2h7M7.5 9.5a4.5 4.5 0 0 1 9 0v9.4a2.6 2.6 0 0 1-2.6 2.6h-3.8a2.6 2.6 0 0 1-2.6-2.6Z"/><path d="M10 12.5h2M10 15.5h2"/></svg>
+            ミルクのみ
+          </div>
+          <div class="tile__value"><b>60〜80ml</b><br><span class="x">×</span> 1日 <b>8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--mixed">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="12" r="5"/><path d="M16 4.5h4M17.5 6.2h5M15.5 7.6a3.5 3.5 0 0 1 7 0v10.6a2.2 2.2 0 0 1-2.2 2.2h-2.6a2.2 2.2 0 0 1-2.2-2.2Z"/></svg>
+            混合
+          </div>
+          <div class="tile__value none">記載なし</div>
+        </div>
+      </div>
+      <div class="stage__total">
+        <span>ミルクのみのとき、1日トータル</span>
+        <strong>480〜640ml</strong>
+      </div>
+      <p class="stage__caveat"><b>この時期は、夜も間隔をあけないのが基本。</b>「夜4時間なら」は、そうしたときに日中がどうなるかという割り算の見え方です。あけてよいかは健診で相談を。</p>
+    </article>
+
+    <!-- S2 -->
+    <article class="stage" id="s2" style="--hue: var(--s2)">
+      <div class="stage__head">
+        <div class="stage__age">2週目〜1ヶ月</div>
+        <p class="stage__line">まだまだ頻回に泣く時期。1時間〜1時間半の間隔になることも。</p>
+      </div>
+      <div class="tiles">
+        <div class="tile tile--breast">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="12" r="7"/><path d="M17 12c1.5 1.5 2.6 2.8 2.6 4a2.6 2.6 0 1 1-5.2 0c0-1.2 1.1-2.5 2.6-4Z"/></svg>
+            母乳のみ
+          </div>
+          <div class="tile__value none">記載なし</div>
+        </div>
+        <div class="tile tile--milk">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 2.5h4M11 2.5v2.2M13 2.5v2.2M8.5 8.2h7M7.5 9.5a4.5 4.5 0 0 1 9 0v9.4a2.6 2.6 0 0 1-2.6 2.6h-3.8a2.6 2.6 0 0 1-2.6-2.6Z"/><path d="M10 12.5h2M10 15.5h2"/></svg>
+            ミルクのみ
+          </div>
+          <div class="tile__value"><b>80〜120ml</b><br><span class="x">×</span> 1日 <b>7〜8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3〜3.5時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3〜3.5時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--mixed">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="12" r="5"/><path d="M16 4.5h4M17.5 6.2h5M15.5 7.6a3.5 3.5 0 0 1 7 0v10.6a2.2 2.2 0 0 1-2.2 2.2h-2.6a2.2 2.2 0 0 1-2.2-2.2Z"/></svg>
+            混合
+          </div>
+          <div class="tile__value none">記載なし</div>
+        </div>
+      </div>
+      <div class="stage__total">
+        <span>ミルクのみのとき、1日トータル</span>
+        <strong>560〜960ml</strong>
+      </div>
+      <p class="stage__caveat"><b>この時期も、夜は間隔をあけないのが基本。</b>1日8回以上の授乳で母乳の分泌が保たれる時期です。</p>
+      <p class="stage__note"><span class="who">生後1か月</span><span>母乳・ミルク合わせた授乳は <b>1日8〜12回</b>（ならすと約2〜3時間おき、夜4時間なら日中 約2〜3時間おき）。1時間〜1時間半での間隔に。まだまだ頻回に泣く時期。</span></p>
+    </article>
+
+    <!-- S3 -->
+    <article class="stage now" id="s3" style="--hue: var(--s3)">
+      <div class="stage__head">
+        <div class="stage__age">1〜2ヶ月</div>
+        <div class="stage__now">いま ここ</div>
+        <p class="stage__line">少しづつ、1回に飲む量が増えてくるよ。</p>
+      </div>
+      <div class="tiles">
+        <div class="tile tile--breast">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="12" r="7"/><path d="M17 12c1.5 1.5 2.6 2.8 2.6 4a2.6 2.6 0 1 1-5.2 0c0-1.2 1.1-2.5 2.6-4Z"/></svg>
+            母乳のみ
+          </div>
+          <div class="tile__value">左右計 <b>10分以上</b><br><span class="x">×</span> 1日 <b>8回以上</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと <b>3時間</b>おき以内</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 <b>3時間</b>おき以内</span></div>
+          </div>
+        </div>
+        <div class="tile tile--milk">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 2.5h4M11 2.5v2.2M13 2.5v2.2M8.5 8.2h7M7.5 9.5a4.5 4.5 0 0 1 9 0v9.4a2.6 2.6 0 0 1-2.6 2.6h-3.8a2.6 2.6 0 0 1-2.6-2.6Z"/><path d="M10 12.5h2M10 15.5h2"/></svg>
+            ミルクのみ
+          </div>
+          <div class="tile__value"><b>120〜160ml</b><br><span class="x">×</span> 1日 <b>6〜7回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3.5〜4時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3.5〜4時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--mixed">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="12" r="5"/><path d="M16 4.5h4M17.5 6.2h5M15.5 7.6a3.5 3.5 0 0 1 7 0v10.6a2.2 2.2 0 0 1-2.2 2.2h-2.6a2.2 2.2 0 0 1-2.2-2.2Z"/></svg>
+            混合
+          </div>
+          <div class="tile__value">左右計 <b>10分以上</b> ＋様子を見ながらミルクをたす<br><span class="x">×</span> 1日 <b>8回くらい</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3時間</b>おき</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="stage__total">
+        <span>ミルクのみのとき、1日トータル</span>
+        <strong>700〜1000ml</strong>
+      </div>
+      <p class="stage__note"><span class="who">生後2か月</span><span>母乳・ミルク合わせた授乳は <b>1日8回以上</b>（ならすと3時間おき以内、夜4時間なら日中も3時間おき以内）。1回の授乳で飲める量が増えて、これまで時間がかかっていた授乳時間が短めになってくる頃。</span></p>
+    </article>
+
+    <!-- S4 -->
+    <article class="stage" id="s4" style="--hue: var(--s4)">
+      <div class="stage__head">
+        <div class="stage__age">3〜4ヶ月</div>
+        <p class="stage__line">徐々に授乳間隔が一定に。遊び飲みも出てくる頃。</p>
+      </div>
+      <div class="tiles">
+        <div class="tile tile--breast">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="12" r="7"/><path d="M17 12c1.5 1.5 2.6 2.8 2.6 4a2.6 2.6 0 1 1-5.2 0c0-1.2 1.1-2.5 2.6-4Z"/></svg>
+            母乳のみ
+          </div>
+          <div class="tile__value">左右計 <b>10〜15分</b>程度<br><span class="x">×</span> 1日 <b>6〜8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3〜4時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3〜4時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--milk">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 2.5h4M11 2.5v2.2M13 2.5v2.2M8.5 8.2h7M7.5 9.5a4.5 4.5 0 0 1 9 0v9.4a2.6 2.6 0 0 1-2.6 2.6h-3.8a2.6 2.6 0 0 1-2.6-2.6Z"/><path d="M10 12.5h2M10 15.5h2"/></svg>
+            ミルクのみ
+          </div>
+          <div class="tile__value"><b>160〜200ml</b><br><span class="x">×</span> 1日 <b>5〜6回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>4〜5時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>4〜5時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--mixed">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="12" r="5"/><path d="M16 4.5h4M17.5 6.2h5M15.5 7.6a3.5 3.5 0 0 1 7 0v10.6a2.2 2.2 0 0 1-2.2 2.2h-2.6a2.2 2.2 0 0 1-2.2-2.2Z"/></svg>
+            混合
+          </div>
+          <div class="tile__value">左右計 <b>10〜15分</b> ＋様子を見ながらミルクをたす<br><span class="x">×</span> 1日 <b>6〜8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3〜4時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3〜4時間</b>おき</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="stage__total">
+        <span>ミルクのみのとき、1日トータル</span>
+        <strong>1000ml</strong>
+      </div>
+      <p class="stage__note"><span class="who">生後3〜4か月</span><span>母乳・ミルク合わせた授乳は <b>1日6〜8回</b>（ならすと約3〜4時間おき、夜4時間なら日中 約3〜4時間おき）。遊び飲みが増えたりするなど、個人差が出る頃。</span></p>
+    </article>
+
+    <!-- S5 -->
+    <article class="stage" id="s5" style="--hue: var(--s5)">
+      <div class="stage__head">
+        <div class="stage__age">5〜6ヶ月</div>
+        <p class="stage__line">授乳リズムがつくころ。離乳食のあとも授乳を！</p>
+      </div>
+      <div class="tiles">
+        <div class="tile tile--breast">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="12" r="7"/><path d="M17 12c1.5 1.5 2.6 2.8 2.6 4a2.6 2.6 0 1 1-5.2 0c0-1.2 1.1-2.5 2.6-4Z"/></svg>
+            母乳のみ
+          </div>
+          <div class="tile__value">左右計 <b>10〜15分</b>程度<br><span class="x">×</span> 1日 <b>6〜8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3〜4時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3〜4時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--milk">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 2.5h4M11 2.5v2.2M13 2.5v2.2M8.5 8.2h7M7.5 9.5a4.5 4.5 0 0 1 9 0v9.4a2.6 2.6 0 0 1-2.6 2.6h-3.8a2.6 2.6 0 0 1-2.6-2.6Z"/><path d="M10 12.5h2M10 15.5h2"/></svg>
+            ミルクのみ
+          </div>
+          <div class="tile__value"><b>200〜240ml</b><br><span class="x">×</span> 1日 <b>4〜6回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>4〜6時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>4〜6.5時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--mixed">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="12" r="5"/><path d="M16 4.5h4M17.5 6.2h5M15.5 7.6a3.5 3.5 0 0 1 7 0v10.6a2.2 2.2 0 0 1-2.2 2.2h-2.6a2.2 2.2 0 0 1-2.2-2.2Z"/></svg>
+            混合
+          </div>
+          <div class="tile__value">左右計 <b>10〜15分</b> ＋様子を見ながらミルクをたす<br><span class="x">×</span> 1日 <b>5〜8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3〜5時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3〜5時間</b>おき</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="stage__total">
+        <span>ミルクのみのとき、1日トータル</span>
+        <strong>1000〜1400ml</strong>
+      </div>
+      <p class="stage__note"><span class="who">生後5〜6か月</span><span>母乳・ミルク合わせた授乳は <b>1日6〜8回</b>（ならすと約3〜4時間おき、夜4時間なら日中 約3〜4時間おき）。夜中授乳が減る子も出てくる頃。飲むペースが一定になって、ママが休める時間も増えるかな。</span></p>
+    </article>
+
+    <!-- S6 -->
+    <article class="stage" id="s6" style="--hue: var(--s6)">
+      <div class="stage__head">
+        <div class="stage__age">7〜8ヶ月</div>
+        <p class="stage__line">授乳回数や飲む量に、個人差が大きくなる。</p>
+      </div>
+      <div class="tiles">
+        <div class="tile tile--breast">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="12" r="7"/><path d="M17 12c1.5 1.5 2.6 2.8 2.6 4a2.6 2.6 0 1 1-5.2 0c0-1.2 1.1-2.5 2.6-4Z"/></svg>
+            母乳のみ
+          </div>
+          <div class="tile__value">左右計 <b>10〜15分</b>程度<br><span class="x">×</span> 1日 <b>5〜8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3〜5時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3〜5時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--milk">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 2.5h4M11 2.5v2.2M13 2.5v2.2M8.5 8.2h7M7.5 9.5a4.5 4.5 0 0 1 9 0v9.4a2.6 2.6 0 0 1-2.6 2.6h-3.8a2.6 2.6 0 0 1-2.6-2.6Z"/><path d="M10 12.5h2M10 15.5h2"/></svg>
+            ミルクのみ
+          </div>
+          <div class="tile__value"><b>200〜240ml</b><br><span class="x">×</span> 1日 <b>4〜5回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>5〜6時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>5〜6.5時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--mixed">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="12" r="5"/><path d="M16 4.5h4M17.5 6.2h5M15.5 7.6a3.5 3.5 0 0 1 7 0v10.6a2.2 2.2 0 0 1-2.2 2.2h-2.6a2.2 2.2 0 0 1-2.2-2.2Z"/></svg>
+            混合
+          </div>
+          <div class="tile__value">母乳のあとに様子を見ながらミルクをたす<br><span class="x">×</span> 1日 <b>5〜8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3〜5時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3〜5時間</b>おき</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="stage__total">
+        <span>ミルクのみのとき、1日トータル</span>
+        <strong>1000〜1200ml</strong>
+      </div>
+    </article>
+
+    <!-- S7 -->
+    <article class="stage" id="s7" style="--hue: var(--s7)">
+      <div class="stage__head">
+        <div class="stage__age">9〜11ヶ月</div>
+        <p class="stage__line">離乳食が1日3回に。授乳回数は減る傾向に。</p>
+      </div>
+      <div class="tiles">
+        <div class="tile tile--breast">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="12" r="7"/><path d="M17 12c1.5 1.5 2.6 2.8 2.6 4a2.6 2.6 0 1 1-5.2 0c0-1.2 1.1-2.5 2.6-4Z"/></svg>
+            母乳のみ
+          </div>
+          <div class="tile__value">左右計 <b>5〜10分</b>程度<br><span class="x">×</span> 1日 <b>5〜8回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>3〜5時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>3〜5時間</b>おき</span></div>
+          </div>
+        </div>
+        <div class="tile tile--milk">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 2.5h4M11 2.5v2.2M13 2.5v2.2M8.5 8.2h7M7.5 9.5a4.5 4.5 0 0 1 9 0v9.4a2.6 2.6 0 0 1-2.6 2.6h-3.8a2.6 2.6 0 0 1-2.6-2.6Z"/><path d="M10 12.5h2M10 15.5h2"/></svg>
+            ミルクのみ
+          </div>
+          <div class="tile__value"><b>100〜200ml</b><br><span class="x">×</span> 1日 <b>2〜5回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>5時間</b>おき〜（2回の日は離乳食が中心）</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>5時間</b>おき〜</span></div>
+          </div>
+        </div>
+        <div class="tile tile--mixed">
+          <div class="tile__label">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="12" r="5"/><path d="M16 4.5h4M17.5 6.2h5M15.5 7.6a3.5 3.5 0 0 1 7 0v10.6a2.2 2.2 0 0 1-2.2 2.2h-2.6a2.2 2.2 0 0 1-2.2-2.2Z"/></svg>
+            混合
+          </div>
+          <div class="tile__value">母乳のあとに様子を見ながらミルクをたす<br><span class="x">×</span> 1日 <b>4〜5回</b></div>
+          <div class="tile__gap">
+            <div class="gaprow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></svg><span>ならすと 約<b>5〜6時間</b>おき</span></div>
+            <div class="gaprow gaprow--night"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15A8.7 8.7 0 0 1 9 3.5a8.8 8.8 0 1 0 11.5 11.5Z"/></svg><span>夜4時間なら 日中 約<b>5〜6.5時間</b>おき</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="stage__total">
+        <span>ミルクのみのとき、1日トータル</span>
+        <strong>400〜1000ml</strong>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- ---------- milk table ---------- -->
+  <section class="block">
+    <h2>ミルクだけの場合の早見表</h2>
+    <p class="block__sub">上のカードの「ミルクのみ」だけを、縦に並べたものです。夜中に片手で見るならこちら。</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">月齢</th>
+            <th scope="col">1回の量</th>
+            <th scope="col">回数</th>
+            <th scope="col">1日トータル</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="--hue: var(--s1)"><th scope="row">誕生〜1週間</th><td>60〜80ml</td><td>8回</td><td class="total">480〜640ml</td></tr>
+          <tr style="--hue: var(--s2)"><th scope="row">2週目〜1ヶ月</th><td>80〜120ml</td><td>7〜8回</td><td class="total">560〜960ml</td></tr>
+          <tr style="--hue: var(--s3)"><th scope="row">1〜2ヶ月</th><td>120〜160ml</td><td>6〜7回</td><td class="total">700〜1000ml</td></tr>
+          <tr style="--hue: var(--s4)"><th scope="row">3〜4ヶ月</th><td>160〜200ml</td><td>5〜6回</td><td class="total">1000ml</td></tr>
+          <tr style="--hue: var(--s5)"><th scope="row">5〜6ヶ月</th><td>200〜240ml</td><td>4〜6回</td><td class="total">1000〜1400ml</td></tr>
+          <tr style="--hue: var(--s6)"><th scope="row">7〜8ヶ月</th><td>200〜240ml</td><td>4〜5回</td><td class="total">1000〜1200ml</td></tr>
+          <tr style="--hue: var(--s7)"><th scope="row">9〜11ヶ月</th><td>100〜200ml</td><td>2〜5回</td><td class="total">400〜1000ml</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ---------- night matrix ---------- -->
+  <section class="block">
+    <h2>夜にまとめて寝るなら、日中はどれくらい？</h2>
+    <p class="block__sub">各カードには「夜4時間」の場合を入れてあります。こちらは夜6時間・8時間まで伸ばした場合を並べた表です。夜にひとまとまり眠ると、そのぶん日中は詰めないと回数が足りません。ミルクのみの回数で計算しています。</p>
+
+    <div class="howto">
+      <div style="--hue: var(--s5)">
+        <strong>ならすと</strong>
+        <span class="formula">24時間 ÷ 回数</span><br>
+        1日ぜんぶを均等にならしたときの間隔です。
+      </div>
+      <div style="--hue: var(--s6)">
+        <strong>夜◯時間まとめて寝るなら</strong>
+        <span class="formula">(24時間 − 夜の睡眠) ÷ (回数 − 1)</span><br>
+        夜のひとまとまりを1回ぶんの間隔と数えて、残りを日中に割りふった間隔です。
+      </div>
+    </div>
+
+    <div class="tablewrap">
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th scope="col">月齢（ミルクのみ）</th>
+            <th scope="col">ならすと</th>
+            <th scope="col" class="night">夜4時間</th>
+            <th scope="col" class="night">夜6時間</th>
+            <th scope="col" class="night">夜8時間</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="--hue: var(--s1)">
+            <th scope="row">誕生〜1週間<span class="warn-dot">※</span></th>
+            <td class="avg">約3時間</td>
+            <td class="night">約3時間</td>
+            <td class="night tight">約2.5時間</td>
+            <td class="night tight">約2.5時間</td>
+          </tr>
+          <tr style="--hue: var(--s2)">
+            <th scope="row">2週目〜1ヶ月<span class="warn-dot">※</span></th>
+            <td class="avg">約3〜3.5時間</td>
+            <td class="night">約3〜3.5時間</td>
+            <td class="night tight">約2.5〜3時間</td>
+            <td class="night tight">約2.5時間</td>
+          </tr>
+          <tr style="--hue: var(--s3)">
+            <th scope="row">1〜2ヶ月</th>
+            <td class="avg">約3.5〜4時間</td>
+            <td class="night">約3.5〜4時間</td>
+            <td class="night">約3〜3.5時間</td>
+            <td class="night tight">約2.5〜3時間</td>
+          </tr>
+          <tr style="--hue: var(--s4)">
+            <th scope="row">3〜4ヶ月</th>
+            <td class="avg">約4〜5時間</td>
+            <td class="night">約4〜5時間</td>
+            <td class="night">約3.5〜4.5時間</td>
+            <td class="night">約3〜4時間</td>
+          </tr>
+          <tr style="--hue: var(--s5)">
+            <th scope="row">5〜6ヶ月</th>
+            <td class="avg">約4〜6時間</td>
+            <td class="night">約4〜6.5時間</td>
+            <td class="night">約3.5〜6時間</td>
+            <td class="night">約3〜5.5時間</td>
+          </tr>
+          <tr style="--hue: var(--s6)">
+            <th scope="row">7〜8ヶ月</th>
+            <td class="avg">約5〜6時間</td>
+            <td class="night">約5〜6.5時間</td>
+            <td class="night">約4.5〜6時間</td>
+            <td class="night">約4〜5.5時間</td>
+          </tr>
+          <tr style="--hue: var(--s7)">
+            <th scope="row">9〜11ヶ月<span class="warn-dot">†</span></th>
+            <td class="avg">約5時間〜</td>
+            <td class="night">約5時間〜</td>
+            <td class="night">約4.5時間〜</td>
+            <td class="night">約4時間〜</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ul class="checks" style="--hue: var(--s1); font-size: .84rem;">
+      <li><b>※ 生後1ヶ月ごろまでは、夜も間隔をあけないのが基本。</b>1日8回以上の授乳で母乳の分泌が保たれるので、この帯の「夜6〜8時間」の列は、そうすると日中が2.5時間おきになる、という<b>算数上の見え方</b>として読んでください。夜に長くあけてよいかは、1ヶ月健診で体重の増え方を見てから相談を。</li>
+      <li><b>† 9〜11ヶ月は離乳食が1日3回に。</b>授乳が2回まで減る日は間隔で考えるより、食事の時間割に合わせるほうが現実的です。</li>
+      <li><b>平均は「ならし」であって、実際はかたまります。</b>元の投稿でも、生後1か月は「1時間〜1時間半での間隔に」とあります。夕方にまとめて欲しがって、そのあと長めに寝る、という日が普通です。</li>
+    </ul>
+  </section>
+
+  <!-- ---------- signs ---------- -->
+  <section class="block">
+    <h2>覚えておきたいこと</h2>
+    <div class="duo">
+      <div>
+        <div class="tile__label" style="color: var(--s4); margin-bottom: 10px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+          ポイント
+        </div>
+        <ul class="checks" style="--hue: var(--s4)">
+          <li>赤ちゃんによって個人差があります</li>
+          <li>飲み残しがあっても気にしすぎない</li>
+          <li>紹介したのは、あくまで目安</li>
+          <li>目安を参考にしながら、赤ちゃんの飲める量であげてみてね</li>
+        </ul>
+      </div>
+      <div>
+        <div class="tile__label" style="color: var(--s1); margin-bottom: 10px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3.5c1.6 3.2 5 4.6 5 8.4a5 5 0 0 1-10 0c0-3.8 3.4-5.2 5-8.4Z"/></svg>
+          ミルクのサイン
+        </div>
+        <ul class="checks" style="--hue: var(--s1)">
+          <li>口をもぐもぐする</li>
+          <li>手をお口に持っていく</li>
+          <li>泣き出す</li>
+          <li>落ち着きがない</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="caution"><b>大切なのは、赤ちゃんの様子をよく見ること。</b><br>ここに書いてあるのは一般的な目安で、医学的な判断の代わりにはなりません。気になることがあれば、助産師さんやお医者さんに相談してください。</p>
+    <p class="legend">「記載なし」は、元の投稿にその項目がなかったところです。推測では埋めていません。<br>「母乳・ミルク合わせた授乳は◯回」の行は、月齢の呼び方が別シリーズ（生後◯か月）だったものを、同じ帯に並べています。<br><b>「ならすと◯時間おき」と「夜にまとめて寝るなら」の表は、元の投稿にはありません。</b>投稿にある回数を <span class="formula">24 ÷ 回数</span> ／ <span class="formula">(24 − 夜の睡眠) ÷ (回数 − 1)</span> で割り算して出した計算値で、0.5時間きざみに丸めています。</p>
+    <p class="src">出典: 助産師さんのInstagram投稿のスクリーンショット10枚（授乳回数シリーズ／授乳スタイル別シリーズ）を1枚にまとめたもの。2026-08-08 作成。「いま ここ」は、この表を作った時点でうちの子がいる月齢です。</p>
+  </footer>
+
+</div>
+</body>
+</html>
